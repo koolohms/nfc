@@ -1,0 +1,10 @@
+#!/bin/bash
+# Script to flash Raspberry Pi Pico using openocd via Picoprobe
+cur_dir="$(pwd)"
+echo Moving to ~/pico/nfc/build/src/
+cd ~/pico/nfc/build/src/
+
+sudo openocd -f interface/picoprobe.cfg -f target/rp2040.cfg -c "program main.elf verify reset exit"
+
+echo Moving to $cur_dir
+cd $cur_dir

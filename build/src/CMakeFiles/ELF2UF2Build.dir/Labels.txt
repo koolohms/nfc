@@ -1,0 +1,13 @@
+# Target labels
+ ELF2UF2Build
+# Source files and their labels
+/home/ddreise/pico/nfc/build/src/CMakeFiles/ELF2UF2Build
+/home/ddreise/pico/nfc/build/src/CMakeFiles/ELF2UF2Build.rule
+/home/ddreise/pico/nfc/build/src/CMakeFiles/ELF2UF2Build-complete.rule
+/home/ddreise/pico/nfc/build/src/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-install.rule
+/home/ddreise/pico/nfc/build/src/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-mkdir.rule
+/home/ddreise/pico/nfc/build/src/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-download.rule
+/home/ddreise/pico/nfc/build/src/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-update.rule
+/home/ddreise/pico/nfc/build/src/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-patch.rule
+/home/ddreise/pico/nfc/build/src/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure.rule
+/home/ddreise/pico/nfc/build/src/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-build.rule

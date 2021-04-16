@@ -1,0 +1,3 @@
+#!/bin/bash
+# Script that opens terminal to picoprobe
+sudo minicom -D /dev/ttyACM0 -b 11520
