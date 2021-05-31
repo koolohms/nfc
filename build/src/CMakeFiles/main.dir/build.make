@@ -70,35 +70,9 @@ src/CMakeFiles/main.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/main.c.s"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ddreise/pico/nfc/src/main.c -o CMakeFiles/main.dir/main.c.s
 
-src/CMakeFiles/main.dir/usb_descriptors.c.obj: src/CMakeFiles/main.dir/flags.make
-src/CMakeFiles/main.dir/usb_descriptors.c.obj: ../src/usb_descriptors.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object src/CMakeFiles/main.dir/usb_descriptors.c.obj"
-	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/usb_descriptors.c.obj   -c /home/ddreise/pico/nfc/src/usb_descriptors.c
-
-src/CMakeFiles/main.dir/usb_descriptors.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/usb_descriptors.c.i"
-	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ddreise/pico/nfc/src/usb_descriptors.c > CMakeFiles/main.dir/usb_descriptors.c.i
-
-src/CMakeFiles/main.dir/usb_descriptors.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/usb_descriptors.c.s"
-	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ddreise/pico/nfc/src/usb_descriptors.c -o CMakeFiles/main.dir/usb_descriptors.c.s
-
-src/CMakeFiles/main.dir/usb_msc.c.obj: src/CMakeFiles/main.dir/flags.make
-src/CMakeFiles/main.dir/usb_msc.c.obj: ../src/usb_msc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object src/CMakeFiles/main.dir/usb_msc.c.obj"
-	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/usb_msc.c.obj   -c /home/ddreise/pico/nfc/src/usb_msc.c
-
-src/CMakeFiles/main.dir/usb_msc.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/usb_msc.c.i"
-	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ddreise/pico/nfc/src/usb_msc.c > CMakeFiles/main.dir/usb_msc.c.i
-
-src/CMakeFiles/main.dir/usb_msc.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/usb_msc.c.s"
-	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ddreise/pico/nfc/src/usb_msc.c -o CMakeFiles/main.dir/usb_msc.c.s
-
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj   -c /home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i: cmake_force
@@ -111,7 +85,7 @@ src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdlib/st
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj   -c /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i: cmake_force
@@ -124,7 +98,7 @@ src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_gpio/
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj   -c /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i: cmake_force
@@ -137,7 +111,7 @@ src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_claim
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj   -c /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i: cmake_force
@@ -150,7 +124,7 @@ src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_sync/
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/pico_platform/platform.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj   -c /home/ddreise/pico/pico-sdk/src/rp2_common/pico_platform/platform.c
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i: cmake_force
@@ -163,7 +137,7 @@ src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_platform/
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj   -c /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i: cmake_force
@@ -176,12 +150,12 @@ src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_uart/
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building ASM object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building ASM object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj   -c /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_time/time.c.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_time/time.c.obj: /home/ddreise/pico/pico-sdk/src/common/pico_time/time.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_time/time.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_time/time.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_time/time.c.obj   -c /home/ddreise/pico/pico-sdk/src/common/pico_time/time.c
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_time/time.c.i: cmake_force
@@ -194,7 +168,7 @@ src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_time/time.c.s
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj: /home/ddreise/pico/pico-sdk/src/common/pico_time/timeout_helper.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj   -c /home/ddreise/pico/pico-sdk/src/common/pico_time/timeout_helper.c
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i: cmake_force
@@ -207,7 +181,7 @@ src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_time/timeout_
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj   -c /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i: cmake_force
@@ -220,7 +194,7 @@ src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_timer
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_sync/sem.c.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_sync/sem.c.obj: /home/ddreise/pico/pico-sdk/src/common/pico_sync/sem.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_sync/sem.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_sync/sem.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_sync/sem.c.obj   -c /home/ddreise/pico/pico-sdk/src/common/pico_sync/sem.c
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_sync/sem.c.i: cmake_force
@@ -233,7 +207,7 @@ src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_sync/sem.c.s:
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj: /home/ddreise/pico/pico-sdk/src/common/pico_sync/lock_core.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj   -c /home/ddreise/pico/pico-sdk/src/common/pico_sync/lock_core.c
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_sync/lock_core.c.i: cmake_force
@@ -246,7 +220,7 @@ src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_sync/lock_cor
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_sync/mutex.c.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_sync/mutex.c.obj: /home/ddreise/pico/pico-sdk/src/common/pico_sync/mutex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_sync/mutex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_sync/mutex.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_sync/mutex.c.obj   -c /home/ddreise/pico/pico-sdk/src/common/pico_sync/mutex.c
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_sync/mutex.c.i: cmake_force
@@ -259,7 +233,7 @@ src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_sync/mutex.c.
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj: /home/ddreise/pico/pico-sdk/src/common/pico_sync/critical_section.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj   -c /home/ddreise/pico/pico-sdk/src/common/pico_sync/critical_section.c
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_sync/critical_section.c.i: cmake_force
@@ -272,7 +246,7 @@ src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_sync/critical
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_util/datetime.c.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_util/datetime.c.obj: /home/ddreise/pico/pico-sdk/src/common/pico_util/datetime.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_util/datetime.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_util/datetime.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_util/datetime.c.obj   -c /home/ddreise/pico/pico-sdk/src/common/pico_util/datetime.c
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_util/datetime.c.i: cmake_force
@@ -285,7 +259,7 @@ src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_util/datetime
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_util/pheap.c.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_util/pheap.c.obj: /home/ddreise/pico/pico-sdk/src/common/pico_util/pheap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_util/pheap.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_util/pheap.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_util/pheap.c.obj   -c /home/ddreise/pico/pico-sdk/src/common/pico_util/pheap.c
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_util/pheap.c.i: cmake_force
@@ -298,7 +272,7 @@ src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_util/pheap.c.
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_util/queue.c.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_util/queue.c.obj: /home/ddreise/pico/pico-sdk/src/common/pico_util/queue.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_util/queue.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_util/queue.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_util/queue.c.obj   -c /home/ddreise/pico/pico-sdk/src/common/pico_util/queue.c
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_util/queue.c.i: cmake_force
@@ -311,7 +285,7 @@ src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_util/queue.c.
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj   -c /home/ddreise/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i: cmake_force
@@ -324,7 +298,7 @@ src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_runtime/r
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj   -c /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i: cmake_force
@@ -337,7 +311,7 @@ src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_clock
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj   -c /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i: cmake_force
@@ -350,7 +324,7 @@ src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_watch
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj   -c /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i: cmake_force
@@ -363,7 +337,7 @@ src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_xosc/
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj   -c /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i: cmake_force
@@ -376,7 +350,7 @@ src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_pll/p
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj   -c /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i: cmake_force
@@ -389,7 +363,7 @@ src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_vreg/
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj   -c /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i: cmake_force
@@ -402,12 +376,12 @@ src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_irq/i
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building ASM object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building ASM object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj   -c /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/pico_printf/printf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj   -c /home/ddreise/pico/pico-sdk/src/rp2_common/pico_printf/printf.c
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i: cmake_force
@@ -420,12 +394,12 @@ src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_printf/pr
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building ASM object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building ASM object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj   -c /home/ddreise/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj   -c /home/ddreise/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i: cmake_force
@@ -438,17 +412,17 @@ src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_bootrom/b
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/pico_divider/divider.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building ASM object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building ASM object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj   -c /home/ddreise/pico/pico-sdk/src/rp2_common/pico_divider/divider.S
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building ASM object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building ASM object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj   -c /home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj   -c /home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i: cmake_force
@@ -461,7 +435,7 @@ src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/do
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_math.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj   -c /home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_math.c
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i: cmake_force
@@ -474,22 +448,22 @@ src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/do
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building ASM object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building ASM object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj   -c /home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building ASM object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building ASM object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj   -c /home/ddreise/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building ASM object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building ASM object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj   -c /home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj   -c /home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i: cmake_force
@@ -502,7 +476,7 @@ src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/flo
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_math.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj   -c /home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_math.c
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i: cmake_force
@@ -515,12 +489,12 @@ src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/flo
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building ASM object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building ASM object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj   -c /home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj   -c /home/ddreise/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i: cmake_force
@@ -533,17 +507,17 @@ src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_malloc/pi
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building ASM object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building ASM object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj   -c /home/ddreise/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building ASM object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building ASM object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj   -c /home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj -c /home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i: cmake_force
@@ -556,7 +530,7 @@ src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj   -c /home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i: cmake_force
@@ -569,7 +543,7 @@ src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj   -c /home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i: cmake_force
@@ -582,7 +556,7 @@ src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio/std
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj   -c /home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i: cmake_force
@@ -595,7 +569,7 @@ src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio_uar
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj   -c /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i: cmake_force
@@ -605,6 +579,32 @@ src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_i2c/i
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c -o CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
+
+src/CMakeFiles/main.dir/usb/usb_descriptors.c.obj: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/usb/usb_descriptors.c.obj: ../src/usb/usb_descriptors.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object src/CMakeFiles/main.dir/usb/usb_descriptors.c.obj"
+	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/usb/usb_descriptors.c.obj   -c /home/ddreise/pico/nfc/src/usb/usb_descriptors.c
+
+src/CMakeFiles/main.dir/usb/usb_descriptors.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/usb/usb_descriptors.c.i"
+	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ddreise/pico/nfc/src/usb/usb_descriptors.c > CMakeFiles/main.dir/usb/usb_descriptors.c.i
+
+src/CMakeFiles/main.dir/usb/usb_descriptors.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/usb/usb_descriptors.c.s"
+	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ddreise/pico/nfc/src/usb/usb_descriptors.c -o CMakeFiles/main.dir/usb/usb_descriptors.c.s
+
+src/CMakeFiles/main.dir/usb/usb_msc.c.obj: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/usb/usb_msc.c.obj: ../src/usb/usb_msc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object src/CMakeFiles/main.dir/usb/usb_msc.c.obj"
+	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/usb/usb_msc.c.obj   -c /home/ddreise/pico/nfc/src/usb/usb_msc.c
+
+src/CMakeFiles/main.dir/usb/usb_msc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/usb/usb_msc.c.i"
+	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ddreise/pico/nfc/src/usb/usb_msc.c > CMakeFiles/main.dir/usb/usb_msc.c.i
+
+src/CMakeFiles/main.dir/usb/usb_msc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/usb/usb_msc.c.s"
+	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ddreise/pico/nfc/src/usb/usb_msc.c -o CMakeFiles/main.dir/usb/usb_msc.c.s
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c
@@ -830,8 +830,6 @@ src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_
 # Object files for target main
 main_OBJECTS = \
 "CMakeFiles/main.dir/main.c.obj" \
-"CMakeFiles/main.dir/usb_descriptors.c.obj" \
-"CMakeFiles/main.dir/usb_msc.c.obj" \
 "CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj" \
 "CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj" \
 "CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj" \
@@ -878,6 +876,8 @@ main_OBJECTS = \
 "CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj" \
 "CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj" \
 "CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj" \
+"CMakeFiles/main.dir/usb/usb_descriptors.c.obj" \
+"CMakeFiles/main.dir/usb/usb_msc.c.obj" \
 "CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj" \
 "CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj" \
 "CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj" \
@@ -900,8 +900,6 @@ main_OBJECTS = \
 main_EXTERNAL_OBJECTS =
 
 src/main.elf: src/CMakeFiles/main.dir/main.c.obj
-src/main.elf: src/CMakeFiles/main.dir/usb_descriptors.c.obj
-src/main.elf: src/CMakeFiles/main.dir/usb_msc.c.obj
 src/main.elf: src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 src/main.elf: src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 src/main.elf: src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
@@ -948,6 +946,8 @@ src/main.elf: src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/
 src/main.elf: src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 src/main.elf: src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
 src/main.elf: src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+src/main.elf: src/CMakeFiles/main.dir/usb/usb_descriptors.c.obj
+src/main.elf: src/CMakeFiles/main.dir/usb/usb_msc.c.obj
 src/main.elf: src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
 src/main.elf: src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
 src/main.elf: src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj

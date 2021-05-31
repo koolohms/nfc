@@ -1670,59 +1670,59 @@ main.c.s:
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/main.c.s
 .PHONY : main.c.s
 
-usb_descriptors.obj: usb_descriptors.c.obj
+usb/usb_descriptors.obj: usb/usb_descriptors.c.obj
 
-.PHONY : usb_descriptors.obj
-
-# target to build an object file
-usb_descriptors.c.obj:
-	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/usb_descriptors.c.obj
-.PHONY : usb_descriptors.c.obj
-
-usb_descriptors.i: usb_descriptors.c.i
-
-.PHONY : usb_descriptors.i
-
-# target to preprocess a source file
-usb_descriptors.c.i:
-	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/usb_descriptors.c.i
-.PHONY : usb_descriptors.c.i
-
-usb_descriptors.s: usb_descriptors.c.s
-
-.PHONY : usb_descriptors.s
-
-# target to generate assembly for a file
-usb_descriptors.c.s:
-	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/usb_descriptors.c.s
-.PHONY : usb_descriptors.c.s
-
-usb_msc.obj: usb_msc.c.obj
-
-.PHONY : usb_msc.obj
+.PHONY : usb/usb_descriptors.obj
 
 # target to build an object file
-usb_msc.c.obj:
-	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/usb_msc.c.obj
-.PHONY : usb_msc.c.obj
+usb/usb_descriptors.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/usb/usb_descriptors.c.obj
+.PHONY : usb/usb_descriptors.c.obj
 
-usb_msc.i: usb_msc.c.i
+usb/usb_descriptors.i: usb/usb_descriptors.c.i
 
-.PHONY : usb_msc.i
+.PHONY : usb/usb_descriptors.i
 
 # target to preprocess a source file
-usb_msc.c.i:
-	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/usb_msc.c.i
-.PHONY : usb_msc.c.i
+usb/usb_descriptors.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/usb/usb_descriptors.c.i
+.PHONY : usb/usb_descriptors.c.i
 
-usb_msc.s: usb_msc.c.s
+usb/usb_descriptors.s: usb/usb_descriptors.c.s
 
-.PHONY : usb_msc.s
+.PHONY : usb/usb_descriptors.s
 
 # target to generate assembly for a file
-usb_msc.c.s:
-	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/usb_msc.c.s
-.PHONY : usb_msc.c.s
+usb/usb_descriptors.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/usb/usb_descriptors.c.s
+.PHONY : usb/usb_descriptors.c.s
+
+usb/usb_msc.obj: usb/usb_msc.c.obj
+
+.PHONY : usb/usb_msc.obj
+
+# target to build an object file
+usb/usb_msc.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/usb/usb_msc.c.obj
+.PHONY : usb/usb_msc.c.obj
+
+usb/usb_msc.i: usb/usb_msc.c.i
+
+.PHONY : usb/usb_msc.i
+
+# target to preprocess a source file
+usb/usb_msc.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/usb/usb_msc.c.i
+.PHONY : usb/usb_msc.c.i
+
+usb/usb_msc.s: usb/usb_msc.c.s
+
+.PHONY : usb/usb_msc.s
+
+# target to generate assembly for a file
+usb/usb_msc.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/usb/usb_msc.c.s
+.PHONY : usb/usb_msc.c.s
 
 # Help Target
 help:
@@ -1904,12 +1904,12 @@ help:
 	@echo "... main.obj"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... usb_descriptors.obj"
-	@echo "... usb_descriptors.i"
-	@echo "... usb_descriptors.s"
-	@echo "... usb_msc.obj"
-	@echo "... usb_msc.i"
-	@echo "... usb_msc.s"
+	@echo "... usb/usb_descriptors.obj"
+	@echo "... usb/usb_descriptors.i"
+	@echo "... usb/usb_descriptors.s"
+	@echo "... usb/usb_msc.obj"
+	@echo "... usb/usb_msc.i"
+	@echo "... usb/usb_msc.s"
 .PHONY : help
 
 

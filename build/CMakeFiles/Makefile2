@@ -1464,19 +1464,39 @@ pico-sdk/tools/clean:
 # Recursive "all" directory target.
 src/all: src/CMakeFiles/ELF2UF2Build.dir/all
 src/all: src/CMakeFiles/main.dir/all
+src/all: src/usb/all
 
 .PHONY : src/all
 
 # Recursive "preinstall" directory target.
-src/preinstall:
+src/preinstall: src/usb/preinstall
 
 .PHONY : src/preinstall
 
 # Recursive "clean" directory target.
 src/clean: src/CMakeFiles/ELF2UF2Build.dir/clean
 src/clean: src/CMakeFiles/main.dir/clean
+src/clean: src/usb/clean
 
 .PHONY : src/clean
+
+#=============================================================================
+# Directory level rules for directory src/usb
+
+# Recursive "all" directory target.
+src/usb/all:
+
+.PHONY : src/usb/all
+
+# Recursive "preinstall" directory target.
+src/usb/preinstall:
+
+.PHONY : src/usb/preinstall
+
+# Recursive "clean" directory target.
+src/usb/clean:
+
+.PHONY : src/usb/clean
 
 #=============================================================================
 # Target rules for target pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir
