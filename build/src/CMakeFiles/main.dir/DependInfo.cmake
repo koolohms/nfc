@@ -49,7 +49,7 @@ set(CMAKE_TARGET_DEFINITIONS_ASM
 
 # The include file search paths:
 set(CMAKE_ASM_TARGET_INCLUDE_PATH
-  "../src"
+  "../src/."
   "/home/ddreise/pico/pico-sdk/src/common/pico_stdlib/include"
   "/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_gpio/include"
   "/home/ddreise/pico/pico-sdk/src/common/pico_base/include"
@@ -88,6 +88,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio/include"
   "/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio_uart/include"
   "/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_i2c/include"
+  "../src/usb/include"
   "/home/ddreise/pico/pico-sdk/lib/tinyusb/src"
   "/home/ddreise/pico/pico-sdk/lib/tinyusb/src/common"
   "/home/ddreise/pico/pico-sdk/lib/tinyusb/hw"
@@ -146,8 +147,8 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c" "/home/ddreise/pico/nfc/build/src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj"
   "/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c" "/home/ddreise/pico/nfc/build/src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj"
   "/home/ddreise/pico/nfc/src/main.c" "/home/ddreise/pico/nfc/build/src/CMakeFiles/main.dir/main.c.obj"
-  "/home/ddreise/pico/nfc/src/usb_descriptors.c" "/home/ddreise/pico/nfc/build/src/CMakeFiles/main.dir/usb_descriptors.c.obj"
-  "/home/ddreise/pico/nfc/src/usb_msc.c" "/home/ddreise/pico/nfc/build/src/CMakeFiles/main.dir/usb_msc.c.obj"
+  "/home/ddreise/pico/nfc/src/usb/usb_descriptors.c" "/home/ddreise/pico/nfc/build/src/CMakeFiles/main.dir/usb/usb_descriptors.c.obj"
+  "/home/ddreise/pico/nfc/src/usb/usb_msc.c" "/home/ddreise/pico/nfc/build/src/CMakeFiles/main.dir/usb/usb_msc.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -180,7 +181,7 @@ set(CMAKE_TARGET_DEFINITIONS_C
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
-  "../src"
+  "../src/."
   "/home/ddreise/pico/pico-sdk/src/common/pico_stdlib/include"
   "/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_gpio/include"
   "/home/ddreise/pico/pico-sdk/src/common/pico_base/include"
@@ -219,6 +220,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio/include"
   "/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio_uart/include"
   "/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_i2c/include"
+  "../src/usb/include"
   "/home/ddreise/pico/pico-sdk/lib/tinyusb/src"
   "/home/ddreise/pico/pico-sdk/lib/tinyusb/src/common"
   "/home/ddreise/pico/pico-sdk/lib/tinyusb/hw"
@@ -258,7 +260,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "../src"
+  "../src/."
   "/home/ddreise/pico/pico-sdk/src/common/pico_stdlib/include"
   "/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_gpio/include"
   "/home/ddreise/pico/pico-sdk/src/common/pico_base/include"
@@ -297,6 +299,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio/include"
   "/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio_uart/include"
   "/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_i2c/include"
+  "../src/usb/include"
   "/home/ddreise/pico/pico-sdk/lib/tinyusb/src"
   "/home/ddreise/pico/pico-sdk/lib/tinyusb/src/common"
   "/home/ddreise/pico/pico-sdk/lib/tinyusb/hw"
