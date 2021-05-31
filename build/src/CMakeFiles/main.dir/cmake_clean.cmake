@@ -62,6 +62,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj"
   "CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj"
   "CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj"
+  "CMakeFiles/main.dir/led/led.c.obj"
   "CMakeFiles/main.dir/main.c.obj"
   "CMakeFiles/main.dir/usb/usb_descriptors.c.obj"
   "CMakeFiles/main.dir/usb/usb_msc.c.obj"

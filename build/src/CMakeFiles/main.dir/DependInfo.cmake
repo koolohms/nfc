@@ -88,11 +88,12 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio/include"
   "/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio_uart/include"
   "/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_i2c/include"
-  "../src/usb/include"
+  "../src/usb"
   "/home/ddreise/pico/pico-sdk/lib/tinyusb/src"
   "/home/ddreise/pico/pico-sdk/lib/tinyusb/src/common"
   "/home/ddreise/pico/pico-sdk/lib/tinyusb/hw"
   "/home/ddreise/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/include"
+  "../src/led"
   )
 set(CMAKE_DEPENDS_CHECK_C
   "/home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.c" "/home/ddreise/pico/nfc/build/src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.c.obj"
@@ -146,6 +147,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c" "/home/ddreise/pico/nfc/build/src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj"
   "/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c" "/home/ddreise/pico/nfc/build/src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj"
   "/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c" "/home/ddreise/pico/nfc/build/src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj"
+  "/home/ddreise/pico/nfc/src/led/led.c" "/home/ddreise/pico/nfc/build/src/CMakeFiles/main.dir/led/led.c.obj"
   "/home/ddreise/pico/nfc/src/main.c" "/home/ddreise/pico/nfc/build/src/CMakeFiles/main.dir/main.c.obj"
   "/home/ddreise/pico/nfc/src/usb/usb_descriptors.c" "/home/ddreise/pico/nfc/build/src/CMakeFiles/main.dir/usb/usb_descriptors.c.obj"
   "/home/ddreise/pico/nfc/src/usb/usb_msc.c" "/home/ddreise/pico/nfc/build/src/CMakeFiles/main.dir/usb/usb_msc.c.obj"
@@ -220,11 +222,12 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio/include"
   "/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio_uart/include"
   "/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_i2c/include"
-  "../src/usb/include"
+  "../src/usb"
   "/home/ddreise/pico/pico-sdk/lib/tinyusb/src"
   "/home/ddreise/pico/pico-sdk/lib/tinyusb/src/common"
   "/home/ddreise/pico/pico-sdk/lib/tinyusb/hw"
   "/home/ddreise/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/include"
+  "../src/led"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp" "/home/ddreise/pico/nfc/build/src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj"
@@ -299,11 +302,12 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio/include"
   "/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio_uart/include"
   "/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_i2c/include"
-  "../src/usb/include"
+  "../src/usb"
   "/home/ddreise/pico/pico-sdk/lib/tinyusb/src"
   "/home/ddreise/pico/pico-sdk/lib/tinyusb/src/common"
   "/home/ddreise/pico/pico-sdk/lib/tinyusb/hw"
   "/home/ddreise/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/include"
+  "../src/led"
   )
 
 # Targets to which this target links.

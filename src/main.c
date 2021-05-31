@@ -34,96 +34,30 @@
 #include "pico/binary_info.h"
 #include "hardware/i2c.h"
 
+#include "led.h"
+#include "tusb_config.h"
 
-//--------------------------------------------------------------------+
-// MACRO CONSTANT TYPEDEF PROTYPES
-//--------------------------------------------------------------------+
-
-/* Blink pattern
- * - 250 ms  : device not mounted
- * - 1000 ms : device mounted
- * - 2500 ms : device is suspended
- */
-enum  {
-  BLINK_NOT_MOUNTED = 250,
-  BLINK_MOUNTED = 1000,
-  BLINK_SUSPENDED = 2500,
-};
-
-static uint32_t blink_interval_ms = BLINK_NOT_MOUNTED;
-
-void led_blinking_task(void);
-bool reserved_addr(uint8_t addr) {
-  return (addr & 0x78) == 0 || (addr & 0x78) == 0x78;
-}
 
 /*------------- MAIN -------------*/
 int main(void)
 {
-  board_init();
-  i2c_init(i2c0, 400000);
+  board_init();             // Initialize the board for led and uart
+  i2c_init(i2c0, 400000);   // Initialize I2C
   gpio_set_function(PICO_DEFAULT_I2C_SDA_PIN, GPIO_FUNC_I2C);
   gpio_set_function(PICO_DEFAULT_I2C_SCL_PIN, GPIO_FUNC_I2C);
   gpio_pull_up(PICO_DEFAULT_I2C_SCL_PIN);
   gpio_pull_up(PICO_DEFAULT_I2C_SDA_PIN);
 
-  tusb_init();
+  tusb_init();              // Initialize tinyusb
 
   printf("--------------------- NEW LOG ---------------------\n");
 
 
   while (1)
   {
-    tud_task(); // tinyusb device task
-    led_blinking_task();
+    tud_task();             // usb task
+    led_blinking_task();    // led task
   }
 
   return 0;
-}
-
-//--------------------------------------------------------------------+
-// Device callbacks
-//--------------------------------------------------------------------+
-
-// Invoked when device is mounted
-void tud_mount_cb(void)
-{
-  blink_interval_ms = BLINK_MOUNTED;
-}
-
-// Invoked when device is unmounted
-void tud_umount_cb(void)
-{
-  blink_interval_ms = BLINK_NOT_MOUNTED;
-}
-
-// Invoked when usb bus is suspended
-// remote_wakeup_en : if host allow us  to perform remote wakeup
-// Within 7ms, device must draw an average of current less than 2.5 mA from bus
-void tud_suspend_cb(bool remote_wakeup_en)
-{
-  (void) remote_wakeup_en;
-  blink_interval_ms = BLINK_SUSPENDED;
-}
-
-// Invoked when usb bus is resumed
-void tud_resume_cb(void)
-{
-  blink_interval_ms = BLINK_MOUNTED;
-}
-
-//--------------------------------------------------------------------+
-// BLINKING TASK
-//--------------------------------------------------------------------+
-void led_blinking_task(void)
-{
-  static uint32_t start_ms = 0;
-  static bool led_state = false;
-
-  // Blink every interval ms
-  if ( board_millis() - start_ms < blink_interval_ms) return; // not enough time
-  start_ms += blink_interval_ms;
-
-  board_led_write(led_state);
-  led_state = 1 - led_state; // toggle
 }

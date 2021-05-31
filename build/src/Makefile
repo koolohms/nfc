@@ -1643,6 +1643,33 @@ home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s:
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 
+led/led.obj: led/led.c.obj
+
+.PHONY : led/led.obj
+
+# target to build an object file
+led/led.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/led/led.c.obj
+.PHONY : led/led.c.obj
+
+led/led.i: led/led.c.i
+
+.PHONY : led/led.i
+
+# target to preprocess a source file
+led/led.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/led/led.c.i
+.PHONY : led/led.c.i
+
+led/led.s: led/led.c.s
+
+.PHONY : led/led.s
+
+# target to generate assembly for a file
+led/led.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/led/led.c.s
+.PHONY : led/led.c.s
+
 main.obj: main.c.obj
 
 .PHONY : main.obj
@@ -1901,6 +1928,9 @@ help:
 	@echo "... home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj"
 	@echo "... home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i"
 	@echo "... home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s"
+	@echo "... led/led.obj"
+	@echo "... led/led.i"
+	@echo "... led/led.s"
 	@echo "... main.obj"
 	@echo "... main.i"
 	@echo "... main.s"

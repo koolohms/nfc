@@ -8,9 +8,7 @@ target_sources(usb INTERFACE
 )
 
 # Add include files
-target_include_directories(usb INTERFACE
-    ${CMAKE_CURRENT_LIST_DIR}/include
-    )
+target_include_directories(usb INTERFACE ${CMAKE_CURRENT_LIST_DIR})
 
 # Target other library dependencies
 target_link_libraries(usb INTERFACE
