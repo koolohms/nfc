@@ -373,21 +373,21 @@ Disassembly of section .text:
 10000362:	4910      	ldr	r1, [pc, #64]	; (100003a4 <main+0x48>)
 10000364:	4810      	ldr	r0, [pc, #64]	; (100003a8 <main+0x4c>)
 10000366:	f002 f87b 	bl	10002460 <i2c_init>
-1000036a:	2103      	movs	r1, #3
-1000036c:	2004      	movs	r0, #4
-1000036e:	f000 f823 	bl	100003b8 <gpio_set_function>
-10000372:	2103      	movs	r1, #3
-10000374:	2005      	movs	r0, #5
-10000376:	f000 f81f 	bl	100003b8 <gpio_set_function>
-1000037a:	2200      	movs	r2, #0
-1000037c:	2101      	movs	r1, #1
-1000037e:	2005      	movs	r0, #5
-10000380:	f000 f832 	bl	100003e8 <gpio_set_pulls>
-10000384:	2200      	movs	r2, #0
-10000386:	2101      	movs	r1, #1
+1000036a:	f003 ff31 	bl	100041d0 <tusb_init>
+1000036e:	2103      	movs	r1, #3
+10000370:	2004      	movs	r0, #4
+10000372:	f000 f821 	bl	100003b8 <gpio_set_function>
+10000376:	2103      	movs	r1, #3
+10000378:	2005      	movs	r0, #5
+1000037a:	f000 f81d 	bl	100003b8 <gpio_set_function>
+1000037e:	2200      	movs	r2, #0
+10000380:	2101      	movs	r1, #1
+10000382:	2005      	movs	r0, #5
+10000384:	f000 f830 	bl	100003e8 <gpio_set_pulls>
 10000388:	2004      	movs	r0, #4
-1000038a:	f000 f82d 	bl	100003e8 <gpio_set_pulls>
-1000038e:	f003 ff1f 	bl	100041d0 <tusb_init>
+1000038a:	2200      	movs	r2, #0
+1000038c:	2101      	movs	r1, #1
+1000038e:	f000 f82b 	bl	100003e8 <gpio_set_pulls>
 10000392:	4806      	ldr	r0, [pc, #24]	; (100003ac <main+0x50>)
 10000394:	f001 ffc2 	bl	1000231c <__wrap_puts>
 10000398:	f002 fd46 	bl	10002e28 <tud_task>

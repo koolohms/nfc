@@ -19,3 +19,4 @@ pico_add_extra_outputs(main)
 
 add_subdirectory(usb)
 add_subdirectory(led)
+#add_subdirectory(board)

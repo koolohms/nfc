@@ -43,12 +43,11 @@ int main(void)
 {
   board_init();             // Initialize the board for led and uart
   i2c_init(i2c0, 400000);   // Initialize I2C
-  gpio_set_function(PICO_DEFAULT_I2C_SDA_PIN, GPIO_FUNC_I2C);
-  gpio_set_function(PICO_DEFAULT_I2C_SCL_PIN, GPIO_FUNC_I2C);
-  gpio_pull_up(PICO_DEFAULT_I2C_SCL_PIN);
-  gpio_pull_up(PICO_DEFAULT_I2C_SDA_PIN);
-
-  tusb_init();              // Initialize tinyusb
+  tusb_init();              // Initialize TinyUSB
+  gpio_set_function(PICO_DEFAULT_I2C_SDA_PIN, GPIO_FUNC_I2C); // Set default i2c sda pin to i2c
+  gpio_set_function(PICO_DEFAULT_I2C_SCL_PIN, GPIO_FUNC_I2C); // Set default i2c scl pin to i2c
+  gpio_pull_up(PICO_DEFAULT_I2C_SCL_PIN); // pullup i2c scl resistor pin
+  gpio_pull_up(PICO_DEFAULT_I2C_SDA_PIN); // pullup i2c sda resistor pin
 
   printf("--------------------- NEW LOG ---------------------\n");
 
