@@ -17,6 +17,9 @@
 #define TIMEOUT_1S			1000
 #define TIMEOUT_2S			2000
 
+#define GPIO_IRQ_PIN        6
+#define GPIO_VEN_PIN        7
+
 extern void tml_Connect(void);
 void tml_Disconnect(void);
 extern void tml_Send(uint8_t *pBuffer, uint16_t BufferLen, uint16_t *pBytesSent);

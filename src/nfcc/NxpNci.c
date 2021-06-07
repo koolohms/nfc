@@ -12,7 +12,10 @@
  *                          arising from its use.
  */
 
-#include <tml.h>
+#include <stdlib.h>
+#include <stdint.h>
+#include <types.h>
+#include "include/tml.h"
 #include <NxpNci.h>
 #include <Nfc_settings.h>
 

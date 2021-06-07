@@ -12,6 +12,8 @@
 *                          arising from its use.
 */
 
+#include <stdint.h>
+
 /***** NFC dedicated setting ****************************************/
 
 /* Following definitions specifies which settings will apply when NxpNci_ConfigureSettings()
