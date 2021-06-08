@@ -1643,6 +1643,33 @@ home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s:
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 
+led/led.obj: led/led.c.obj
+
+.PHONY : led/led.obj
+
+# target to build an object file
+led/led.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/led/led.c.obj
+.PHONY : led/led.c.obj
+
+led/led.i: led/led.c.i
+
+.PHONY : led/led.i
+
+# target to preprocess a source file
+led/led.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/led/led.c.i
+.PHONY : led/led.c.i
+
+led/led.s: led/led.c.s
+
+.PHONY : led/led.s
+
+# target to generate assembly for a file
+led/led.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/led/led.c.s
+.PHONY : led/led.c.s
+
 main.obj: main.c.obj
 
 .PHONY : main.obj
@@ -1669,6 +1696,33 @@ main.s: main.c.s
 main.c.s:
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/main.c.s
 .PHONY : main.c.s
+
+test/i2c_test.obj: test/i2c_test.c.obj
+
+.PHONY : test/i2c_test.obj
+
+# target to build an object file
+test/i2c_test.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/test/i2c_test.c.obj
+.PHONY : test/i2c_test.c.obj
+
+test/i2c_test.i: test/i2c_test.c.i
+
+.PHONY : test/i2c_test.i
+
+# target to preprocess a source file
+test/i2c_test.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/test/i2c_test.c.i
+.PHONY : test/i2c_test.c.i
+
+test/i2c_test.s: test/i2c_test.c.s
+
+.PHONY : test/i2c_test.s
+
+# target to generate assembly for a file
+test/i2c_test.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/test/i2c_test.c.s
+.PHONY : test/i2c_test.c.s
 
 usb/usb_descriptors.obj: usb/usb_descriptors.c.obj
 
@@ -1901,9 +1955,15 @@ help:
 	@echo "... home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj"
 	@echo "... home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i"
 	@echo "... home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s"
+	@echo "... led/led.obj"
+	@echo "... led/led.i"
+	@echo "... led/led.s"
 	@echo "... main.obj"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... test/i2c_test.obj"
+	@echo "... test/i2c_test.i"
+	@echo "... test/i2c_test.s"
 	@echo "... usb/usb_descriptors.obj"
 	@echo "... usb/usb_descriptors.i"
 	@echo "... usb/usb_descriptors.s"

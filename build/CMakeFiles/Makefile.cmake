@@ -14,6 +14,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.16.3/CMakeSystem.cmake"
   "src/elf2uf2/tmp/ELF2UF2Build-cfgcmd.txt.in"
   "../src/CMakeLists.txt"
+  "../src/led/CMakeLists.txt"
+  "../src/test/CMakeLists.txt"
   "../src/usb/CMakeLists.txt"
   "/home/ddreise/pico/pico-sdk/CMakeLists.txt"
   "/home/ddreise/pico/pico-sdk/cmake/Platform/PICO.cmake"
@@ -201,6 +203,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "pico-sdk/docs/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/usb/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/led/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/test/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:

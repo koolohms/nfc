@@ -11,9 +11,13 @@ target_link_libraries(main PRIVATE
         usb
         tinyusb_device 
         tinyusb_board
+        led
+        test
         )
 
 # create map/bin/hex file etc.
 pico_add_extra_outputs(main)
 
 add_subdirectory(usb)
+add_subdirectory(led)
+add_subdirectory(test)

@@ -827,6 +827,32 @@ src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.c.s"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.c -o CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.c.s
 
+src/CMakeFiles/main.dir/led/led.c.obj: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/led/led.c.obj: ../src/led/led.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object src/CMakeFiles/main.dir/led/led.c.obj"
+	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/led/led.c.obj   -c /home/ddreise/pico/nfc/src/led/led.c
+
+src/CMakeFiles/main.dir/led/led.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/led/led.c.i"
+	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ddreise/pico/nfc/src/led/led.c > CMakeFiles/main.dir/led/led.c.i
+
+src/CMakeFiles/main.dir/led/led.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/led/led.c.s"
+	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ddreise/pico/nfc/src/led/led.c -o CMakeFiles/main.dir/led/led.c.s
+
+src/CMakeFiles/main.dir/test/i2c_test.c.obj: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/test/i2c_test.c.obj: ../src/test/i2c_test.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object src/CMakeFiles/main.dir/test/i2c_test.c.obj"
+	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/test/i2c_test.c.obj   -c /home/ddreise/pico/nfc/src/test/i2c_test.c
+
+src/CMakeFiles/main.dir/test/i2c_test.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/test/i2c_test.c.i"
+	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ddreise/pico/nfc/src/test/i2c_test.c > CMakeFiles/main.dir/test/i2c_test.c.i
+
+src/CMakeFiles/main.dir/test/i2c_test.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/test/i2c_test.c.s"
+	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ddreise/pico/nfc/src/test/i2c_test.c -o CMakeFiles/main.dir/test/i2c_test.c.s
+
 # Object files for target main
 main_OBJECTS = \
 "CMakeFiles/main.dir/main.c.obj" \
@@ -894,7 +920,9 @@ main_OBJECTS = \
 "CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj" \
 "CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj" \
 "CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj" \
-"CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.c.obj"
+"CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.c.obj" \
+"CMakeFiles/main.dir/led/led.c.obj" \
+"CMakeFiles/main.dir/test/i2c_test.c.obj"
 
 # External object files for target main
 main_EXTERNAL_OBJECTS =
@@ -965,10 +993,12 @@ src/main.elf: src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src
 src/main.elf: src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
 src/main.elf: src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
 src/main.elf: src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.c.obj
+src/main.elf: src/CMakeFiles/main.dir/led/led.c.obj
+src/main.elf: src/CMakeFiles/main.dir/test/i2c_test.c.obj
 src/main.elf: src/CMakeFiles/main.dir/build.make
 src/main.elf: pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S
 src/main.elf: src/CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Linking CXX executable main.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Linking CXX executable main.elf"
 	cd /home/ddreise/pico/nfc/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-objcopy -Oihex main.elf main.hex
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-objcopy -Obinary main.elf main.bin
