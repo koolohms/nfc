@@ -853,6 +853,84 @@ src/CMakeFiles/main.dir/test/i2c_test.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/test/i2c_test.c.s"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ddreise/pico/nfc/src/test/i2c_test.c -o CMakeFiles/main.dir/test/i2c_test.c.s
 
+src/CMakeFiles/main.dir/nfcc/NxpNci.c.obj: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/nfcc/NxpNci.c.obj: ../src/nfcc/NxpNci.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object src/CMakeFiles/main.dir/nfcc/NxpNci.c.obj"
+	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/nfcc/NxpNci.c.obj   -c /home/ddreise/pico/nfc/src/nfcc/NxpNci.c
+
+src/CMakeFiles/main.dir/nfcc/NxpNci.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/nfcc/NxpNci.c.i"
+	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ddreise/pico/nfc/src/nfcc/NxpNci.c > CMakeFiles/main.dir/nfcc/NxpNci.c.i
+
+src/CMakeFiles/main.dir/nfcc/NxpNci.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/nfcc/NxpNci.c.s"
+	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ddreise/pico/nfc/src/nfcc/NxpNci.c -o CMakeFiles/main.dir/nfcc/NxpNci.c.s
+
+src/CMakeFiles/main.dir/nfcc/P2P_NDEF.c.obj: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/nfcc/P2P_NDEF.c.obj: ../src/nfcc/P2P_NDEF.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object src/CMakeFiles/main.dir/nfcc/P2P_NDEF.c.obj"
+	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/nfcc/P2P_NDEF.c.obj   -c /home/ddreise/pico/nfc/src/nfcc/P2P_NDEF.c
+
+src/CMakeFiles/main.dir/nfcc/P2P_NDEF.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/nfcc/P2P_NDEF.c.i"
+	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ddreise/pico/nfc/src/nfcc/P2P_NDEF.c > CMakeFiles/main.dir/nfcc/P2P_NDEF.c.i
+
+src/CMakeFiles/main.dir/nfcc/P2P_NDEF.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/nfcc/P2P_NDEF.c.s"
+	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ddreise/pico/nfc/src/nfcc/P2P_NDEF.c -o CMakeFiles/main.dir/nfcc/P2P_NDEF.c.s
+
+src/CMakeFiles/main.dir/nfcc/tml.c.obj: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/nfcc/tml.c.obj: ../src/nfcc/tml.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object src/CMakeFiles/main.dir/nfcc/tml.c.obj"
+	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/nfcc/tml.c.obj   -c /home/ddreise/pico/nfc/src/nfcc/tml.c
+
+src/CMakeFiles/main.dir/nfcc/tml.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/nfcc/tml.c.i"
+	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ddreise/pico/nfc/src/nfcc/tml.c > CMakeFiles/main.dir/nfcc/tml.c.i
+
+src/CMakeFiles/main.dir/nfcc/tml.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/nfcc/tml.c.s"
+	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ddreise/pico/nfc/src/nfcc/tml.c -o CMakeFiles/main.dir/nfcc/tml.c.s
+
+src/CMakeFiles/main.dir/nfcc/ndef_helper.c.obj: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/nfcc/ndef_helper.c.obj: ../src/nfcc/ndef_helper.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object src/CMakeFiles/main.dir/nfcc/ndef_helper.c.obj"
+	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/nfcc/ndef_helper.c.obj   -c /home/ddreise/pico/nfc/src/nfcc/ndef_helper.c
+
+src/CMakeFiles/main.dir/nfcc/ndef_helper.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/nfcc/ndef_helper.c.i"
+	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ddreise/pico/nfc/src/nfcc/ndef_helper.c > CMakeFiles/main.dir/nfcc/ndef_helper.c.i
+
+src/CMakeFiles/main.dir/nfcc/ndef_helper.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/nfcc/ndef_helper.c.s"
+	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ddreise/pico/nfc/src/nfcc/ndef_helper.c -o CMakeFiles/main.dir/nfcc/ndef_helper.c.s
+
+src/CMakeFiles/main.dir/nfcc/nfc_task.c.obj: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/nfcc/nfc_task.c.obj: ../src/nfcc/nfc_task.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object src/CMakeFiles/main.dir/nfcc/nfc_task.c.obj"
+	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/nfcc/nfc_task.c.obj   -c /home/ddreise/pico/nfc/src/nfcc/nfc_task.c
+
+src/CMakeFiles/main.dir/nfcc/nfc_task.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/nfcc/nfc_task.c.i"
+	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ddreise/pico/nfc/src/nfcc/nfc_task.c > CMakeFiles/main.dir/nfcc/nfc_task.c.i
+
+src/CMakeFiles/main.dir/nfcc/nfc_task.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/nfcc/nfc_task.c.s"
+	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ddreise/pico/nfc/src/nfcc/nfc_task.c -o CMakeFiles/main.dir/nfcc/nfc_task.c.s
+
+src/CMakeFiles/main.dir/gpio/gpio.c.obj: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/gpio/gpio.c.obj: ../src/gpio/gpio.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object src/CMakeFiles/main.dir/gpio/gpio.c.obj"
+	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/gpio/gpio.c.obj   -c /home/ddreise/pico/nfc/src/gpio/gpio.c
+
+src/CMakeFiles/main.dir/gpio/gpio.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/gpio/gpio.c.i"
+	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ddreise/pico/nfc/src/gpio/gpio.c > CMakeFiles/main.dir/gpio/gpio.c.i
+
+src/CMakeFiles/main.dir/gpio/gpio.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/gpio/gpio.c.s"
+	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ddreise/pico/nfc/src/gpio/gpio.c -o CMakeFiles/main.dir/gpio/gpio.c.s
+
 # Object files for target main
 main_OBJECTS = \
 "CMakeFiles/main.dir/main.c.obj" \
@@ -922,7 +1000,13 @@ main_OBJECTS = \
 "CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj" \
 "CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.c.obj" \
 "CMakeFiles/main.dir/led/led.c.obj" \
-"CMakeFiles/main.dir/test/i2c_test.c.obj"
+"CMakeFiles/main.dir/test/i2c_test.c.obj" \
+"CMakeFiles/main.dir/nfcc/NxpNci.c.obj" \
+"CMakeFiles/main.dir/nfcc/P2P_NDEF.c.obj" \
+"CMakeFiles/main.dir/nfcc/tml.c.obj" \
+"CMakeFiles/main.dir/nfcc/ndef_helper.c.obj" \
+"CMakeFiles/main.dir/nfcc/nfc_task.c.obj" \
+"CMakeFiles/main.dir/gpio/gpio.c.obj"
 
 # External object files for target main
 main_EXTERNAL_OBJECTS =
@@ -995,10 +1079,16 @@ src/main.elf: src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/
 src/main.elf: src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.c.obj
 src/main.elf: src/CMakeFiles/main.dir/led/led.c.obj
 src/main.elf: src/CMakeFiles/main.dir/test/i2c_test.c.obj
+src/main.elf: src/CMakeFiles/main.dir/nfcc/NxpNci.c.obj
+src/main.elf: src/CMakeFiles/main.dir/nfcc/P2P_NDEF.c.obj
+src/main.elf: src/CMakeFiles/main.dir/nfcc/tml.c.obj
+src/main.elf: src/CMakeFiles/main.dir/nfcc/ndef_helper.c.obj
+src/main.elf: src/CMakeFiles/main.dir/nfcc/nfc_task.c.obj
+src/main.elf: src/CMakeFiles/main.dir/gpio/gpio.c.obj
 src/main.elf: src/CMakeFiles/main.dir/build.make
 src/main.elf: pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S
 src/main.elf: src/CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Linking CXX executable main.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Linking CXX executable main.elf"
 	cd /home/ddreise/pico/nfc/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-objcopy -Oihex main.elf main.hex
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-objcopy -Obinary main.elf main.bin

@@ -14,7 +14,8 @@
 
 #include <stdlib.h>
 #include <stdint.h>
-#include <types.h>
+#include <pico.h>
+#include <time.h>
 #include "include/tml.h"
 #include "include/driver.h"
 #include "hardware/i2c.h"
@@ -35,9 +36,9 @@ static uint8_t tml_Init(void) {
 static uint8_t tml_Reset(void) {
 	/* Apply VEN reset */
     gpio_set_mask(GPIO_VEN_PIN_MASK);
-	Sleep(10);
+	sleep_ms(10);
 	gpio_clr_mask(GPIO_VEN_PIN_MASK);
-	Sleep(10);
+	sleep_ms(10);
     gpio_set_mask(GPIO_VEN_PIN_MASK);
 	return PICO_OK;
 }
@@ -47,7 +48,7 @@ static uint8_t tml_Tx(uint8_t *pBuff, uint16_t buffLen) {
     // Attempt transmission twice, if second attempt fails then flag error
     if (i2c_write_blocking(i2c0, BOARD_NXPNCI_I2C_ADDR, pBuff, buffLen, false) != PICO_OK)
     {
-        Sleep(10);
+        sleep_ms(10);
         if (i2c_write_blocking(i2c0, BOARD_NXPNCI_I2C_ADDR, pBuff, buffLen, false) != PICO_OK)
         {
             return PICO_ERROR_GENERIC;
@@ -87,7 +88,7 @@ static uint8_t tml_WaitForRx(uint16_t timeout) {
 	} else {
 		int16_t to = timeout;
 		while (gpio_get(GPIO_IRQ_PIN) == LOW) {
-			Sleep(10);
+			sleep_ms(10);
 			to -= 10;
 			if (to <= 0) return PICO_ERROR_GENERIC;
 		}

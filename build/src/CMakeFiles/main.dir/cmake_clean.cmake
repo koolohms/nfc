@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/main.dir/gpio/gpio.c.obj"
   "CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.c.obj"
   "CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj"
   "CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj"
@@ -64,6 +65,11 @@ file(REMOVE_RECURSE
   "CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj"
   "CMakeFiles/main.dir/led/led.c.obj"
   "CMakeFiles/main.dir/main.c.obj"
+  "CMakeFiles/main.dir/nfcc/NxpNci.c.obj"
+  "CMakeFiles/main.dir/nfcc/P2P_NDEF.c.obj"
+  "CMakeFiles/main.dir/nfcc/ndef_helper.c.obj"
+  "CMakeFiles/main.dir/nfcc/nfc_task.c.obj"
+  "CMakeFiles/main.dir/nfcc/tml.c.obj"
   "CMakeFiles/main.dir/test/i2c_test.c.obj"
   "CMakeFiles/main.dir/usb/usb_descriptors.c.obj"
   "CMakeFiles/main.dir/usb/usb_msc.c.obj"

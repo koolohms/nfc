@@ -19,4 +19,6 @@ target_include_directories(nfc INTERFACE
 # Target other library dependencies
 target_link_libraries(nfc INTERFACE
         pico_stdlib
+        pico_time
+        pico_mem_ops
 )

@@ -140,6 +140,33 @@ main/fast:
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+gpio/gpio.obj: gpio/gpio.c.obj
+
+.PHONY : gpio/gpio.obj
+
+# target to build an object file
+gpio/gpio.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/gpio/gpio.c.obj
+.PHONY : gpio/gpio.c.obj
+
+gpio/gpio.i: gpio/gpio.c.i
+
+.PHONY : gpio/gpio.i
+
+# target to preprocess a source file
+gpio/gpio.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/gpio/gpio.c.i
+.PHONY : gpio/gpio.c.i
+
+gpio/gpio.s: gpio/gpio.c.s
+
+.PHONY : gpio/gpio.s
+
+# target to generate assembly for a file
+gpio/gpio.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/gpio/gpio.c.s
+.PHONY : gpio/gpio.c.s
+
 home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.obj: home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.c.obj
 
 .PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.obj
@@ -1697,6 +1724,141 @@ main.c.s:
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/main.c.s
 .PHONY : main.c.s
 
+nfcc/NxpNci.obj: nfcc/NxpNci.c.obj
+
+.PHONY : nfcc/NxpNci.obj
+
+# target to build an object file
+nfcc/NxpNci.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/nfcc/NxpNci.c.obj
+.PHONY : nfcc/NxpNci.c.obj
+
+nfcc/NxpNci.i: nfcc/NxpNci.c.i
+
+.PHONY : nfcc/NxpNci.i
+
+# target to preprocess a source file
+nfcc/NxpNci.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/nfcc/NxpNci.c.i
+.PHONY : nfcc/NxpNci.c.i
+
+nfcc/NxpNci.s: nfcc/NxpNci.c.s
+
+.PHONY : nfcc/NxpNci.s
+
+# target to generate assembly for a file
+nfcc/NxpNci.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/nfcc/NxpNci.c.s
+.PHONY : nfcc/NxpNci.c.s
+
+nfcc/P2P_NDEF.obj: nfcc/P2P_NDEF.c.obj
+
+.PHONY : nfcc/P2P_NDEF.obj
+
+# target to build an object file
+nfcc/P2P_NDEF.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/nfcc/P2P_NDEF.c.obj
+.PHONY : nfcc/P2P_NDEF.c.obj
+
+nfcc/P2P_NDEF.i: nfcc/P2P_NDEF.c.i
+
+.PHONY : nfcc/P2P_NDEF.i
+
+# target to preprocess a source file
+nfcc/P2P_NDEF.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/nfcc/P2P_NDEF.c.i
+.PHONY : nfcc/P2P_NDEF.c.i
+
+nfcc/P2P_NDEF.s: nfcc/P2P_NDEF.c.s
+
+.PHONY : nfcc/P2P_NDEF.s
+
+# target to generate assembly for a file
+nfcc/P2P_NDEF.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/nfcc/P2P_NDEF.c.s
+.PHONY : nfcc/P2P_NDEF.c.s
+
+nfcc/ndef_helper.obj: nfcc/ndef_helper.c.obj
+
+.PHONY : nfcc/ndef_helper.obj
+
+# target to build an object file
+nfcc/ndef_helper.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/nfcc/ndef_helper.c.obj
+.PHONY : nfcc/ndef_helper.c.obj
+
+nfcc/ndef_helper.i: nfcc/ndef_helper.c.i
+
+.PHONY : nfcc/ndef_helper.i
+
+# target to preprocess a source file
+nfcc/ndef_helper.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/nfcc/ndef_helper.c.i
+.PHONY : nfcc/ndef_helper.c.i
+
+nfcc/ndef_helper.s: nfcc/ndef_helper.c.s
+
+.PHONY : nfcc/ndef_helper.s
+
+# target to generate assembly for a file
+nfcc/ndef_helper.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/nfcc/ndef_helper.c.s
+.PHONY : nfcc/ndef_helper.c.s
+
+nfcc/nfc_task.obj: nfcc/nfc_task.c.obj
+
+.PHONY : nfcc/nfc_task.obj
+
+# target to build an object file
+nfcc/nfc_task.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/nfcc/nfc_task.c.obj
+.PHONY : nfcc/nfc_task.c.obj
+
+nfcc/nfc_task.i: nfcc/nfc_task.c.i
+
+.PHONY : nfcc/nfc_task.i
+
+# target to preprocess a source file
+nfcc/nfc_task.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/nfcc/nfc_task.c.i
+.PHONY : nfcc/nfc_task.c.i
+
+nfcc/nfc_task.s: nfcc/nfc_task.c.s
+
+.PHONY : nfcc/nfc_task.s
+
+# target to generate assembly for a file
+nfcc/nfc_task.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/nfcc/nfc_task.c.s
+.PHONY : nfcc/nfc_task.c.s
+
+nfcc/tml.obj: nfcc/tml.c.obj
+
+.PHONY : nfcc/tml.obj
+
+# target to build an object file
+nfcc/tml.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/nfcc/tml.c.obj
+.PHONY : nfcc/tml.c.obj
+
+nfcc/tml.i: nfcc/tml.c.i
+
+.PHONY : nfcc/tml.i
+
+# target to preprocess a source file
+nfcc/tml.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/nfcc/tml.c.i
+.PHONY : nfcc/tml.c.i
+
+nfcc/tml.s: nfcc/tml.c.s
+
+.PHONY : nfcc/tml.s
+
+# target to generate assembly for a file
+nfcc/tml.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/nfcc/tml.c.s
+.PHONY : nfcc/tml.c.s
+
 test/i2c_test.obj: test/i2c_test.c.obj
 
 .PHONY : test/i2c_test.obj
@@ -1788,6 +1950,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... ELF2UF2Build"
 	@echo "... main"
+	@echo "... gpio/gpio.obj"
+	@echo "... gpio/gpio.i"
+	@echo "... gpio/gpio.s"
 	@echo "... home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.obj"
 	@echo "... home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.i"
 	@echo "... home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.s"
@@ -1961,6 +2126,21 @@ help:
 	@echo "... main.obj"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... nfcc/NxpNci.obj"
+	@echo "... nfcc/NxpNci.i"
+	@echo "... nfcc/NxpNci.s"
+	@echo "... nfcc/P2P_NDEF.obj"
+	@echo "... nfcc/P2P_NDEF.i"
+	@echo "... nfcc/P2P_NDEF.s"
+	@echo "... nfcc/ndef_helper.obj"
+	@echo "... nfcc/ndef_helper.i"
+	@echo "... nfcc/ndef_helper.s"
+	@echo "... nfcc/nfc_task.obj"
+	@echo "... nfcc/nfc_task.i"
+	@echo "... nfcc/nfc_task.s"
+	@echo "... nfcc/tml.obj"
+	@echo "... nfcc/tml.i"
+	@echo "... nfcc/tml.s"
 	@echo "... test/i2c_test.obj"
 	@echo "... test/i2c_test.i"
 	@echo "... test/i2c_test.s"

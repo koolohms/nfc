@@ -22,7 +22,7 @@
 //#define RW_RAW_EXCHANGE
 //#define CARDEMU_RAW_EXCHANGE
 
-#define PRINT_BUF(x,y,z)  {unsigned int loop; PRINTF(x); for(loop=0;loop<z;loop++) PRINTF("%.2x ", y[loop]); PRINTF("\n");}
+#define PRINT_BUF(x,y,z)  {unsigned int loop; printf(x); for(loop=0;loop<z;loop++) printf("%.2x ", y[loop]); printf("\n");}
 
 /* Discovery loop configuration according to the targeted modes of operation */
 unsigned char DiscoveryTechnologies[] = {
@@ -77,7 +77,7 @@ void NdefPull_Cb(unsigned char *pNdefMessage, unsigned short ReceivedSize, unsig
 
     if (pNdefMessage == NULL)
     {
-        PRINTF("--- Provisioned buffer size too small or NDEF message empty \n");
+        printf("--- Provisioned buffer size too small or NDEF message empty \n");
         return;
     }
 
@@ -87,12 +87,12 @@ void NdefPull_Cb(unsigned char *pNdefMessage, unsigned short ReceivedSize, unsig
         gPendingReception -= ReceivedSize;
         if (gPendingReception > 0)
         {
-            PRINTF("--- Receiving Ndef fragmented message, pending reception of %d bytes\n", gPendingReception);
+            printf("--- Receiving Ndef fragmented message, pending reception of %d bytes\n", gPendingReception);
             return;
         }
         else
         {
-            PRINTF("--- Received complete Ndef fragmented message\n");
+            printf("--- Received complete Ndef fragmented message\n");
             pNdefRecord = gNdefBuffer;
         }
     }
@@ -100,12 +100,12 @@ void NdefPull_Cb(unsigned char *pNdefMessage, unsigned short ReceivedSize, unsig
     {
         if (sizeof(gNdefBuffer) < NdefMessageSize) 
         {
-            PRINTF("--- Provisioned buffer size too small \n");
+            printf("--- Provisioned buffer size too small \n");
             return;
         }
         memcpy(gNdefBuffer, pNdefMessage, ReceivedSize);
         gPendingReception = NdefMessageSize - ReceivedSize;
-        PRINTF("--- Receiving Ndef fragmented message (size = %d bytes), pending reception of %d bytes\n", NdefMessageSize, gPendingReception);
+        printf("--- Receiving Ndef fragmented message (size = %d bytes), pending reception of %d bytes\n", NdefMessageSize, gPendingReception);
         return;
     }
 
@@ -113,7 +113,7 @@ void NdefPull_Cb(unsigned char *pNdefMessage, unsigned short ReceivedSize, unsig
     {
         NdefRecord = DetectNdefRecordType(pNdefRecord);
 
-        PRINTF("--- NDEF record received:\n");
+        printf("--- NDEF record received:\n");
 
         switch(NdefRecord.recordType)
         {
@@ -121,7 +121,7 @@ void NdefPull_Cb(unsigned char *pNdefMessage, unsigned short ReceivedSize, unsig
             {
                 save = NdefRecord.recordPayload[NdefRecord.recordPayloadSize];
                 NdefRecord.recordPayload[NdefRecord.recordPayloadSize] = '\0';
-                PRINTF("   vCard:\n%s\n", NdefRecord.recordPayload);
+                printf("   vCard:\n%s\n", NdefRecord.recordPayload);
                 NdefRecord.recordPayload[NdefRecord.recordPayloadSize] = save;
             }
             break;
@@ -130,7 +130,7 @@ void NdefPull_Cb(unsigned char *pNdefMessage, unsigned short ReceivedSize, unsig
             {
                 save = NdefRecord.recordPayload[NdefRecord.recordPayloadSize];
                 NdefRecord.recordPayload[NdefRecord.recordPayloadSize] = '\0';
-                PRINTF("   Text record: %s\n", &NdefRecord.recordPayload[NdefRecord.recordPayload[0]+1]);
+                printf("   Text record: %s\n", &NdefRecord.recordPayload[NdefRecord.recordPayload[0]+1]);
                 NdefRecord.recordPayload[NdefRecord.recordPayloadSize] = save;
             }
             break;
@@ -139,7 +139,7 @@ void NdefPull_Cb(unsigned char *pNdefMessage, unsigned short ReceivedSize, unsig
             {
                 save = NdefRecord.recordPayload[NdefRecord.recordPayloadSize];
                 NdefRecord.recordPayload[NdefRecord.recordPayloadSize] = '\0';
-                PRINTF("   URI record: %s%s\n", ndef_helper_UriHead(NdefRecord.recordPayload[0]), &NdefRecord.recordPayload[1]);
+                printf("   URI record: %s%s\n", ndef_helper_UriHead(NdefRecord.recordPayload[0]), &NdefRecord.recordPayload[1]);
                 NdefRecord.recordPayload[NdefRecord.recordPayloadSize] = save;
             }
             break;
@@ -148,16 +148,16 @@ void NdefPull_Cb(unsigned char *pNdefMessage, unsigned short ReceivedSize, unsig
             {
                 unsigned char index = 0, i;
 
-                PRINTF ("--- Received WIFI credentials:\n");
+                printf ("--- Received WIFI credentials:\n");
                 if ((NdefRecord.recordPayload[index] == 0x10) && (NdefRecord.recordPayload[index+1] == 0x0e)) index+= 4;
                 while(index < NdefRecord.recordPayloadSize)
                 {
                     if (NdefRecord.recordPayload[index] == 0x10)
                     {
-                        if (NdefRecord.recordPayload[index+1] == 0x45) {PRINTF ("- SSID = "); for(i=0;i<NdefRecord.recordPayload[index+3];i++) PRINTF("%c", NdefRecord.recordPayload[index+4+i]); PRINTF ("\n");}
-                        else if (NdefRecord.recordPayload[index+1] == 0x03) PRINTF ("- Authenticate Type = %s\n", ndef_helper_WifiAuth(NdefRecord.recordPayload[index+5]));
-                        else if (NdefRecord.recordPayload[index+1] == 0x0f) PRINTF ("- Encryption Type = %s\n", ndef_helper_WifiEnc(NdefRecord.recordPayload[index+5]));
-                        else if (NdefRecord.recordPayload[index+1] == 0x27) {PRINTF ("- Network key = "); for(i=0;i<NdefRecord.recordPayload[index+3];i++) PRINTF("#"); PRINTF ("\n");}
+                        if (NdefRecord.recordPayload[index+1] == 0x45) {printf ("- SSID = "); for(i=0;i<NdefRecord.recordPayload[index+3];i++) printf("%c", NdefRecord.recordPayload[index+4+i]); printf ("\n");}
+                        else if (NdefRecord.recordPayload[index+1] == 0x03) printf ("- Authenticate Type = %s\n", ndef_helper_WifiAuth(NdefRecord.recordPayload[index+5]));
+                        else if (NdefRecord.recordPayload[index+1] == 0x0f) printf ("- Encryption Type = %s\n", ndef_helper_WifiEnc(NdefRecord.recordPayload[index+5]));
+                        else if (NdefRecord.recordPayload[index+1] == 0x27) {printf ("- Network key = "); for(i=0;i<NdefRecord.recordPayload[index+3];i++) printf("#"); printf ("\n");}
                         index += 4 + NdefRecord.recordPayload[index+3];
                     }
                     else continue;
@@ -166,11 +166,11 @@ void NdefPull_Cb(unsigned char *pNdefMessage, unsigned short ReceivedSize, unsig
             break;
 
         case WELL_KNOWN_HANDOVER_SELECT:
-            PRINTF("   Handover select version %d.%d\n", NdefRecord.recordPayload[0] >> 4, NdefRecord.recordPayload[0] & 0xF);
+            printf("   Handover select version %d.%d\n", NdefRecord.recordPayload[0] >> 4, NdefRecord.recordPayload[0] & 0xF);
             break;
 
         case WELL_KNOWN_HANDOVER_REQUEST:
-            PRINTF("   Handover request version %d.%d\n", NdefRecord.recordPayload[0] >> 4, NdefRecord.recordPayload[0] & 0xF);
+            printf("   Handover request version %d.%d\n", NdefRecord.recordPayload[0] >> 4, NdefRecord.recordPayload[0] & 0xF);
             break;
 
         case MEDIA_HANDOVER_BT:
@@ -186,13 +186,13 @@ void NdefPull_Cb(unsigned char *pNdefMessage, unsigned short ReceivedSize, unsig
             break;
 
         default:
-            PRINTF("   Unsupported NDEF record, cannot parse\n");
+            printf("   Unsupported NDEF record, cannot parse\n");
             break;
         }
         pNdefRecord = GetNextRecord(pNdefRecord);
     }
 
-    PRINTF("\n");
+    printf("\n");
 }
 #endif // if defined P2P_SUPPORT || defined RW_SUPPORT
 
@@ -211,7 +211,7 @@ const char NDEF_MESSAGE[14 + ADD] = { 0xC1,   // MB/ME/CF/1/IL/TNF
         'T', 'e', 's', 't' };
 
 void NdefPush_Cb(unsigned char *pNdefRecord, unsigned short NdefRecordSize) {
-    PRINTF("--- NDEF Record sent\n\n");
+    printf("--- NDEF Record sent\n\n");
 }
 #endif // if defined P2P_SUPPORT || defined CARDEMU_SUPPORT
 
@@ -238,43 +238,43 @@ void PCD_MIFARE_scenario (void)
     status = NxpNci_ReaderTagCmd(Auth, sizeof(Auth), Resp, &RespSize);
     if((status == NFC_ERROR) || (Resp[RespSize-1] != 0))
     {
-        PRINTF(" Authenticate sector %d failed with error 0x%02x\n", Auth[1], Resp[RespSize-1]);
+        printf(" Authenticate sector %d failed with error 0x%02x\n", Auth[1], Resp[RespSize-1]);
         return;
     }
-    PRINTF(" Authenticate sector %d succeed\n", Auth[1]);
+    printf(" Authenticate sector %d succeed\n", Auth[1]);
 
     /* Read block */
     status = NxpNci_ReaderTagCmd(Read, sizeof(Read), Resp, &RespSize);
     if((status == NFC_ERROR) || (Resp[RespSize-1] != 0))
     {
-        PRINTF(" Read block %d failed with error 0x%02x\n", Read[2], Resp[RespSize-1]);
+        printf(" Read block %d failed with error 0x%02x\n", Read[2], Resp[RespSize-1]);
         return;
     }
-    PRINTF(" Read block %d:", Read[2]); PRINT_BUF(" ", (Resp+1), RespSize-2);
+    printf(" Read block %d:", Read[2]); PRINT_BUF(" ", (Resp+1), RespSize-2);
 
     /* Write block */
     status = NxpNci_ReaderTagCmd(WritePart1, sizeof(WritePart1), Resp, &RespSize);
     if((status == NFC_ERROR) || (Resp[RespSize-1] != 0))
     {
-        PRINTF(" Write block %d failed with error 0x%02x\n", WritePart1[2], Resp[RespSize-1]);
+        printf(" Write block %d failed with error 0x%02x\n", WritePart1[2], Resp[RespSize-1]);
         return;
     }
     status = NxpNci_ReaderTagCmd(WritePart2, sizeof(WritePart2), Resp, &RespSize);
     if((status == NFC_ERROR) || (Resp[RespSize-1] != 0))
     {
-        PRINTF(" Write block %d failed with error 0x%02x\n", WritePart1[2], Resp[RespSize-1]);
+        printf(" Write block %d failed with error 0x%02x\n", WritePart1[2], Resp[RespSize-1]);
         return;
     }
-    PRINTF(" Block %d written\n", WritePart1[2]);
+    printf(" Block %d written\n", WritePart1[2]);
 
     /* Read block */
     status = NxpNci_ReaderTagCmd(Read, sizeof(Read), Resp, &RespSize);
     if((status == NFC_ERROR) || (Resp[RespSize-1] != 0))
     {
-        PRINTF(" Read failed with error 0x%02x\n", Resp[RespSize-1]);
+        printf(" Read failed with error 0x%02x\n", Resp[RespSize-1]);
         return;
     }
-    PRINTF(" Read block %d:", Read[2]); PRINT_BUF(" ", (Resp+1), RespSize-2);
+    printf(" Read block %d:", Read[2]); PRINT_BUF(" ", (Resp+1), RespSize-2);
 }
 
 void PCD_ISO15693_scenario (void)
@@ -291,28 +291,28 @@ void PCD_ISO15693_scenario (void)
     status = NxpNci_ReaderTagCmd(ReadBlock, sizeof(ReadBlock), Resp, &RespSize);
     if((status == NFC_ERROR) || (Resp[RespSize-1] != 0x00))
     {
-        PRINTF(" Read block %d failed with error 0x%02x\n", ReadBlock[2], Resp[RespSize-1]);
+        printf(" Read block %d failed with error 0x%02x\n", ReadBlock[2], Resp[RespSize-1]);
         return;
     }
-    PRINTF(" Read block %d:", ReadBlock[2]); PRINT_BUF(" ", (Resp+1), RespSize-2);
+    printf(" Read block %d:", ReadBlock[2]); PRINT_BUF(" ", (Resp+1), RespSize-2);
 
     /* Write */
     status = NxpNci_ReaderTagCmd(WriteBlock, sizeof(WriteBlock), Resp, &RespSize);
     if((status == NFC_ERROR) || (Resp[RespSize-1] != 0))
     {
-        PRINTF(" Write block %d failed with error 0x%02x\n", WriteBlock[2], Resp[RespSize-1]);
+        printf(" Write block %d failed with error 0x%02x\n", WriteBlock[2], Resp[RespSize-1]);
         return;
     }
-    PRINTF(" Block %d written\n", WriteBlock[2]);
+    printf(" Block %d written\n", WriteBlock[2]);
 
     /* Read back */
     status = NxpNci_ReaderTagCmd(ReadBlock, sizeof(ReadBlock), Resp, &RespSize);
     if((status == NFC_ERROR) || (Resp[RespSize-1] != 0x00))
     {
-        PRINTF(" Read block %d failed with error 0x%02x\n", ReadBlock[2], Resp[RespSize-1]);
+        printf(" Read block %d failed with error 0x%02x\n", ReadBlock[2], Resp[RespSize-1]);
         return;
     }
-    PRINTF(" Read block %d:", ReadBlock[2]); PRINT_BUF(" ", (Resp+1), RespSize-2);
+    printf(" Read block %d:", ReadBlock[2]); PRINT_BUF(" ", (Resp+1), RespSize-2);
 }
 
 void PCD_ISO14443_3A_scenario (void)
@@ -332,27 +332,27 @@ void PCD_ISO14443_3A_scenario (void)
     status = NxpNci_ReaderTagCmd(Read, sizeof(Read), Resp, &RespSize);
     if((status == NFC_ERROR) || (Resp[RespSize-1] != 0))
     {
-        PRINTF(" Read block %d failed with error 0x%02x\n", Read[1], Resp[RespSize-1]);
+        printf(" Read block %d failed with error 0x%02x\n", Read[1], Resp[RespSize-1]);
         return;
     }
-    PRINTF(" Read block %d:", Read[1]); PRINT_BUF(" ", Resp, 4);
+    printf(" Read block %d:", Read[1]); PRINT_BUF(" ", Resp, 4);
     /* Write */
     status = NxpNci_ReaderTagCmd(Write, sizeof(Write), Resp, &RespSize);
     if((status == NFC_ERROR) || (Resp[RespSize-1] != 0))
     {
-        PRINTF(" Write block %d failed with error 0x%02x\n", Write[1], Resp[RespSize-1]);
+        printf(" Write block %d failed with error 0x%02x\n", Write[1], Resp[RespSize-1]);
         return;
     }
-    PRINTF(" Block %d written\n", Write[1]);
+    printf(" Block %d written\n", Write[1]);
 
     /* Read back */
     status = NxpNci_ReaderTagCmd(Read, sizeof(Read), Resp, &RespSize);
     if((status == NFC_ERROR) || (Resp[RespSize-1] != 0))
     {
-        PRINTF(" Read block %d failed with error 0x%02x\n", Read[1], Resp[RespSize-1]);
+        printf(" Read block %d failed with error 0x%02x\n", Read[1], Resp[RespSize-1]);
         return;
     }
-    PRINTF(" Read block %d:", Read[1]); PRINT_BUF(" ", Resp, 4);
+    printf(" Read block %d:", Read[1]); PRINT_BUF(" ", Resp, 4);
 }
 
 void PCD_ISO14443_4_scenario (void)
@@ -365,10 +365,10 @@ void PCD_ISO14443_4_scenario (void)
     status = NxpNci_ReaderTagCmd(SelectPPSE, sizeof(SelectPPSE), Resp, &RespSize);
     if((status == NFC_ERROR) || (Resp[RespSize-2] != 0x90) || (Resp[RespSize-1] != 0x00))
     {
-        PRINTF(" Select PPSE failed with error %02x %02x\n", Resp[RespSize-2], Resp[RespSize-1]);
+        printf(" Select PPSE failed with error %02x %02x\n", Resp[RespSize-2], Resp[RespSize-1]);
         return;
     }
-    PRINTF(" Select NDEF Application succeed\n");
+    printf(" Select NDEF Application succeed\n");
 }
 #endif // ifdef RW_RAW_EXCHANGE
 
@@ -379,24 +379,24 @@ void displayCardInfo(NxpNci_RfIntf_t RfIntf)
     case PROT_T2T:
     case PROT_T3T:
     case PROT_ISODEP:
-        PRINTF(" - POLL MODE: Remote T%dT card activated\n", RfIntf.Protocol);
+        printf(" - POLL MODE: Remote T%dT card activated\n", RfIntf.Protocol);
         break;
     case PROT_T5T:
-        PRINTF(" - POLL MODE: Remote T5T card activated\n");
+        printf(" - POLL MODE: Remote T5T card activated\n");
         break;
     case PROT_MIFARE:
-        PRINTF(" - POLL MODE: Remote MIFARE card activated\n");
+        printf(" - POLL MODE: Remote MIFARE card activated\n");
         break;
     default:
-        PRINTF(" - POLL MODE: Undetermined target\n");
+        printf(" - POLL MODE: Undetermined target\n");
         return;
     }
 
     switch(RfIntf.ModeTech) {
     case (MODE_POLL | TECH_PASSIVE_NFCA):
-        PRINTF("\tSENS_RES = 0x%.2x 0x%.2x\n", RfIntf.Info.NFC_APP.SensRes[0], RfIntf.Info.NFC_APP.SensRes[1]);
+        printf("\tSENS_RES = 0x%.2x 0x%.2x\n", RfIntf.Info.NFC_APP.SensRes[0], RfIntf.Info.NFC_APP.SensRes[1]);
         PRINT_BUF("\tNFCID = ", RfIntf.Info.NFC_APP.NfcId, RfIntf.Info.NFC_APP.NfcIdLen);
-        if(RfIntf.Info.NFC_APP.SelResLen != 0) PRINTF("\tSEL_RES = 0x%.2x\n", RfIntf.Info.NFC_APP.SelRes[0]);
+        if(RfIntf.Info.NFC_APP.SelResLen != 0) printf("\tSEL_RES = 0x%.2x\n", RfIntf.Info.NFC_APP.SelRes[0]);
     break;
 
     case (MODE_POLL | TECH_PASSIVE_NFCB):
@@ -404,14 +404,14 @@ void displayCardInfo(NxpNci_RfIntf_t RfIntf)
     break;
 
     case (MODE_POLL | TECH_PASSIVE_NFCF):
-        PRINTF("\tBitrate = %s\n", (RfIntf.Info.NFC_FPP.BitRate==1)?"212":"424");
+        printf("\tBitrate = %s\n", (RfIntf.Info.NFC_FPP.BitRate==1)?"212":"424");
         if(RfIntf.Info.NFC_FPP.SensResLen != 0) PRINT_BUF("\tSENS_RES = ", RfIntf.Info.NFC_FPP.SensRes, RfIntf.Info.NFC_FPP.SensResLen);
     break;
 
     case (MODE_POLL | TECH_PASSIVE_15693):
         PRINT_BUF("\tID = ", RfIntf.Info.NFC_VPP.ID, sizeof(RfIntf.Info.NFC_VPP.ID));
-        PRINTF("\tAFI = 0x%.2x\n", RfIntf.Info.NFC_VPP.AFI);
-        PRINTF("\tDSFID = 0x%.2x\n", RfIntf.Info.NFC_VPP.DSFID);
+        printf("\tAFI = 0x%.2x\n", RfIntf.Info.NFC_VPP.AFI);
+        printf("\tDSFID = 0x%.2x\n", RfIntf.Info.NFC_VPP.DSFID);
     break;
 
     default:
@@ -466,7 +466,7 @@ void task_nfc_reader(NxpNci_RfIntf_t RfIntf)
     /* Wait for card removal */
     NxpNci_ProcessReaderMode(RfIntf, PRESENCE_CHECK);
 
-    PRINTF("CARD REMOVED\n");
+    printf("CARD REMOVED\n");
 
     /* Restart discovery loop */
     NxpNci_StopDiscovery();
@@ -491,15 +491,15 @@ void PICC_ISO14443_4_scenario (void)
             	switch (Cmd[1])
             	{
             	case 0xA4:
-            		PRINTF("Select File received\n");
+            		printf("Select File received\n");
             		break;
 
             	case 0xB0:
-            		PRINTF("Read Binary received\n");
+            		printf("Read Binary received\n");
             		break;
 
             	case 0xD0:
-                	PRINTF("Write Binary received\n");
+                	printf("Write Binary received\n");
             		break;
 
             	default:
@@ -511,7 +511,7 @@ void PICC_ISO14443_4_scenario (void)
         }
         else
         {
-            PRINTF("End of transaction\n");
+            printf("End of transaction\n");
             return;
         }
     }
@@ -542,31 +542,31 @@ void task_nfc(void)
 
     /* Open connection to NXPNCI device */
     if (NxpNci_Connect() == NFC_ERROR) {
-        PRINTF("Error: cannot connect to NXPNCI device\n");
+        printf("Error: cannot connect to NXPNCI device\n");
         return;
     }
 
     if (NxpNci_ConfigureSettings() == NFC_ERROR) {
-        PRINTF("Error: cannot configure NXPNCI settings\n");
+        printf("Error: cannot configure NXPNCI settings\n");
         return;
     }
 
     if (NxpNci_ConfigureMode(mode) == NFC_ERROR)
     {
-        PRINTF("Error: cannot configure NXPNCI\n");
+        printf("Error: cannot configure NXPNCI\n");
         return;
     }
 
     /* Start Discovery */
     if (NxpNci_StartDiscovery(DiscoveryTechnologies,sizeof(DiscoveryTechnologies)) != NFC_SUCCESS)
     {
-        PRINTF("Error: cannot start discovery\n");
+        printf("Error: cannot start discovery\n");
         return;
     }
 
     while(1)
     {
-        PRINTF("\nWAITING FOR DEVICE DISCOVERY\n");
+        printf("\nWAITING FOR DEVICE DISCOVERY\n");
 
 #if defined P2P_SUPPORT || defined RW_SUPPORT
         /* Reset reception index */
@@ -580,13 +580,13 @@ void task_nfc(void)
         /* Is activated from remote T4T ? */
         if ((RfInterface.Interface == INTF_ISODEP) && ((RfInterface.ModeTech & MODE_MASK) == MODE_LISTEN))
         {
-            PRINTF(" - LISTEN MODE: Activated from remote Reader\n");
+            printf(" - LISTEN MODE: Activated from remote Reader\n");
 #ifndef CARDEMU_RAW_EXCHANGE
             NxpNci_ProcessCardMode(RfInterface);
 #else
             PICC_ISO14443_4_scenario();
 #endif
-            PRINTF("READER DISCONNECTED\n");
+            printf("READER DISCONNECTED\n");
         }
         else
 #endif
@@ -595,13 +595,13 @@ void task_nfc(void)
         /* Is P2P discovery ? */
         if (RfInterface.Interface == INTF_NFCDEP)
         {
-            if ((RfInterface.ModeTech & MODE_LISTEN) == MODE_LISTEN) PRINTF(" - P2P TARGET MODE: Activated from remote Initiator\n");
-            else PRINTF(" - P2P INITIATOR MODE: Remote Target activated\n");
+            if ((RfInterface.ModeTech & MODE_LISTEN) == MODE_LISTEN) printf(" - P2P TARGET MODE: Activated from remote Initiator\n");
+            else printf(" - P2P INITIATOR MODE: Remote Target activated\n");
 
             /* Process with SNEP for NDEF exchange */
             NxpNci_ProcessP2pMode(RfInterface);
 
-            PRINTF("PEER LOST\n");
+            printf("PEER LOST\n");
         }
         else
 #endif // ifdef P2P_SUPPORT
@@ -613,7 +613,7 @@ void task_nfc(void)
         else
 #endif // ifdef RW_SUPPORT
         {
-            PRINTF("WRONG DISCOVERY\n");
+            printf("WRONG DISCOVERY\n");
         }
     }
 }

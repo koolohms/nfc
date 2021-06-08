@@ -14,10 +14,14 @@
 
 #include <stdlib.h>
 #include <stdint.h>
-#include <types.h>
+#include <pico.h>
+#include <time.h>
+#include <stdio.h>
+#include <string.h>
 #include "include/tml.h"
 #include <NxpNci.h>
 #include <Nfc_settings.h>
+#include "pico/time.h"
 
 #define MAX_NCI_FRAME_SIZE    258
 
@@ -446,7 +450,7 @@ static void NxpNci_PresenceCheck(NxpNci_RfIntf_t RfIntf)
     case PROT_T1T:
         do
         {
-            Sleep(500);
+            sleep_ms(500);
             NxpNci_HostTransceive(NCIPresCheckT1T, sizeof(NCIPresCheckT1T), Answer, sizeof(Answer), &AnswerSize);
             NxpNci_WaitForReception(Answer, sizeof(Answer), &AnswerSize, TIMEOUT_100MS);
         } while ((Answer[0] == 0x00) && (Answer[1] == 0x00));
@@ -455,7 +459,7 @@ static void NxpNci_PresenceCheck(NxpNci_RfIntf_t RfIntf)
     case PROT_T2T:
         do
         {
-            Sleep(500);
+            sleep_ms(500);
             NxpNci_HostTransceive(NCIPresCheckT2T, sizeof(NCIPresCheckT2T), Answer, sizeof(Answer), &AnswerSize);
             NxpNci_WaitForReception(Answer, sizeof(Answer), &AnswerSize, TIMEOUT_100MS);
         } while ((Answer[0] == 0x00) && (Answer[1] == 0x00) && (Answer[2] == 0x11));
@@ -464,7 +468,7 @@ static void NxpNci_PresenceCheck(NxpNci_RfIntf_t RfIntf)
     case PROT_T3T:
         do
         {
-            Sleep(500);
+            sleep_ms(500);
             NxpNci_HostTransceive(NCIPresCheckT3T, sizeof(NCIPresCheckT3T), Answer, sizeof(Answer), &AnswerSize);
             NxpNci_WaitForReception(Answer, sizeof(Answer), &AnswerSize, TIMEOUT_100MS);
         } while ((Answer[0] == 0x61) && (Answer[1] == 0x08) && ((Answer[3] == 0x00) || (Answer[4] > 0x00)));
@@ -473,7 +477,7 @@ static void NxpNci_PresenceCheck(NxpNci_RfIntf_t RfIntf)
     case PROT_ISODEP:
         do
         {
-            Sleep(500);
+            sleep_ms(500);
             NxpNci_HostTransceive(NCIPresCheckIsoDep, sizeof(NCIPresCheckIsoDep), Answer, sizeof(Answer), &AnswerSize);
             NxpNci_WaitForReception(Answer, sizeof(Answer), &AnswerSize, TIMEOUT_100MS);
         } while ((Answer[0] == 0x6F) && (Answer[1] == 0x11) && (Answer[2] == 0x01) && (Answer[3] == 0x01));
@@ -482,7 +486,7 @@ static void NxpNci_PresenceCheck(NxpNci_RfIntf_t RfIntf)
     case PROT_T5T:
         do
         {
-            Sleep(500);
+            sleep_ms(500);
             for(i=0; i<8; i++) NCIPresCheckIso15693[i+6] = RfIntf.Info.NFC_VPP.ID[7-i];
             NxpNci_HostTransceive(NCIPresCheckIso15693, sizeof(NCIPresCheckIso15693), Answer, sizeof(Answer), &AnswerSize);
             status = NxpNci_WaitForReception(Answer, sizeof(Answer), &AnswerSize, TIMEOUT_100MS);
@@ -492,7 +496,7 @@ static void NxpNci_PresenceCheck(NxpNci_RfIntf_t RfIntf)
     case PROT_MIFARE:
         do
         {
-            Sleep(500);
+            sleep_ms(500);
             /* Deactivate target */
             NxpNci_HostTransceive(NCIDeactivate, sizeof(NCIDeactivate), Answer, sizeof(Answer), &AnswerSize);
             NxpNci_WaitForReception(Answer, sizeof(Answer), &AnswerSize, TIMEOUT_100MS);
@@ -616,7 +620,7 @@ bool NxpNci_Connect(void)
     while(NxpNci_CheckDevPres() != NXPNCI_SUCCESS)
     {
         if(i-- == 0) return NXPNCI_ERROR;
-        Sleep(500);
+        sleep_ms(500);
     }
 
     NxpNci_HostTransceive(NCICoreInit, sizeof(NCICoreInit), Answer, sizeof(Answer), &AnswerSize);
