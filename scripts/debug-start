@@ -1,0 +1,5 @@
+#!/bin/bash
+cd ~/pico/nfc/build/src/	# open new terminal
+gdb-multiarch main.elf	# Start gdb debugger using main.elf
+
+target remote localhost:3333	# Connect to pico

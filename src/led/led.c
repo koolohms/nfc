@@ -51,6 +51,6 @@ void tud_resume_cb(void)
 
 
 //! Not sure what this is for. I2C MAYBE?
-bool reserved_addr(uint8_t addr) {
+/* bool reserved_addr(uint8_t addr) {
   return (addr & 0x78) == 0 || (addr & 0x78) == 0x78;
-}
+}  */

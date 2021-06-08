@@ -94,6 +94,7 @@ src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj: /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S
 
+src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.c.obj: ../src/usb/tusb_config.h
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/ansi_escape.h
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/board.h
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.c
@@ -168,6 +169,7 @@ src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.c.obj: generated/pico_base/pico/config_autogen.h
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.c.obj: generated/pico_base/pico/version.h
 
+src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj: ../src/usb/tusb_config.h
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/audio.h
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.h
@@ -209,6 +211,7 @@ src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/a
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj: generated/pico_base/pico/config_autogen.h
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj: generated/pico_base/pico/version.h
 
+src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj: ../src/usb/tusb_config.h
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc.h
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.h
@@ -250,6 +253,7 @@ src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj: generated/pico_base/pico/config_autogen.h
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj: generated/pico_base/pico/version.h
 
+src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj: ../src/usb/tusb_config.h
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.h
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/common/tusb_common.h
@@ -290,6 +294,7 @@ src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj: generated/pico_base/pico/config_autogen.h
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj: generated/pico_base/pico/version.h
 
+src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj: ../src/usb/tusb_config.h
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/hid/hid.h
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.h
@@ -331,6 +336,7 @@ src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/hid/hid
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj: generated/pico_base/pico/config_autogen.h
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj: generated/pico_base/pico/version.h
 
+src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj: ../src/usb/tusb_config.h
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/audio.h
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/midi/midi.h
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c
@@ -373,6 +379,7 @@ src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/midi/mi
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj: generated/pico_base/pico/config_autogen.h
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj: generated/pico_base/pico/version.h
 
+src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj: ../src/usb/tusb_config.h
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/msc/msc.h
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.h
@@ -415,6 +422,7 @@ src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/msc/msc
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj: generated/pico_base/pico/config_autogen.h
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj: generated/pico_base/pico/version.h
 
+src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.obj: ../src/usb/tusb_config.h
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc.h
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.h
@@ -456,6 +464,7 @@ src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/net/net
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.obj: generated/pico_base/pico/config_autogen.h
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.obj: generated/pico_base/pico/version.h
 
+src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj: ../src/usb/tusb_config.h
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc.h
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.h
@@ -497,6 +506,7 @@ src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj: generated/pico_base/pico/config_autogen.h
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj: generated/pico_base/pico/version.h
 
+src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj: ../src/usb/tusb_config.h
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.h
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/common/tusb_common.h
@@ -537,6 +547,7 @@ src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/vendor/
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj: generated/pico_base/pico/config_autogen.h
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj: generated/pico_base/pico/version.h
 
+src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj: ../src/usb/tusb_config.h
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/common/tusb_common.h
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/common/tusb_compiler.h
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/common/tusb_error.h
@@ -574,6 +585,7 @@ src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/common/tusb_f
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj: generated/pico_base/pico/config_autogen.h
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj: generated/pico_base/pico/version.h
 
+src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj: ../src/usb/tusb_config.h
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/audio.h
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.h
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/bth/bth_device.h
@@ -637,6 +649,7 @@ src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd.c
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj: generated/pico_base/pico/config_autogen.h
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj: generated/pico_base/pico/version.h
 
+src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj: ../src/usb/tusb_config.h
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/audio.h
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.h
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/bth/bth_device.h
@@ -700,6 +713,7 @@ src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd_c
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj: generated/pico_base/pico/config_autogen.h
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj: generated/pico_base/pico/version.h
 
+src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj: ../src/usb/tusb_config.h
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/common/tusb_common.h
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/common/tusb_compiler.h
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/common/tusb_error.h
@@ -748,6 +762,7 @@ src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/rasp
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj: generated/pico_base/pico/config_autogen.h
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj: generated/pico_base/pico/version.h
 
+src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj: ../src/usb/tusb_config.h
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/common/tusb_common.h
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/common/tusb_compiler.h
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/common/tusb_error.h
@@ -781,6 +796,7 @@ src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/rasp
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj: generated/pico_base/pico/config_autogen.h
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj: generated/pico_base/pico/version.h
 
+src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj: ../src/usb/tusb_config.h
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/audio.h
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.h
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/bth/bth_device.h
@@ -1642,8 +1658,9 @@ src/CMakeFiles/main.dir/led/led.c.obj: /home/ddreise/pico/pico-sdk/src/rp2_commo
 src/CMakeFiles/main.dir/led/led.c.obj: generated/pico_base/pico/config_autogen.h
 src/CMakeFiles/main.dir/led/led.c.obj: generated/pico_base/pico/version.h
 
-src/CMakeFiles/main.dir/main.c.obj: ../src/led/led.h
+src/CMakeFiles/main.dir/main.c.obj: ../src/test/include/test.h
 src/CMakeFiles/main.dir/main.c.obj: ../src/usb/tusb_config.h
+src/CMakeFiles/main.dir/main.c.obj: ../src/led/led.h
 src/CMakeFiles/main.dir/main.c.obj: ../src/main.c
 src/CMakeFiles/main.dir/main.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/ansi_escape.h
 src/CMakeFiles/main.dir/main.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/board.h
@@ -1724,6 +1741,44 @@ src/CMakeFiles/main.dir/main.c.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/p
 src/CMakeFiles/main.dir/main.c.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio_uart/include/pico/stdio_uart.h
 src/CMakeFiles/main.dir/main.c.obj: generated/pico_base/pico/config_autogen.h
 src/CMakeFiles/main.dir/main.c.obj: generated/pico_base/pico/version.h
+
+src/CMakeFiles/main.dir/test/i2c_test.c.obj: ../src/test/i2c_test.c
+src/CMakeFiles/main.dir/test/i2c_test.c.obj: ../src/test/include/test.h
+src/CMakeFiles/main.dir/test/i2c_test.c.obj: /home/ddreise/pico/pico-sdk/src/boards/include/boards/pico.h
+src/CMakeFiles/main.dir/test/i2c_test.c.obj: /home/ddreise/pico/pico-sdk/src/common/pico_base/include/pico.h
+src/CMakeFiles/main.dir/test/i2c_test.c.obj: /home/ddreise/pico/pico-sdk/src/common/pico_base/include/pico/assert.h
+src/CMakeFiles/main.dir/test/i2c_test.c.obj: /home/ddreise/pico/pico-sdk/src/common/pico_base/include/pico/config.h
+src/CMakeFiles/main.dir/test/i2c_test.c.obj: /home/ddreise/pico/pico-sdk/src/common/pico_base/include/pico/error.h
+src/CMakeFiles/main.dir/test/i2c_test.c.obj: /home/ddreise/pico/pico-sdk/src/common/pico_base/include/pico/types.h
+src/CMakeFiles/main.dir/test/i2c_test.c.obj: /home/ddreise/pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info.h
+src/CMakeFiles/main.dir/test/i2c_test.c.obj: /home/ddreise/pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/code.h
+src/CMakeFiles/main.dir/test/i2c_test.c.obj: /home/ddreise/pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/defs.h
+src/CMakeFiles/main.dir/test/i2c_test.c.obj: /home/ddreise/pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/structure.h
+src/CMakeFiles/main.dir/test/i2c_test.c.obj: /home/ddreise/pico/pico-sdk/src/common/pico_stdlib/include/pico/stdlib.h
+src/CMakeFiles/main.dir/test/i2c_test.c.obj: /home/ddreise/pico/pico-sdk/src/common/pico_time/include/pico/time.h
+src/CMakeFiles/main.dir/test/i2c_test.c.obj: /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h
+src/CMakeFiles/main.dir/test/i2c_test.c.obj: /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h
+src/CMakeFiles/main.dir/test/i2c_test.c.obj: /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/i2c.h
+src/CMakeFiles/main.dir/test/i2c_test.c.obj: /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h
+src/CMakeFiles/main.dir/test/i2c_test.c.obj: /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h
+src/CMakeFiles/main.dir/test/i2c_test.c.obj: /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h
+src/CMakeFiles/main.dir/test/i2c_test.c.obj: /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h
+src/CMakeFiles/main.dir/test/i2c_test.c.obj: /home/ddreise/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/i2c.h
+src/CMakeFiles/main.dir/test/i2c_test.c.obj: /home/ddreise/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h
+src/CMakeFiles/main.dir/test/i2c_test.c.obj: /home/ddreise/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/padsbank0.h
+src/CMakeFiles/main.dir/test/i2c_test.c.obj: /home/ddreise/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h
+src/CMakeFiles/main.dir/test/i2c_test.c.obj: /home/ddreise/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h
+src/CMakeFiles/main.dir/test/i2c_test.c.obj: /home/ddreise/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h
+src/CMakeFiles/main.dir/test/i2c_test.c.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h
+src/CMakeFiles/main.dir/test/i2c_test.c.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h
+src/CMakeFiles/main.dir/test/i2c_test.c.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_i2c/include/hardware/i2c.h
+src/CMakeFiles/main.dir/test/i2c_test.c.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h
+src/CMakeFiles/main.dir/test/i2c_test.c.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h
+src/CMakeFiles/main.dir/test/i2c_test.c.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
+src/CMakeFiles/main.dir/test/i2c_test.c.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio/include/pico/stdio.h
+src/CMakeFiles/main.dir/test/i2c_test.c.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio_uart/include/pico/stdio_uart.h
+src/CMakeFiles/main.dir/test/i2c_test.c.obj: generated/pico_base/pico/config_autogen.h
+src/CMakeFiles/main.dir/test/i2c_test.c.obj: generated/pico_base/pico/version.h
 
 src/CMakeFiles/main.dir/usb/usb_descriptors.c.obj: ../src/usb/tusb_config.h
 src/CMakeFiles/main.dir/usb/usb_descriptors.c.obj: ../src/usb/usb_descriptors.c

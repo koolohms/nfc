@@ -145,3 +145,5 @@
 /home/ddreise/pico/nfc/build/src/usb/CMakeFiles/edit_cache.dir
 /home/ddreise/pico/nfc/build/src/led/CMakeFiles/rebuild_cache.dir
 /home/ddreise/pico/nfc/build/src/led/CMakeFiles/edit_cache.dir
+/home/ddreise/pico/nfc/build/src/test/CMakeFiles/rebuild_cache.dir
+/home/ddreise/pico/nfc/build/src/test/CMakeFiles/edit_cache.dir

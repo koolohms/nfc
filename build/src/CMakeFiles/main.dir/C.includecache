@@ -6,9 +6,11 @@
 
 #IncludeRegexTransform: 
 
-../src/led/led.h
+../src/test/include/test.h
 
 ../src/usb/tusb_config.h
+
+/home/ddreise/pico/nfc/src/led/led.h
 
 /home/ddreise/pico/nfc/src/main.c
 stdlib.h
@@ -27,10 +29,12 @@ pico/binary_info.h
 /home/ddreise/pico/nfc/src/pico/binary_info.h
 hardware/i2c.h
 /home/ddreise/pico/nfc/src/hardware/i2c.h
-led.h
-/home/ddreise/pico/nfc/src/led.h
+led/led.h
+/home/ddreise/pico/nfc/src/led/led.h
 tusb_config.h
 /home/ddreise/pico/nfc/src/tusb_config.h
+test.h
+/home/ddreise/pico/nfc/src/test.h
 
 /home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/ansi_escape.h
 

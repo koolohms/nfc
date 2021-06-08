@@ -1697,6 +1697,33 @@ main.c.s:
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/main.c.s
 .PHONY : main.c.s
 
+test/i2c_test.obj: test/i2c_test.c.obj
+
+.PHONY : test/i2c_test.obj
+
+# target to build an object file
+test/i2c_test.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/test/i2c_test.c.obj
+.PHONY : test/i2c_test.c.obj
+
+test/i2c_test.i: test/i2c_test.c.i
+
+.PHONY : test/i2c_test.i
+
+# target to preprocess a source file
+test/i2c_test.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/test/i2c_test.c.i
+.PHONY : test/i2c_test.c.i
+
+test/i2c_test.s: test/i2c_test.c.s
+
+.PHONY : test/i2c_test.s
+
+# target to generate assembly for a file
+test/i2c_test.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/test/i2c_test.c.s
+.PHONY : test/i2c_test.c.s
+
 usb/usb_descriptors.obj: usb/usb_descriptors.c.obj
 
 .PHONY : usb/usb_descriptors.obj
@@ -1934,6 +1961,9 @@ help:
 	@echo "... main.obj"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... test/i2c_test.obj"
+	@echo "... test/i2c_test.i"
+	@echo "... test/i2c_test.s"
 	@echo "... usb/usb_descriptors.obj"
 	@echo "... usb/usb_descriptors.i"
 	@echo "... usb/usb_descriptors.s"
