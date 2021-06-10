@@ -36,6 +36,7 @@
 #include "test.h"
 #include "nfc_task.h"
 #include "gpio.h"
+#include "board.h"
 
 
 /*------------- MAIN -------------*/
@@ -55,8 +56,8 @@ int main(void)
 
    while (1)
   {
-    task_nfc();               // nfc task
-    //tud_task();             // usb task
+    //task_nfc();               // nfc task
+    tud_task();             // usb task
     //led_blinking_task();    // led task
   } 
     
