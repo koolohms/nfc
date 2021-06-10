@@ -17,7 +17,6 @@ target_link_libraries(main PRIVATE
         pico_time
         pico_mem_ops
         gpio
-        board
         )
 
 # create map/bin/hex file etc.
@@ -28,4 +27,3 @@ add_subdirectory(led)
 add_subdirectory(test)
 add_subdirectory(nfcc)
 add_subdirectory(gpio)
-add_subdirectory(board)

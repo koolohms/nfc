@@ -151,5 +151,3 @@
 /home/ddreise/pico/nfc/build/src/nfcc/CMakeFiles/edit_cache.dir
 /home/ddreise/pico/nfc/build/src/gpio/CMakeFiles/rebuild_cache.dir
 /home/ddreise/pico/nfc/build/src/gpio/CMakeFiles/edit_cache.dir
-/home/ddreise/pico/nfc/build/src/board/CMakeFiles/rebuild_cache.dir
-/home/ddreise/pico/nfc/build/src/board/CMakeFiles/edit_cache.dir

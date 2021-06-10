@@ -94,36 +94,6 @@ src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj: /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S
 
-src/CMakeFiles/main.dir/board/board.c.obj: ../src/board/board.c
-src/CMakeFiles/main.dir/board/board.c.obj: /home/ddreise/pico/pico-sdk/src/boards/include/boards/pico.h
-src/CMakeFiles/main.dir/board/board.c.obj: /home/ddreise/pico/pico-sdk/src/common/pico_base/include/pico.h
-src/CMakeFiles/main.dir/board/board.c.obj: /home/ddreise/pico/pico-sdk/src/common/pico_base/include/pico/assert.h
-src/CMakeFiles/main.dir/board/board.c.obj: /home/ddreise/pico/pico-sdk/src/common/pico_base/include/pico/config.h
-src/CMakeFiles/main.dir/board/board.c.obj: /home/ddreise/pico/pico-sdk/src/common/pico_base/include/pico/error.h
-src/CMakeFiles/main.dir/board/board.c.obj: /home/ddreise/pico/pico-sdk/src/common/pico_base/include/pico/types.h
-src/CMakeFiles/main.dir/board/board.c.obj: /home/ddreise/pico/pico-sdk/src/common/pico_stdlib/include/pico/stdlib.h
-src/CMakeFiles/main.dir/board/board.c.obj: /home/ddreise/pico/pico-sdk/src/common/pico_time/include/pico/time.h
-src/CMakeFiles/main.dir/board/board.c.obj: /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h
-src/CMakeFiles/main.dir/board/board.c.obj: /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h
-src/CMakeFiles/main.dir/board/board.c.obj: /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h
-src/CMakeFiles/main.dir/board/board.c.obj: /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h
-src/CMakeFiles/main.dir/board/board.c.obj: /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h
-src/CMakeFiles/main.dir/board/board.c.obj: /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h
-src/CMakeFiles/main.dir/board/board.c.obj: /home/ddreise/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h
-src/CMakeFiles/main.dir/board/board.c.obj: /home/ddreise/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/padsbank0.h
-src/CMakeFiles/main.dir/board/board.c.obj: /home/ddreise/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h
-src/CMakeFiles/main.dir/board/board.c.obj: /home/ddreise/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h
-src/CMakeFiles/main.dir/board/board.c.obj: /home/ddreise/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h
-src/CMakeFiles/main.dir/board/board.c.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h
-src/CMakeFiles/main.dir/board/board.c.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h
-src/CMakeFiles/main.dir/board/board.c.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h
-src/CMakeFiles/main.dir/board/board.c.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h
-src/CMakeFiles/main.dir/board/board.c.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
-src/CMakeFiles/main.dir/board/board.c.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio/include/pico/stdio.h
-src/CMakeFiles/main.dir/board/board.c.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio_uart/include/pico/stdio_uart.h
-src/CMakeFiles/main.dir/board/board.c.obj: generated/pico_base/pico/config_autogen.h
-src/CMakeFiles/main.dir/board/board.c.obj: generated/pico_base/pico/version.h
-
 src/CMakeFiles/main.dir/gpio/gpio.c.obj: ../src/gpio/gpio.c
 src/CMakeFiles/main.dir/gpio/gpio.c.obj: ../src/gpio/gpio.h
 src/CMakeFiles/main.dir/gpio/gpio.c.obj: /home/ddreise/pico/pico-sdk/src/boards/include/boards/pico.h
@@ -1719,7 +1689,6 @@ src/CMakeFiles/main.dir/led/led.c.obj: /home/ddreise/pico/pico-sdk/src/rp2_commo
 src/CMakeFiles/main.dir/led/led.c.obj: generated/pico_base/pico/config_autogen.h
 src/CMakeFiles/main.dir/led/led.c.obj: generated/pico_base/pico/version.h
 
-src/CMakeFiles/main.dir/main.c.obj: ../src/board/include/board.h
 src/CMakeFiles/main.dir/main.c.obj: ../src/gpio/gpio.h
 src/CMakeFiles/main.dir/main.c.obj: ../src/led/led.h
 src/CMakeFiles/main.dir/main.c.obj: ../src/nfcc/include/nfc_task.h

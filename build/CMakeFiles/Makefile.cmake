@@ -14,7 +14,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.16.3/CMakeSystem.cmake"
   "src/elf2uf2/tmp/ELF2UF2Build-cfgcmd.txt.in"
   "../src/CMakeLists.txt"
-  "../src/board/CMakeLists.txt"
   "../src/gpio/CMakeLists.txt"
   "../src/led/CMakeLists.txt"
   "../src/nfcc/CMakeLists.txt"
@@ -210,7 +209,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "src/test/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/nfcc/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/gpio/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "src/board/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
