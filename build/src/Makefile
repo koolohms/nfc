@@ -140,6 +140,33 @@ main/fast:
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+board/board.obj: board/board.c.obj
+
+.PHONY : board/board.obj
+
+# target to build an object file
+board/board.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/board/board.c.obj
+.PHONY : board/board.c.obj
+
+board/board.i: board/board.c.i
+
+.PHONY : board/board.i
+
+# target to preprocess a source file
+board/board.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/board/board.c.i
+.PHONY : board/board.c.i
+
+board/board.s: board/board.c.s
+
+.PHONY : board/board.s
+
+# target to generate assembly for a file
+board/board.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/board/board.c.s
+.PHONY : board/board.c.s
+
 gpio/gpio.obj: gpio/gpio.c.obj
 
 .PHONY : gpio/gpio.obj
@@ -1950,6 +1977,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... ELF2UF2Build"
 	@echo "... main"
+	@echo "... board/board.obj"
+	@echo "... board/board.i"
+	@echo "... board/board.s"
 	@echo "... gpio/gpio.obj"
 	@echo "... gpio/gpio.i"
 	@echo "... gpio/gpio.s"

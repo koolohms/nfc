@@ -97,8 +97,10 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "../src/test/include"
   "../src/nfcc/include"
   "../src/gpio"
+  "../src/board/include"
   )
 set(CMAKE_DEPENDS_CHECK_C
+  "/home/ddreise/pico/nfc/src/board/board.c" "/home/ddreise/pico/nfc/build/src/CMakeFiles/main.dir/board/board.c.obj"
   "/home/ddreise/pico/nfc/src/gpio/gpio.c" "/home/ddreise/pico/nfc/build/src/CMakeFiles/main.dir/gpio/gpio.c.obj"
   "/home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.c" "/home/ddreise/pico/nfc/build/src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.c.obj"
   "/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c" "/home/ddreise/pico/nfc/build/src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj"
@@ -241,6 +243,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../src/test/include"
   "../src/nfcc/include"
   "../src/gpio"
+  "../src/board/include"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp" "/home/ddreise/pico/nfc/build/src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj"
@@ -324,6 +327,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../src/test/include"
   "../src/nfcc/include"
   "../src/gpio"
+  "../src/board/include"
   )
 
 # Targets to which this target links.

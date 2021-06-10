@@ -6,6 +6,8 @@
 
 #IncludeRegexTransform: 
 
+../src/board/include/board.h
+
 ../src/gpio/gpio.h
 
 ../src/led/led.h
@@ -15,18 +17,6 @@
 ../src/test/include/test.h
 
 ../src/usb/tusb_config.h
-
-/home/ddreise/pico/nfc/src/gpio/gpio.c
-stdlib.h
--
-stdio.h
--
-gpio.h
-/home/ddreise/pico/nfc/src/gpio/gpio.h
-pico/stdlib.h
-/home/ddreise/pico/nfc/src/gpio/pico/stdlib.h
-
-/home/ddreise/pico/nfc/src/gpio/gpio.h
 
 /home/ddreise/pico/nfc/src/main.c
 stdlib.h
@@ -55,30 +45,8 @@ nfc_task.h
 /home/ddreise/pico/nfc/src/nfc_task.h
 gpio.h
 /home/ddreise/pico/nfc/src/gpio.h
-
-/home/ddreise/pico/nfc/src/nfcc/include/driver.h
-
-/home/ddreise/pico/nfc/src/nfcc/include/tml.h
-
-/home/ddreise/pico/nfc/src/nfcc/tml.c
-stdlib.h
--
-stdint.h
--
-pico.h
--
-time.h
--
-include/tml.h
-/home/ddreise/pico/nfc/src/nfcc/include/tml.h
-include/driver.h
-/home/ddreise/pico/nfc/src/nfcc/include/driver.h
-hardware/i2c.h
-/home/ddreise/pico/nfc/src/nfcc/hardware/i2c.h
-hardware/gpio.h
-/home/ddreise/pico/nfc/src/nfcc/hardware/gpio.h
-../gpio/gpio.h
-/home/ddreise/pico/nfc/src/gpio/gpio.h
+board.h
+/home/ddreise/pico/nfc/src/board.h
 
 /home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/ansi_escape.h
 
