@@ -39,7 +39,6 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/ddreise/pico/nfc/build/src/led/cmake_install.cmake")
   include("/home/ddreise/pico/nfc/build/src/test/cmake_install.cmake")
   include("/home/ddreise/pico/nfc/build/src/nfcc/cmake_install.cmake")
-  include("/home/ddreise/pico/nfc/build/src/gpio/cmake_install.cmake")
 
 endif()
 

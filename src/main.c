@@ -36,6 +36,7 @@
 #include "test.h"
 #include "nfc_task.h"
 #include "gpio.h"
+#include "i2c.h"
 
 
 /*------------- MAIN -------------*/
@@ -44,7 +45,8 @@ int main(void)
   board_init();             // Initialize the board for led and uart
   gpios_init();             // Initialize GPIOs
 
-  i2c_init(i2c0, 100000);   // Initialize I2C. Set as 400 kbps (can't go faster than this because the Pico is limited to this)
+  i2c_Init();
+  //i2c_init(i2c0, 100000);   // Initialize I2C. Set as 400 kbps (can't go faster than this because the Pico is limited to this)
   
   //tusb_init();            // Initialize TinyUSB
 

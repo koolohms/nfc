@@ -13,7 +13,6 @@
 */
 
 #include <Nfc.h>
-#include "nfc_task.h"
 #include "tool.h"
 
 #ifdef CARDEMU_SUPPORT

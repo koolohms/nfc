@@ -16,7 +16,7 @@ target_link_libraries(main PRIVATE
         nfcc
         pico_time
         pico_mem_ops
-        gpio
+        #gpio
         drivers
         )
 
@@ -28,4 +28,4 @@ add_subdirectory(usb)
 add_subdirectory(led)
 add_subdirectory(test)
 add_subdirectory(nfcc)
-add_subdirectory(gpio)
+#add_subdirectory(gpio)

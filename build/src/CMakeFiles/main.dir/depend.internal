@@ -94,29 +94,11 @@ src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_
  /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h
  /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h
  /home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S
-src/CMakeFiles/main.dir/drivers/tool.c.obj
+src/CMakeFiles/main.dir/drivers/gpio.c.obj
+ ../src/drivers/include/driver_config.h
+ ../src/drivers/include/gpio.h
  ../src/drivers/include/tool.h
- /home/ddreise/pico/nfc/src/drivers/tool.c
- /home/ddreise/pico/pico-sdk/src/boards/include/boards/pico.h
- /home/ddreise/pico/pico-sdk/src/common/pico_base/include/pico.h
- /home/ddreise/pico/pico-sdk/src/common/pico_base/include/pico/assert.h
- /home/ddreise/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- /home/ddreise/pico/pico-sdk/src/common/pico_base/include/pico/error.h
- /home/ddreise/pico/pico-sdk/src/common/pico_base/include/pico/types.h
- /home/ddreise/pico/pico-sdk/src/common/pico_time/include/pico/time.h
- /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h
- /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h
- /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h
- /home/ddreise/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h
- /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h
- /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h
- /home/ddreise/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
- generated/pico_base/pico/config_autogen.h
- generated/pico_base/pico/version.h
-src/CMakeFiles/main.dir/gpio/gpio.c.obj
- ../src/drivers/include/tool.h
- /home/ddreise/pico/nfc/src/gpio/gpio.c
- /home/ddreise/pico/nfc/src/gpio/gpio.h
+ /home/ddreise/pico/nfc/src/drivers/gpio.c
  /home/ddreise/pico/pico-sdk/src/boards/include/boards/pico.h
  /home/ddreise/pico/pico-sdk/src/common/pico_base/include/pico.h
  /home/ddreise/pico/pico-sdk/src/common/pico_base/include/pico/assert.h
@@ -143,6 +125,53 @@ src/CMakeFiles/main.dir/gpio/gpio.c.obj
  /home/ddreise/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
  /home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio/include/pico/stdio.h
  /home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio_uart/include/pico/stdio_uart.h
+ generated/pico_base/pico/config_autogen.h
+ generated/pico_base/pico/version.h
+src/CMakeFiles/main.dir/drivers/i2c.c.obj
+ ../src/drivers/include/driver_config.h
+ /home/ddreise/pico/nfc/src/drivers/i2c.c
+ /home/ddreise/pico/pico-sdk/src/boards/include/boards/pico.h
+ /home/ddreise/pico/pico-sdk/src/common/pico_base/include/pico.h
+ /home/ddreise/pico/pico-sdk/src/common/pico_base/include/pico/assert.h
+ /home/ddreise/pico/pico-sdk/src/common/pico_base/include/pico/config.h
+ /home/ddreise/pico/pico-sdk/src/common/pico_base/include/pico/error.h
+ /home/ddreise/pico/pico-sdk/src/common/pico_base/include/pico/types.h
+ /home/ddreise/pico/pico-sdk/src/common/pico_time/include/pico/time.h
+ /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h
+ /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h
+ /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/i2c.h
+ /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h
+ /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h
+ /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h
+ /home/ddreise/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/i2c.h
+ /home/ddreise/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h
+ /home/ddreise/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/padsbank0.h
+ /home/ddreise/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h
+ /home/ddreise/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h
+ /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h
+ /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h
+ /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_i2c/include/hardware/i2c.h
+ /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h
+ /home/ddreise/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
+ generated/pico_base/pico/config_autogen.h
+ generated/pico_base/pico/version.h
+src/CMakeFiles/main.dir/drivers/tool.c.obj
+ ../src/drivers/include/tool.h
+ /home/ddreise/pico/nfc/src/drivers/tool.c
+ /home/ddreise/pico/pico-sdk/src/boards/include/boards/pico.h
+ /home/ddreise/pico/pico-sdk/src/common/pico_base/include/pico.h
+ /home/ddreise/pico/pico-sdk/src/common/pico_base/include/pico/assert.h
+ /home/ddreise/pico/pico-sdk/src/common/pico_base/include/pico/config.h
+ /home/ddreise/pico/pico-sdk/src/common/pico_base/include/pico/error.h
+ /home/ddreise/pico/pico-sdk/src/common/pico_base/include/pico/types.h
+ /home/ddreise/pico/pico-sdk/src/common/pico_time/include/pico/time.h
+ /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h
+ /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h
+ /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h
+ /home/ddreise/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h
+ /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h
+ /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h
+ /home/ddreise/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
  generated/pico_base/pico/config_autogen.h
  generated/pico_base/pico/version.h
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.c.obj
@@ -1710,7 +1739,8 @@ src/CMakeFiles/main.dir/led/led.c.obj
  generated/pico_base/pico/config_autogen.h
  generated/pico_base/pico/version.h
 src/CMakeFiles/main.dir/main.c.obj
- ../src/gpio/gpio.h
+ ../src/drivers/include/gpio.h
+ ../src/drivers/include/i2c.h
  ../src/led/led.h
  ../src/nfcc/include/nfc_task.h
  ../src/test/include/test.h
@@ -1801,68 +1831,26 @@ src/CMakeFiles/main.dir/nfcc/NxpNci.c.obj
  ../src/nfcc/include/Nfc_settings.h
  ../src/nfcc/include/NxpNci.h
  ../src/nfcc/include/P2P_NDEF.h
- ../src/nfcc/include/driver.h
- ../src/nfcc/include/nfc_task.h
  ../src/nfcc/include/tml.h
  /home/ddreise/pico/nfc/src/nfcc/NxpNci.c
- /home/ddreise/pico/pico-sdk/src/boards/include/boards/pico.h
- /home/ddreise/pico/pico-sdk/src/common/pico_base/include/pico.h
- /home/ddreise/pico/pico-sdk/src/common/pico_base/include/pico/assert.h
- /home/ddreise/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- /home/ddreise/pico/pico-sdk/src/common/pico_base/include/pico/error.h
- /home/ddreise/pico/pico-sdk/src/common/pico_base/include/pico/types.h
- /home/ddreise/pico/pico-sdk/src/common/pico_time/include/pico/time.h
- /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h
- /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h
- /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h
- /home/ddreise/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h
- /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h
- /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h
- /home/ddreise/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
- generated/pico_base/pico/config_autogen.h
- generated/pico_base/pico/version.h
 src/CMakeFiles/main.dir/nfcc/P2P_NDEF.c.obj
+ ../src/drivers/include/tool.h
  ../src/nfcc/include/P2P_NDEF.h
- ../src/nfcc/include/driver.h
- ../src/nfcc/include/nfc_task.h
  /home/ddreise/pico/nfc/src/nfcc/P2P_NDEF.c
- /home/ddreise/pico/pico-sdk/src/boards/include/boards/pico.h
- /home/ddreise/pico/pico-sdk/src/common/pico_base/include/pico.h
- /home/ddreise/pico/pico-sdk/src/common/pico_base/include/pico/assert.h
- /home/ddreise/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- /home/ddreise/pico/pico-sdk/src/common/pico_base/include/pico/error.h
- /home/ddreise/pico/pico-sdk/src/common/pico_base/include/pico/types.h
- /home/ddreise/pico/pico-sdk/src/common/pico_time/include/pico/time.h
- /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h
- /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h
- /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h
- /home/ddreise/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h
- /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h
- /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h
- /home/ddreise/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
- generated/pico_base/pico/config_autogen.h
- generated/pico_base/pico/version.h
 src/CMakeFiles/main.dir/nfcc/ndef_helper.c.obj
  ../src/nfcc/include/ndef_helper.h
  /home/ddreise/pico/nfc/src/nfcc/ndef_helper.c
 src/CMakeFiles/main.dir/nfcc/nfc_task.c.obj
  ../src/drivers/include/tool.h
  ../src/nfcc/include/Nfc.h
- ../src/nfcc/include/P2P_NDEF.h
- ../src/nfcc/include/driver.h
  ../src/nfcc/include/ndef_helper.h
- ../src/nfcc/include/nfc_task.h
  /home/ddreise/pico/nfc/src/nfcc/nfc_task.c
 src/CMakeFiles/main.dir/nfcc/tml.c.obj
+ ../src/drivers/include/driver_config.h
+ ../src/drivers/include/gpio.h
+ ../src/drivers/include/i2c.h
  ../src/drivers/include/tool.h
- ../src/nfcc/include/Nfc.h
- ../src/nfcc/include/NxpNci.h
- ../src/nfcc/include/P2P_NDEF.h
- ../src/nfcc/include/driver.h
- ../src/nfcc/include/nfc_task.h
- /home/ddreise/pico/nfc/src/gpio/gpio.h
- /home/ddreise/pico/nfc/src/nfcc/include/driver.h
- /home/ddreise/pico/nfc/src/nfcc/include/tml.h
+ ../src/drivers/include/types.h
  /home/ddreise/pico/nfc/src/nfcc/tml.c
  /home/ddreise/pico/pico-sdk/src/boards/include/boards/pico.h
  /home/ddreise/pico/pico-sdk/src/common/pico_base/include/pico.h
@@ -1870,22 +1858,7 @@ src/CMakeFiles/main.dir/nfcc/tml.c.obj
  /home/ddreise/pico/pico-sdk/src/common/pico_base/include/pico/config.h
  /home/ddreise/pico/pico-sdk/src/common/pico_base/include/pico/error.h
  /home/ddreise/pico/pico-sdk/src/common/pico_base/include/pico/types.h
- /home/ddreise/pico/pico-sdk/src/common/pico_time/include/pico/time.h
  /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h
- /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h
- /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/i2c.h
- /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h
- /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h
- /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h
- /home/ddreise/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/i2c.h
- /home/ddreise/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h
- /home/ddreise/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/padsbank0.h
- /home/ddreise/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h
- /home/ddreise/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h
- /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h
- /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h
- /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_i2c/include/hardware/i2c.h
- /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h
  /home/ddreise/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
  generated/pico_base/pico/config_autogen.h
  generated/pico_base/pico/version.h

@@ -20,6 +20,7 @@
 
 /* definitions for i2c link */
 #define DEFAULT_I2C          					I2C0
+#define I2C0                                    i2c0
 #define CONFIG_ENABLE_DRIVER_I2C                1
 #define CONFIG_I2C_DEFAULT_I2C_IRQHANDLER       1
 
@@ -52,6 +53,9 @@
 
 #define HIGH              	  1
 #define LOW               	  0
+
+#define SUCCESS               1
+#define ERROR                 0
 
 /***********************************************************************************************
  **	Global variables

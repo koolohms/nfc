@@ -12,17 +12,10 @@
 *                          arising from its use.
 */
 
-#include <stdio.h>
-#include <string.h>
-#include <stdbool.h>
-#include <stdint.h>
-#include <stddef.h>
-#include <pico/time.h>
-#include "nfc_task.h"
 
 #ifdef P2P_SUPPORT
+#include "tool.h"
 #include "P2P_NDEF.h"
-#include "driver.h"
 
 /* Well-known LLCP SAP Values */
 #define SAP_SDP         1

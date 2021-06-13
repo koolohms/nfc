@@ -12,72 +12,55 @@
 *                          arising from its use.
 */
 
-#include <stdio.h>
-#include <stdlib.h>
+#include "driver_config.h"
 #include <stdint.h>
-#include <pico.h>
-#include <time.h>
-#include "include/tml.h"
-#include "include/driver.h"
-#include "hardware/i2c.h"
-#include "hardware/gpio.h"
-#include "../gpio/gpio.h"
-#include "driver.h"
+#include "types.h"
+#include "gpio.h"
+#include "i2c.h"
 #include "tool.h"
-#include "NxpNci.h"
+#include "pico.h"
 
 
 static uint8_t tml_Init(void) {
 	
-	//gpios_init(); already initialized
-	//printf("tml initialized\n");
-    
-	return PICO_OK;
+	/* Configure GPIO for IRQ pin */
+	gpio_SetDir(PIN_IRQ, SET_IN);
+	/* Configure GPIO for VEN pin */
+	gpio_SetDir(PIN_VEN, SET_OUT);
+	return SUCCESS;
 }
 
 static uint8_t tml_Reset(void) {
 	/* Apply VEN reset */
-    gpio_put(GPIO_VEN_PIN, HIGH);
-	sleep_ms(10);
-	//PRINTF("VEN Pin State: %d\n", gpio_get(GPIO_VEN_PIN));
-	gpio_put(GPIO_VEN_PIN, LOW);
-	sleep_ms(10);
-	//PRINTF("VEN Pin State: %d\n", gpio_get(GPIO_VEN_PIN));
-    gpio_put(GPIO_VEN_PIN, HIGH);
-	//sleep_ms(10);
-	//PRINTF("VEN Pin State: %d\n", gpio_get(GPIO_VEN_PIN));
-
-
-	//printf("tml reset\n");
-
-	return PICO_OK;
+	gpio_SetValue(PIN_VEN, HIGH);
+	Sleep(10);
+	gpio_SetValue(PIN_VEN, LOW);
+	Sleep(10);
+	gpio_SetValue(PIN_VEN, HIGH);
+	return SUCCESS;
 }
 
 static uint8_t tml_Tx(uint8_t *pBuff, uint16_t buffLen) {
 
-    // Attempt transmission twice, if second attempt fails then flag error
-    if (i2c_write_blocking(i2c0, BOARD_NXPNCI_I2C_ADDR, pBuff, buffLen, false) != PICO_OK)
+    if (i2c_Write(BOARD_NXPNCI_I2C_ADDR, pBuff, buffLen) != SUCCESS)
     {
-        sleep_ms(10);
-        if (i2c_write_blocking(i2c0, BOARD_NXPNCI_I2C_ADDR, pBuff, buffLen, false) != PICO_OK)
-        {
-            return PICO_ERROR_GENERIC;
-        }
+    	Sleep(10);
+    	if(i2c_Write(BOARD_NXPNCI_I2C_ADDR, pBuff, buffLen) != SUCCESS)
+    	{
+    		return ERROR;
+    	}
     }
-
-    return PICO_OK;
+	return SUCCESS;
 }
 
 static uint8_t tml_Rx(uint8_t *pBuff, uint16_t buffLen, uint16_t *pBytesRead) {
 	uint8_t ret;
 
-	ret = i2c_read_blocking(i2c0, BOARD_NXPNCI_I2C_ADDR, pBuff, 3, false);
-    NCI_PRINT_BUF("NCI << ", pBuff, 3);
-
-	if (ret != PICO_ERROR_GENERIC) {
+	ret = i2c_Read(BOARD_NXPNCI_I2C_ADDR, pBuff, 3);
+	if (ret == SUCCESS) {
 		if (pBuff[2] != 0) {
-			ret = i2c_read_blocking(i2c0, BOARD_NXPNCI_I2C_ADDR, &pBuff[3], pBuff[2], false);
-			if (ret != PICO_ERROR_GENERIC) {
+			ret = i2c_Read(BOARD_NXPNCI_I2C_ADDR, &pBuff[3], pBuff[2]);
+			if (ret == SUCCESS) {
 				*pBytesRead = pBuff[2] + 3;
 			} else {
 				*pBytesRead = 0;
@@ -88,23 +71,22 @@ static uint8_t tml_Rx(uint8_t *pBuff, uint16_t buffLen, uint16_t *pBytesRead) {
 	} else {
 		*pBytesRead = 0;
 	}
-
 	return ret;
 
 }
 
 static uint8_t tml_WaitForRx(uint16_t timeout) {
 	if (timeout == 0) {
-		while (gpio_get(GPIO_IRQ_PIN) == LOW);
+		while ((gpio_GetValue(PIN_IRQ) == LOW));
 	} else {
 		int16_t to = timeout;
-		while (gpio_get(GPIO_IRQ_PIN) == LOW) {
-			sleep_ms(10);
+		while ((gpio_GetValue(PIN_IRQ) == LOW)) {
+			Sleep(10);
 			to -= 10;
-			if (to <= 0) return PICO_ERROR_GENERIC;
+			if (to <= 0) return ERROR;
 		}
 	}
-	return PICO_OK;
+	return SUCCESS;
 }
 
 void tml_Connect(void) {
@@ -117,7 +99,7 @@ void tml_Disconnect(void) {
 }
 
 void tml_Send(uint8_t *pBuffer, uint16_t BufferLen, uint16_t *pBytesSent) {
-	if(tml_Tx(pBuffer, BufferLen) == PICO_ERROR_TIMEOUT)
+	if(tml_Tx(pBuffer, BufferLen) == ERROR)
 	{
 		*pBytesSent = 0;
 	}
@@ -130,11 +112,9 @@ void tml_Send(uint8_t *pBuffer, uint16_t BufferLen, uint16_t *pBytesSent) {
 void tml_Receive(uint8_t *pBuffer, uint16_t BufferLen, uint16_t *pBytes,
 		uint16_t timeout) {
 	if (tml_WaitForRx(timeout) == PICO_ERROR_TIMEOUT){
-		//printf("Timeout\n");
 		*pBytes = 0;
 	}
 	else
 		tml_Rx(pBuffer, BufferLen, pBytes);
-		//printf("Received\n");
 }
 

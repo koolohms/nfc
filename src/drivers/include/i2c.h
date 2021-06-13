@@ -12,29 +12,8 @@
 *                          arising from its use.
 */
 
-#include <time.h>
-#include "tool.h"
-#include "pico/time.h"
+#include <stdint.h>
 
-/* LOOP_REF and CLOCK_CALL_TIME must be adapted according to the CPU execution time */
-#define LOOP_REF		6800
-#define CLOCK_CALL_TIME 40
-
-void Sleep(unsigned int ms)
-{
-	sleep_ms(ms);
-//	int i;
-/* #ifndef DEBUG_SEMIHOSTING
-	for(i=0; i<(ms * LOOP_REF); i++) asm("nop");
-# else
-	if(ms <= CLOCK_CALL_TIME)
-	{
-		for(i=0; i<(ms * LOOP_REF); i++) asm("nop");
-	}
-	else
-	{
-		clock_t time = clock() + ((ms - CLOCK_CALL_TIME)/10);
-		while (clock() <= time);
-	}
-#endif */
-}
+extern void i2c_Init(void);
+extern uint8_t i2c_Read(uint8_t add, uint8_t *pRsp, uint16_t Rsp_size);
+extern uint8_t i2c_Write(uint8_t add, uint8_t *pCmd, uint16_t Cmd_size);

@@ -9,9 +9,9 @@
 #include <stdint.h>
 #include <stddef.h>
 
-#define DEBUG
+#define NCI_DEBUG
 
-#ifdef  DEBUG
+#ifdef  NCI_DEBUG
 #define PRINTF printf
 #endif  // DEBUG
 

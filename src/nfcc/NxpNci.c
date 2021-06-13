@@ -12,20 +12,10 @@
  *                          arising from its use.
  */
 
-#include <stdlib.h>
-#include <stdint.h>
-#include <pico.h>
-#include <time.h>
-#include <stdio.h>
-#include <string.h>
+#include "tool.h"
 #include "tml.h"
 #include "NxpNci.h"
 #include "Nfc_settings.h"
-#include "pico/time.h"
-#include "driver.h"
-#include "nfc_task.h"
-#include "P2P_NDEF.h"
-#include "tool.h"
 
 #define MAX_NCI_FRAME_SIZE    258
 
@@ -49,18 +39,13 @@ static bool NxpNci_CheckDevPres(void)
 
     tml_Send(NCICoreReset, sizeof(NCICoreReset), &NbBytes);
     NCI_PRINT_BUF("NCI >> ", NCICoreReset, NbBytes);
-    //printf("NCI >> %d, %d\n", sizeof(NCICoreReset), NbBytes);
     if (NbBytes != sizeof(NCICoreReset)) return NXPNCI_ERROR;
     tml_Receive(Answer, sizeof(Answer), &NbBytes, TIMEOUT_100MS);
     NCI_PRINT_BUF("NCI << ", Answer, NbBytes);
-    //printf("NCI << %d, %x, %x\n", NbBytes, Answer[0], Answer[1]);
     if ((NbBytes == 0) || (Answer[0] != 0x40) || (Answer[1] != 0x00)) return NXPNCI_ERROR;
-
-    //printf("I am here\n");
 
     /* Catch potential notifications */
     tml_Receive(Answer, sizeof(Answer), &NbBytes, TIMEOUT_100MS);
-    //printf("I am here 2\n");
     if (NbBytes != 0)
     {
         NCI_PRINT_BUF("NCI << ", Answer, NbBytes);
@@ -77,7 +62,6 @@ static bool NxpNci_CheckDevPres(void)
         }
     }
 
-    printf("success!\n");
     return NXPNCI_SUCCESS;
 }
 
@@ -627,14 +611,13 @@ bool NxpNci_Connect(void)
 
     /* Open connection to NXPNCI */
     tml_Connect();
-    //printf("tml connected\n");
 
     /* Loop until NXPNCI answers */
-    while(error = NxpNci_CheckDevPres() != NXPNCI_SUCCESS)
+    while(NxpNci_CheckDevPres() != NXPNCI_SUCCESS)
     {
         //printf("%d\n", error);
         if(i-- == 0) return NXPNCI_ERROR;
-        sleep_ms(500);
+        Sleep(500);
     }
 
     NxpNci_HostTransceive(NCICoreInit, sizeof(NCICoreInit), Answer, sizeof(Answer), &AnswerSize);

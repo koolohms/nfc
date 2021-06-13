@@ -15,12 +15,9 @@
 #include <stdio.h>
 #include <stdint.h>
 #include <string.h>
-#include "Nfc.h"
-#include "nfc_task.h"
-#include "driver.h"
-#include "ndef_helper.h"
-#include "P2P_NDEF.h"
 #include "tool.h"
+#include "Nfc.h"
+#include "ndef_helper.h"
 
 //#define RW_NDEF_WRITING
 //#define RW_RAW_EXCHANGE

@@ -4,6 +4,8 @@ add_library(drivers INTERFACE)
 # Target the sources that are to be included in this library
 target_sources(drivers INTERFACE
         ${CMAKE_CURRENT_LIST_DIR}/tool.c
+        ${CMAKE_CURRENT_LIST_DIR}/gpio.c
+        ${CMAKE_CURRENT_LIST_DIR}/i2c.c
 )
 
 # Add include files
