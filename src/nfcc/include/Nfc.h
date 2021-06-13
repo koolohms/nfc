@@ -12,7 +12,6 @@
 *                          arising from its use.
 */
 
-#include <stdint.h>
 #include <stdbool.h>
 
 /***** NFC dedicated interface ****************************************/

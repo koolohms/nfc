@@ -96,9 +96,11 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "../src/led"
   "../src/test/include"
   "../src/nfcc/include"
+  "../src/drivers/include"
   "../src/gpio"
   )
 set(CMAKE_DEPENDS_CHECK_C
+  "/home/ddreise/pico/nfc/src/drivers/tool.c" "/home/ddreise/pico/nfc/build/src/CMakeFiles/main.dir/drivers/tool.c.obj"
   "/home/ddreise/pico/nfc/src/gpio/gpio.c" "/home/ddreise/pico/nfc/build/src/CMakeFiles/main.dir/gpio/gpio.c.obj"
   "/home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.c" "/home/ddreise/pico/nfc/build/src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.c.obj"
   "/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c" "/home/ddreise/pico/nfc/build/src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj"
@@ -240,6 +242,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../src/led"
   "../src/test/include"
   "../src/nfcc/include"
+  "../src/drivers/include"
   "../src/gpio"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
@@ -323,6 +326,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../src/led"
   "../src/test/include"
   "../src/nfcc/include"
+  "../src/drivers/include"
   "../src/gpio"
   )
 

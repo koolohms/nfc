@@ -12,6 +12,7 @@
 *                          arising from its use.
 */
 
+#include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
 #include <pico.h>
@@ -21,25 +22,34 @@
 #include "hardware/i2c.h"
 #include "hardware/gpio.h"
 #include "../gpio/gpio.h"
+#include "driver.h"
+#include "tool.h"
+#include "NxpNci.h"
 
 
 static uint8_t tml_Init(void) {
-	/* Configure GPIO 6 for IRQ pin as input */
-    gpio_set_input_enabled(GPIO_IRQ_PIN, GPIO_IN);
-    
-	/* Configure GPIO 7 for VEN pin as output*/
-    //? to output by default ??S?
+	
+	//gpios_init(); already initialized
+	//printf("tml initialized\n");
     
 	return PICO_OK;
 }
 
 static uint8_t tml_Reset(void) {
 	/* Apply VEN reset */
-    gpio_set_mask(GPIO_VEN_PIN_MASK);
+    gpio_put(GPIO_VEN_PIN, HIGH);
 	sleep_ms(10);
-	gpio_clr_mask(GPIO_VEN_PIN_MASK);
+	//PRINTF("VEN Pin State: %d\n", gpio_get(GPIO_VEN_PIN));
+	gpio_put(GPIO_VEN_PIN, LOW);
 	sleep_ms(10);
-    gpio_set_mask(GPIO_VEN_PIN_MASK);
+	//PRINTF("VEN Pin State: %d\n", gpio_get(GPIO_VEN_PIN));
+    gpio_put(GPIO_VEN_PIN, HIGH);
+	//sleep_ms(10);
+	//PRINTF("VEN Pin State: %d\n", gpio_get(GPIO_VEN_PIN));
+
+
+	//printf("tml reset\n");
+
 	return PICO_OK;
 }
 
@@ -62,11 +72,12 @@ static uint8_t tml_Rx(uint8_t *pBuff, uint16_t buffLen, uint16_t *pBytesRead) {
 	uint8_t ret;
 
 	ret = i2c_read_blocking(i2c0, BOARD_NXPNCI_I2C_ADDR, pBuff, 3, false);
+    NCI_PRINT_BUF("NCI << ", pBuff, 3);
 
-	if (ret == PICO_OK) {
+	if (ret != PICO_ERROR_GENERIC) {
 		if (pBuff[2] != 0) {
 			ret = i2c_read_blocking(i2c0, BOARD_NXPNCI_I2C_ADDR, &pBuff[3], pBuff[2], false);
-			if (ret == PICO_OK) {
+			if (ret != PICO_ERROR_GENERIC) {
 				*pBytesRead = pBuff[2] + 3;
 			} else {
 				*pBytesRead = 0;
@@ -118,9 +129,12 @@ void tml_Send(uint8_t *pBuffer, uint16_t BufferLen, uint16_t *pBytesSent) {
 
 void tml_Receive(uint8_t *pBuffer, uint16_t BufferLen, uint16_t *pBytes,
 		uint16_t timeout) {
-	if (tml_WaitForRx(timeout) == PICO_ERROR_TIMEOUT)
+	if (tml_WaitForRx(timeout) == PICO_ERROR_TIMEOUT){
+		//printf("Timeout\n");
 		*pBytes = 0;
+	}
 	else
 		tml_Rx(pBuffer, BufferLen, pBytes);
+		//printf("Received\n");
 }
 

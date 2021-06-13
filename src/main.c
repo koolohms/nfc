@@ -44,7 +44,8 @@ int main(void)
   board_init();             // Initialize the board for led and uart
   gpios_init();             // Initialize GPIOs
 
-  i2c_init(i2c0, 400000);   // Initialize I2C. Set as 400 kbps (can't go faster than this because the Pico is limited to this)
+  i2c_init(i2c0, 100000);   // Initialize I2C. Set as 400 kbps (can't go faster than this because the Pico is limited to this)
+  
   //tusb_init();            // Initialize TinyUSB
 
   printf("\n--------------------- NEW LOG ---------------------\n");
@@ -52,8 +53,8 @@ int main(void)
 
    while (1)
   {
-    //task_nfc();               // nfc task
-    tud_task();             // usb task
+    task_nfc();               // nfc task
+    //tud_task();             // usb task
     //led_blinking_task();    // led task
   } 
     

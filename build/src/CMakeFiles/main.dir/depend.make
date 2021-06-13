@@ -94,6 +94,26 @@ src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj: /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S
 
+src/CMakeFiles/main.dir/drivers/tool.c.obj: ../src/drivers/include/tool.h
+src/CMakeFiles/main.dir/drivers/tool.c.obj: ../src/drivers/tool.c
+src/CMakeFiles/main.dir/drivers/tool.c.obj: /home/ddreise/pico/pico-sdk/src/boards/include/boards/pico.h
+src/CMakeFiles/main.dir/drivers/tool.c.obj: /home/ddreise/pico/pico-sdk/src/common/pico_base/include/pico.h
+src/CMakeFiles/main.dir/drivers/tool.c.obj: /home/ddreise/pico/pico-sdk/src/common/pico_base/include/pico/assert.h
+src/CMakeFiles/main.dir/drivers/tool.c.obj: /home/ddreise/pico/pico-sdk/src/common/pico_base/include/pico/config.h
+src/CMakeFiles/main.dir/drivers/tool.c.obj: /home/ddreise/pico/pico-sdk/src/common/pico_base/include/pico/error.h
+src/CMakeFiles/main.dir/drivers/tool.c.obj: /home/ddreise/pico/pico-sdk/src/common/pico_base/include/pico/types.h
+src/CMakeFiles/main.dir/drivers/tool.c.obj: /home/ddreise/pico/pico-sdk/src/common/pico_time/include/pico/time.h
+src/CMakeFiles/main.dir/drivers/tool.c.obj: /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h
+src/CMakeFiles/main.dir/drivers/tool.c.obj: /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h
+src/CMakeFiles/main.dir/drivers/tool.c.obj: /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h
+src/CMakeFiles/main.dir/drivers/tool.c.obj: /home/ddreise/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h
+src/CMakeFiles/main.dir/drivers/tool.c.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h
+src/CMakeFiles/main.dir/drivers/tool.c.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h
+src/CMakeFiles/main.dir/drivers/tool.c.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
+src/CMakeFiles/main.dir/drivers/tool.c.obj: generated/pico_base/pico/config_autogen.h
+src/CMakeFiles/main.dir/drivers/tool.c.obj: generated/pico_base/pico/version.h
+
+src/CMakeFiles/main.dir/gpio/gpio.c.obj: ../src/drivers/include/tool.h
 src/CMakeFiles/main.dir/gpio/gpio.c.obj: ../src/gpio/gpio.c
 src/CMakeFiles/main.dir/gpio/gpio.c.obj: ../src/gpio/gpio.h
 src/CMakeFiles/main.dir/gpio/gpio.c.obj: /home/ddreise/pico/pico-sdk/src/boards/include/boards/pico.h
@@ -1775,12 +1795,15 @@ src/CMakeFiles/main.dir/main.c.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/p
 src/CMakeFiles/main.dir/main.c.obj: generated/pico_base/pico/config_autogen.h
 src/CMakeFiles/main.dir/main.c.obj: generated/pico_base/pico/version.h
 
+src/CMakeFiles/main.dir/nfcc/NxpNci.c.obj: ../src/drivers/include/tool.h
 src/CMakeFiles/main.dir/nfcc/NxpNci.c.obj: ../src/nfcc/include/Nfc.h
 src/CMakeFiles/main.dir/nfcc/NxpNci.c.obj: ../src/nfcc/include/Nfc_settings.h
 src/CMakeFiles/main.dir/nfcc/NxpNci.c.obj: ../src/nfcc/include/NxpNci.h
 src/CMakeFiles/main.dir/nfcc/NxpNci.c.obj: ../src/nfcc/include/P2P_NDEF.h
-src/CMakeFiles/main.dir/nfcc/NxpNci.c.obj: ../src/nfcc/NxpNci.c
+src/CMakeFiles/main.dir/nfcc/NxpNci.c.obj: ../src/nfcc/include/driver.h
+src/CMakeFiles/main.dir/nfcc/NxpNci.c.obj: ../src/nfcc/include/nfc_task.h
 src/CMakeFiles/main.dir/nfcc/NxpNci.c.obj: ../src/nfcc/include/tml.h
+src/CMakeFiles/main.dir/nfcc/NxpNci.c.obj: ../src/nfcc/NxpNci.c
 src/CMakeFiles/main.dir/nfcc/NxpNci.c.obj: /home/ddreise/pico/pico-sdk/src/boards/include/boards/pico.h
 src/CMakeFiles/main.dir/nfcc/NxpNci.c.obj: /home/ddreise/pico/pico-sdk/src/common/pico_base/include/pico.h
 src/CMakeFiles/main.dir/nfcc/NxpNci.c.obj: /home/ddreise/pico/pico-sdk/src/common/pico_base/include/pico/assert.h
@@ -1799,15 +1822,43 @@ src/CMakeFiles/main.dir/nfcc/NxpNci.c.obj: generated/pico_base/pico/config_autog
 src/CMakeFiles/main.dir/nfcc/NxpNci.c.obj: generated/pico_base/pico/version.h
 
 src/CMakeFiles/main.dir/nfcc/P2P_NDEF.c.obj: ../src/nfcc/include/P2P_NDEF.h
+src/CMakeFiles/main.dir/nfcc/P2P_NDEF.c.obj: ../src/nfcc/include/driver.h
+src/CMakeFiles/main.dir/nfcc/P2P_NDEF.c.obj: ../src/nfcc/include/nfc_task.h
 src/CMakeFiles/main.dir/nfcc/P2P_NDEF.c.obj: ../src/nfcc/P2P_NDEF.c
+src/CMakeFiles/main.dir/nfcc/P2P_NDEF.c.obj: /home/ddreise/pico/pico-sdk/src/boards/include/boards/pico.h
+src/CMakeFiles/main.dir/nfcc/P2P_NDEF.c.obj: /home/ddreise/pico/pico-sdk/src/common/pico_base/include/pico.h
+src/CMakeFiles/main.dir/nfcc/P2P_NDEF.c.obj: /home/ddreise/pico/pico-sdk/src/common/pico_base/include/pico/assert.h
+src/CMakeFiles/main.dir/nfcc/P2P_NDEF.c.obj: /home/ddreise/pico/pico-sdk/src/common/pico_base/include/pico/config.h
+src/CMakeFiles/main.dir/nfcc/P2P_NDEF.c.obj: /home/ddreise/pico/pico-sdk/src/common/pico_base/include/pico/error.h
+src/CMakeFiles/main.dir/nfcc/P2P_NDEF.c.obj: /home/ddreise/pico/pico-sdk/src/common/pico_base/include/pico/types.h
+src/CMakeFiles/main.dir/nfcc/P2P_NDEF.c.obj: /home/ddreise/pico/pico-sdk/src/common/pico_time/include/pico/time.h
+src/CMakeFiles/main.dir/nfcc/P2P_NDEF.c.obj: /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h
+src/CMakeFiles/main.dir/nfcc/P2P_NDEF.c.obj: /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h
+src/CMakeFiles/main.dir/nfcc/P2P_NDEF.c.obj: /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h
+src/CMakeFiles/main.dir/nfcc/P2P_NDEF.c.obj: /home/ddreise/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h
+src/CMakeFiles/main.dir/nfcc/P2P_NDEF.c.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h
+src/CMakeFiles/main.dir/nfcc/P2P_NDEF.c.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h
+src/CMakeFiles/main.dir/nfcc/P2P_NDEF.c.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
+src/CMakeFiles/main.dir/nfcc/P2P_NDEF.c.obj: generated/pico_base/pico/config_autogen.h
+src/CMakeFiles/main.dir/nfcc/P2P_NDEF.c.obj: generated/pico_base/pico/version.h
 
 src/CMakeFiles/main.dir/nfcc/ndef_helper.c.obj: ../src/nfcc/include/ndef_helper.h
 src/CMakeFiles/main.dir/nfcc/ndef_helper.c.obj: ../src/nfcc/ndef_helper.c
 
+src/CMakeFiles/main.dir/nfcc/nfc_task.c.obj: ../src/drivers/include/tool.h
 src/CMakeFiles/main.dir/nfcc/nfc_task.c.obj: ../src/nfcc/include/Nfc.h
+src/CMakeFiles/main.dir/nfcc/nfc_task.c.obj: ../src/nfcc/include/P2P_NDEF.h
+src/CMakeFiles/main.dir/nfcc/nfc_task.c.obj: ../src/nfcc/include/driver.h
 src/CMakeFiles/main.dir/nfcc/nfc_task.c.obj: ../src/nfcc/include/ndef_helper.h
+src/CMakeFiles/main.dir/nfcc/nfc_task.c.obj: ../src/nfcc/include/nfc_task.h
 src/CMakeFiles/main.dir/nfcc/nfc_task.c.obj: ../src/nfcc/nfc_task.c
 
+src/CMakeFiles/main.dir/nfcc/tml.c.obj: ../src/drivers/include/tool.h
+src/CMakeFiles/main.dir/nfcc/tml.c.obj: ../src/nfcc/include/Nfc.h
+src/CMakeFiles/main.dir/nfcc/tml.c.obj: ../src/nfcc/include/NxpNci.h
+src/CMakeFiles/main.dir/nfcc/tml.c.obj: ../src/nfcc/include/P2P_NDEF.h
+src/CMakeFiles/main.dir/nfcc/tml.c.obj: ../src/nfcc/include/driver.h
+src/CMakeFiles/main.dir/nfcc/tml.c.obj: ../src/nfcc/include/nfc_task.h
 src/CMakeFiles/main.dir/nfcc/tml.c.obj: ../src/gpio/gpio.h
 src/CMakeFiles/main.dir/nfcc/tml.c.obj: ../src/nfcc/include/driver.h
 src/CMakeFiles/main.dir/nfcc/tml.c.obj: ../src/nfcc/include/tml.h

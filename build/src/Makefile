@@ -140,6 +140,33 @@ main/fast:
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+drivers/tool.obj: drivers/tool.c.obj
+
+.PHONY : drivers/tool.obj
+
+# target to build an object file
+drivers/tool.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/drivers/tool.c.obj
+.PHONY : drivers/tool.c.obj
+
+drivers/tool.i: drivers/tool.c.i
+
+.PHONY : drivers/tool.i
+
+# target to preprocess a source file
+drivers/tool.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/drivers/tool.c.i
+.PHONY : drivers/tool.c.i
+
+drivers/tool.s: drivers/tool.c.s
+
+.PHONY : drivers/tool.s
+
+# target to generate assembly for a file
+drivers/tool.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/drivers/tool.c.s
+.PHONY : drivers/tool.c.s
+
 gpio/gpio.obj: gpio/gpio.c.obj
 
 .PHONY : gpio/gpio.obj
@@ -1950,6 +1977,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... ELF2UF2Build"
 	@echo "... main"
+	@echo "... drivers/tool.obj"
+	@echo "... drivers/tool.i"
+	@echo "... drivers/tool.s"
 	@echo "... gpio/gpio.obj"
 	@echo "... gpio/gpio.i"
 	@echo "... gpio/gpio.s"

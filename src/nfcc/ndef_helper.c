@@ -15,7 +15,9 @@
 #include <stdio.h>
 #include <stdint.h>
 #include <string.h>
-#include "include/ndef_helper.h"
+//#include "driver.h"
+#include "ndef_helper.h"
+//#include "tool.h"
 
 const char* ndef_helper_WifiAuth(unsigned char auth)
 {

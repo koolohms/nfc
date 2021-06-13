@@ -12,4 +12,5 @@ target_include_directories(gpio INTERFACE ${CMAKE_CURRENT_LIST_DIR})
 # Target other library dependencies
 target_link_libraries(gpio INTERFACE
         pico_stdlib
+        hardware_irq
 )

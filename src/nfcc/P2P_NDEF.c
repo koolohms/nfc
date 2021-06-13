@@ -12,9 +12,17 @@
 *                          arising from its use.
 */
 
+#include <stdio.h>
+#include <string.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stddef.h>
+#include <pico/time.h>
+#include "nfc_task.h"
+
 #ifdef P2P_SUPPORT
-#include <tool.h>
-#include <P2P_NDEF.h>
+#include "P2P_NDEF.h"
+#include "driver.h"
 
 /* Well-known LLCP SAP Values */
 #define SAP_SDP         1
@@ -351,7 +359,8 @@ void P2P_NDEF_Next(unsigned char *pCmd, unsigned short Cmd_size, unsigned char *
                 P2P_SnepClient_DelayCount = 1;
                 eP2P_SnepClient_State = DelayingPush;
                 /* Wait then send a SYMM */
-                Sleep (SYMM_FREQ);
+                
+                sleep_ms(SYMM_FREQ);
                 memcpy(pRsp, LLCP_SYMM, sizeof(LLCP_SYMM));
                 *pRsp_size = sizeof(LLCP_SYMM);
             }
@@ -371,7 +380,8 @@ void P2P_NDEF_Next(unsigned char *pCmd, unsigned short Cmd_size, unsigned char *
             {
                 P2P_SnepClient_DelayCount++;
                 /* Wait then send a SYMM */
-                Sleep (SYMM_FREQ);
+                sleep_ms(SYMM_FREQ);
+                
                 memcpy(pRsp, LLCP_SYMM, sizeof(LLCP_SYMM));
                 *pRsp_size = sizeof(LLCP_SYMM);
             }
@@ -433,7 +443,7 @@ void P2P_NDEF_Next(unsigned char *pCmd, unsigned short Cmd_size, unsigned char *
 
         default:
             /* Wait then send SYMM */
-            Sleep (SYMM_FREQ);
+            sleep_ms(SYMM_FREQ);
             memcpy(pRsp, LLCP_SYMM, sizeof(LLCP_SYMM));
             *pRsp_size = sizeof(LLCP_SYMM);
             break;

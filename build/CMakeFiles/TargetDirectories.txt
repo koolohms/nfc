@@ -141,6 +141,8 @@
 /home/ddreise/pico/nfc/build/src/CMakeFiles/edit_cache.dir
 /home/ddreise/pico/nfc/build/src/CMakeFiles/ELF2UF2Build.dir
 /home/ddreise/pico/nfc/build/src/CMakeFiles/main.dir
+/home/ddreise/pico/nfc/build/src/drivers/CMakeFiles/rebuild_cache.dir
+/home/ddreise/pico/nfc/build/src/drivers/CMakeFiles/edit_cache.dir
 /home/ddreise/pico/nfc/build/src/usb/CMakeFiles/rebuild_cache.dir
 /home/ddreise/pico/nfc/build/src/usb/CMakeFiles/edit_cache.dir
 /home/ddreise/pico/nfc/build/src/led/CMakeFiles/rebuild_cache.dir

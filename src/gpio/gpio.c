@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include "gpio.h"
 #include "pico/stdlib.h"
+#include "tool.h"
 
 
 void gpios_init(void){
@@ -28,8 +29,13 @@ void gpios_init(void){
     // NFC VEN PIN
     gpio_set_dir(GPIO_VEN_PIN, true);   // Set to output
 
-    // NFC IRQ PIN --> NOT REQUIRED
-/*     gpio_set_input_enabled(GPIO_IRQ_PIN, true);     // Enable input
+    // NFC IRQ PIN
+    gpio_set_input_enabled(GPIO_IRQ_PIN, true);     // Enable input
     gpio_set_dir(GPIO_IRQ_PIN, false);              // Set to input
-    gpio_set_irq_enabled(GPIO_IRQ_PIN, true);       // Enable IRQ */
+    gpio_set_irq_enabled(GPIO_IRQ_PIN, HIGH, EDGE_HIGH);       // Enable IRQ
+
+    #ifdef  DEBUG
+    printf("GPIO:   VEN pin direction = %d\n", gpio_get_dir(GPIO_VEN_PIN));
+    printf("GPIO:   IRQ status = %d", gpio_get(GPIO_IRQ_PIN));
+    #endif  // DEBUG
 } 

@@ -18,10 +18,14 @@
 #include <time.h>
 #include <stdio.h>
 #include <string.h>
-#include "include/tml.h"
-#include <NxpNci.h>
-#include <Nfc_settings.h>
+#include "tml.h"
+#include "NxpNci.h"
+#include "Nfc_settings.h"
 #include "pico/time.h"
+#include "driver.h"
+#include "nfc_task.h"
+#include "P2P_NDEF.h"
+#include "tool.h"
 
 #define MAX_NCI_FRAME_SIZE    258
 
@@ -45,16 +49,22 @@ static bool NxpNci_CheckDevPres(void)
 
     tml_Send(NCICoreReset, sizeof(NCICoreReset), &NbBytes);
     NCI_PRINT_BUF("NCI >> ", NCICoreReset, NbBytes);
+    //printf("NCI >> %d, %d\n", sizeof(NCICoreReset), NbBytes);
     if (NbBytes != sizeof(NCICoreReset)) return NXPNCI_ERROR;
     tml_Receive(Answer, sizeof(Answer), &NbBytes, TIMEOUT_100MS);
     NCI_PRINT_BUF("NCI << ", Answer, NbBytes);
+    //printf("NCI << %d, %x, %x\n", NbBytes, Answer[0], Answer[1]);
     if ((NbBytes == 0) || (Answer[0] != 0x40) || (Answer[1] != 0x00)) return NXPNCI_ERROR;
+
+    //printf("I am here\n");
 
     /* Catch potential notifications */
     tml_Receive(Answer, sizeof(Answer), &NbBytes, TIMEOUT_100MS);
+    //printf("I am here 2\n");
     if (NbBytes != 0)
     {
         NCI_PRINT_BUF("NCI << ", Answer, NbBytes);
+        //printf("NCI << %d, ,%d, %d\n", Answer[0], Answer[1], NbBytes);
         /* Is CORE_GENERIC_ERROR_NTF ? */
         if ((Answer[0] == 0x60) && (Answer[1] == 0x07))
         {
@@ -67,6 +77,7 @@ static bool NxpNci_CheckDevPres(void)
         }
     }
 
+    printf("success!\n");
     return NXPNCI_SUCCESS;
 }
 
@@ -612,13 +623,16 @@ bool NxpNci_Connect(void)
     uint8_t NCICoreInit[] = {0x20, 0x01, 0x00};
     uint8_t Answer[MAX_NCI_FRAME_SIZE];
     uint16_t AnswerSize;
+    uint8_t error;
 
     /* Open connection to NXPNCI */
-    tml_Connect ();
+    tml_Connect();
+    //printf("tml connected\n");
 
     /* Loop until NXPNCI answers */
-    while(NxpNci_CheckDevPres() != NXPNCI_SUCCESS)
+    while(error = NxpNci_CheckDevPres() != NXPNCI_SUCCESS)
     {
+        //printf("%d\n", error);
         if(i-- == 0) return NXPNCI_ERROR;
         sleep_ms(500);
     }
