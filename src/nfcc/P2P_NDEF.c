@@ -353,7 +353,7 @@ void P2P_NDEF_Next(unsigned char *pCmd, unsigned short Cmd_size, unsigned char *
                 eP2P_SnepClient_State = DelayingPush;
                 /* Wait then send a SYMM */
                 
-                sleep_ms(SYMM_FREQ);
+                Sleep(SYMM_FREQ);
                 memcpy(pRsp, LLCP_SYMM, sizeof(LLCP_SYMM));
                 *pRsp_size = sizeof(LLCP_SYMM);
             }
@@ -373,7 +373,7 @@ void P2P_NDEF_Next(unsigned char *pCmd, unsigned short Cmd_size, unsigned char *
             {
                 P2P_SnepClient_DelayCount++;
                 /* Wait then send a SYMM */
-                sleep_ms(SYMM_FREQ);
+                Sleep(SYMM_FREQ);
                 
                 memcpy(pRsp, LLCP_SYMM, sizeof(LLCP_SYMM));
                 *pRsp_size = sizeof(LLCP_SYMM);
@@ -436,7 +436,7 @@ void P2P_NDEF_Next(unsigned char *pCmd, unsigned short Cmd_size, unsigned char *
 
         default:
             /* Wait then send SYMM */
-            sleep_ms(SYMM_FREQ);
+            Sleep(SYMM_FREQ);
             memcpy(pRsp, LLCP_SYMM, sizeof(LLCP_SYMM));
             *pRsp_size = sizeof(LLCP_SYMM);
             break;

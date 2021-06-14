@@ -37,6 +37,7 @@ static uint8_t tml_Reset(void) {
 	gpio_SetValue(PIN_VEN, LOW);
 	Sleep(10);
 	gpio_SetValue(PIN_VEN, HIGH);
+	Sleep(10);
 	return SUCCESS;
 }
 

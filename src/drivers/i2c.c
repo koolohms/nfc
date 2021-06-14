@@ -37,13 +37,13 @@ void i2c_Init(void)
 uint8_t i2c_Read(uint8_t add, uint8_t *pRsp, uint16_t Rsp_size)
 {
     uint16_t tmp = i2c_read_blocking(DEFAULT_I2C, add, pRsp, Rsp_size, false);
-	//uint16_t tmp = Chip_I2C_MasterRead(DEFAULT_I2C, add, pRsp, Rsp_size);
-	return (tmp == Rsp_size ? SUCCESS : ERROR);
+	
+    return (tmp == Rsp_size ? SUCCESS : ERROR);
 }
 
 uint8_t i2c_Write(uint8_t add, uint8_t *pCmd, uint16_t Cmd_size)
 {
-    uint16_t tmp = i2c_write_blocking(DEFAULT_I2C, add, pCmd, Cmd_size, true);
-	//uint16_t tmp = Chip_I2C_MasterSend(DEFAULT_I2C, add, pCmd, Cmd_size);
-	return (tmp == Cmd_size ? SUCCESS : ERROR);
+    uint16_t tmp = i2c_write_blocking(DEFAULT_I2C, add, pCmd, Cmd_size, false);
+	
+    return (tmp == Cmd_size ? SUCCESS : ERROR);
 }

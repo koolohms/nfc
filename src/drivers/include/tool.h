@@ -15,6 +15,6 @@
 #define PRINTF printf
 #endif  // DEBUG
 
-extern void Sleep (unsigned int ms);
+extern void Sleep(unsigned int ms);
 
 #endif  // TOOL_H

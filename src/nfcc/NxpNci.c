@@ -45,22 +45,22 @@ static bool NxpNci_CheckDevPres(void)
     if ((NbBytes == 0) || (Answer[0] != 0x40) || (Answer[1] != 0x00)) return NXPNCI_ERROR;
 
     /* Catch potential notifications */
-    tml_Receive(Answer, sizeof(Answer), &NbBytes, TIMEOUT_100MS);
-    if (NbBytes != 0)
-    {
-        NCI_PRINT_BUF("NCI << ", Answer, NbBytes);
-        //printf("NCI << %d, ,%d, %d\n", Answer[0], Answer[1], NbBytes);
-        /* Is CORE_GENERIC_ERROR_NTF ? */
-        if ((Answer[0] == 0x60) && (Answer[1] == 0x07))
-        {
-            /* Is PN7150B0HN/C11004 Anti-tearing recovery procedure triggered ? */
-            if ((Answer[3] == 0xE6)) gRfSettingsRestored_flag = true;
-        }
-        else
-        {
-            return NXPNCI_ERROR;
-        }
-    }
+    // tml_Receive(Answer, sizeof(Answer), &NbBytes, TIMEOUT_100MS);
+    // if (NbBytes != 0)
+    // {
+    //     NCI_PRINT_BUF("NCI << ", Answer, NbBytes);
+    //     //printf("NCI << %d, ,%d, %d\n", Answer[0], Answer[1], NbBytes);
+    //     /* Is CORE_GENERIC_ERROR_NTF ? */
+    //     if ((Answer[0] == 0x60) && (Answer[1] == 0x07))
+    //     {
+    //         /* Is PN7150B0HN/C11004 Anti-tearing recovery procedure triggered ? */
+    //         if ((Answer[3] == 0xE6)) gRfSettingsRestored_flag = true;
+    //     }
+    //     else
+    //     {
+    //         return NXPNCI_ERROR;
+    //     }
+    // }
 
     return NXPNCI_SUCCESS;
 }
