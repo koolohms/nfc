@@ -13,19 +13,20 @@
 */
 
 #include <Nfc.h>
+#include "tool.h"
 
-#ifdef CARDEMU_SUPPORT
+/* #ifdef CARDEMU_SUPPORT
 #include <T4T_NDEF_emu.h>
-#endif
+#endif */
 
 #ifdef P2P_SUPPORT
 #include <P2P_NDEF.h>
 #endif
 
-#ifdef RW_SUPPORT
+/* #ifdef RW_SUPPORT
 #include <RW_NDEF.h>
 #include <RW_NDEF_T3T.h>
-#endif
+#endif */
 
 #define NXPNCI_SUCCESS      NFC_SUCCESS
 #define NXPNCI_ERROR        NFC_ERROR

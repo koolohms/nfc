@@ -13,17 +13,20 @@ target_link_libraries(main PRIVATE
         tinyusb_board
         led
         test
-        nfc
+        nfcc
         pico_time
         pico_mem_ops
-        gpio
+        drivers
         )
+
+# Declare global defines
+target_compile_definitions(main PRIVATE P2P_SUPPORT)
 
 # create map/bin/hex file etc.
 pico_add_extra_outputs(main)
 
+add_subdirectory(drivers)
 add_subdirectory(usb)
 add_subdirectory(led)
 add_subdirectory(test)
 add_subdirectory(nfcc)
-add_subdirectory(gpio)

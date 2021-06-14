@@ -25,6 +25,7 @@ set(CMAKE_TARGET_DEFINITIONS_ASM
   "CFG_TUSB_DEBUG=0"
   "CFG_TUSB_MCU=OPT_MCU_RP2040"
   "CFG_TUSB_OS=OPT_OS_PICO"
+  "P2P_SUPPORT"
   "PICO_BIT_OPS_PICO=1"
   "PICO_BOARD=\"pico\""
   "PICO_BUILD=1"
@@ -96,10 +97,12 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "../src/led"
   "../src/test/include"
   "../src/nfcc/include"
-  "../src/gpio"
+  "../src/drivers/include"
   )
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/ddreise/pico/nfc/src/gpio/gpio.c" "/home/ddreise/pico/nfc/build/src/CMakeFiles/main.dir/gpio/gpio.c.obj"
+  "/home/ddreise/pico/nfc/src/drivers/gpio.c" "/home/ddreise/pico/nfc/build/src/CMakeFiles/main.dir/drivers/gpio.c.obj"
+  "/home/ddreise/pico/nfc/src/drivers/i2c.c" "/home/ddreise/pico/nfc/build/src/CMakeFiles/main.dir/drivers/i2c.c.obj"
+  "/home/ddreise/pico/nfc/src/drivers/tool.c" "/home/ddreise/pico/nfc/build/src/CMakeFiles/main.dir/drivers/tool.c.obj"
   "/home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.c" "/home/ddreise/pico/nfc/build/src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.c.obj"
   "/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c" "/home/ddreise/pico/nfc/build/src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj"
   "/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c" "/home/ddreise/pico/nfc/build/src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj"
@@ -169,6 +172,7 @@ set(CMAKE_TARGET_DEFINITIONS_C
   "CFG_TUSB_DEBUG=0"
   "CFG_TUSB_MCU=OPT_MCU_RP2040"
   "CFG_TUSB_OS=OPT_OS_PICO"
+  "P2P_SUPPORT"
   "PICO_BIT_OPS_PICO=1"
   "PICO_BOARD=\"pico\""
   "PICO_BUILD=1"
@@ -240,7 +244,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../src/led"
   "../src/test/include"
   "../src/nfcc/include"
-  "../src/gpio"
+  "../src/drivers/include"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp" "/home/ddreise/pico/nfc/build/src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj"
@@ -252,6 +256,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
   "CFG_TUSB_DEBUG=0"
   "CFG_TUSB_MCU=OPT_MCU_RP2040"
   "CFG_TUSB_OS=OPT_OS_PICO"
+  "P2P_SUPPORT"
   "PICO_BIT_OPS_PICO=1"
   "PICO_BOARD=\"pico\""
   "PICO_BUILD=1"
@@ -323,7 +328,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../src/led"
   "../src/test/include"
   "../src/nfcc/include"
-  "../src/gpio"
+  "../src/drivers/include"
   )
 
 # Targets to which this target links.

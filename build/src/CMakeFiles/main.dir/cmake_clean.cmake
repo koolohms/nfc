@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/main.dir/gpio/gpio.c.obj"
+  "CMakeFiles/main.dir/drivers/gpio.c.obj"
+  "CMakeFiles/main.dir/drivers/i2c.c.obj"
+  "CMakeFiles/main.dir/drivers/tool.c.obj"
   "CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.c.obj"
   "CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj"
   "CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj"

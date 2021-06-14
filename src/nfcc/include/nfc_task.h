@@ -1,4 +1,7 @@
 /* nfc_task.h
 */
 
-void nfc_task();
+//#define P2P_SUPPORT
+#define NCI_DEBUG
+
+void task_nfc(void);

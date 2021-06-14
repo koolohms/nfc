@@ -140,32 +140,86 @@ main/fast:
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/build
 .PHONY : main/fast
 
-gpio/gpio.obj: gpio/gpio.c.obj
+drivers/gpio.obj: drivers/gpio.c.obj
 
-.PHONY : gpio/gpio.obj
+.PHONY : drivers/gpio.obj
 
 # target to build an object file
-gpio/gpio.c.obj:
-	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/gpio/gpio.c.obj
-.PHONY : gpio/gpio.c.obj
+drivers/gpio.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/drivers/gpio.c.obj
+.PHONY : drivers/gpio.c.obj
 
-gpio/gpio.i: gpio/gpio.c.i
+drivers/gpio.i: drivers/gpio.c.i
 
-.PHONY : gpio/gpio.i
+.PHONY : drivers/gpio.i
 
 # target to preprocess a source file
-gpio/gpio.c.i:
-	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/gpio/gpio.c.i
-.PHONY : gpio/gpio.c.i
+drivers/gpio.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/drivers/gpio.c.i
+.PHONY : drivers/gpio.c.i
 
-gpio/gpio.s: gpio/gpio.c.s
+drivers/gpio.s: drivers/gpio.c.s
 
-.PHONY : gpio/gpio.s
+.PHONY : drivers/gpio.s
 
 # target to generate assembly for a file
-gpio/gpio.c.s:
-	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/gpio/gpio.c.s
-.PHONY : gpio/gpio.c.s
+drivers/gpio.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/drivers/gpio.c.s
+.PHONY : drivers/gpio.c.s
+
+drivers/i2c.obj: drivers/i2c.c.obj
+
+.PHONY : drivers/i2c.obj
+
+# target to build an object file
+drivers/i2c.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/drivers/i2c.c.obj
+.PHONY : drivers/i2c.c.obj
+
+drivers/i2c.i: drivers/i2c.c.i
+
+.PHONY : drivers/i2c.i
+
+# target to preprocess a source file
+drivers/i2c.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/drivers/i2c.c.i
+.PHONY : drivers/i2c.c.i
+
+drivers/i2c.s: drivers/i2c.c.s
+
+.PHONY : drivers/i2c.s
+
+# target to generate assembly for a file
+drivers/i2c.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/drivers/i2c.c.s
+.PHONY : drivers/i2c.c.s
+
+drivers/tool.obj: drivers/tool.c.obj
+
+.PHONY : drivers/tool.obj
+
+# target to build an object file
+drivers/tool.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/drivers/tool.c.obj
+.PHONY : drivers/tool.c.obj
+
+drivers/tool.i: drivers/tool.c.i
+
+.PHONY : drivers/tool.i
+
+# target to preprocess a source file
+drivers/tool.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/drivers/tool.c.i
+.PHONY : drivers/tool.c.i
+
+drivers/tool.s: drivers/tool.c.s
+
+.PHONY : drivers/tool.s
+
+# target to generate assembly for a file
+drivers/tool.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/drivers/tool.c.s
+.PHONY : drivers/tool.c.s
 
 home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.obj: home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.c.obj
 
@@ -1950,9 +2004,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... ELF2UF2Build"
 	@echo "... main"
-	@echo "... gpio/gpio.obj"
-	@echo "... gpio/gpio.i"
-	@echo "... gpio/gpio.s"
+	@echo "... drivers/gpio.obj"
+	@echo "... drivers/gpio.i"
+	@echo "... drivers/gpio.s"
+	@echo "... drivers/i2c.obj"
+	@echo "... drivers/i2c.i"
+	@echo "... drivers/i2c.s"
+	@echo "... drivers/tool.obj"
+	@echo "... drivers/tool.i"
+	@echo "... drivers/tool.s"
 	@echo "... home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.obj"
 	@echo "... home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.i"
 	@echo "... home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.s"
