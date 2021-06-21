@@ -46,16 +46,16 @@ int main(void)
   gpios_init();             // Initialize GPIOs
 
   i2c_Init();  
-  //tusb_init();            // Initialize TinyUSB
+  tusb_init();            // Initialize TinyUSB
 
   printf("\n--------------------- NEW LOG ---------------------\n");
   //i2c_test();
 
    while (1)
   {
-    task_nfc();               // nfc task
-    //tud_task();             // usb task
-    //led_blinking_task();    // led task
+    tud_task();             // usb task
+    led_blinking_task();    // led task
+    //task_nfc();             // nfc task
   } 
     
   return 0;

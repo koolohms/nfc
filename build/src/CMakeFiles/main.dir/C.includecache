@@ -20,18 +20,6 @@ stdint.h
 
 ../src/usb/tusb_config.h
 
-/home/ddreise/pico/nfc/src/led/led.c
-stdio.h
--
-pico/stdlib.h
-/home/ddreise/pico/nfc/src/led/pico/stdlib.h
-bsp/board.h
-/home/ddreise/pico/nfc/src/led/bsp/board.h
-led.h
-/home/ddreise/pico/nfc/src/led/led.h
-
-/home/ddreise/pico/nfc/src/led/led.h
-
 /home/ddreise/pico/nfc/src/main.c
 stdlib.h
 -
@@ -62,16 +50,6 @@ gpio.h
 i2c.h
 /home/ddreise/pico/nfc/src/i2c.h
 
-/home/ddreise/pico/nfc/src/usb/usb_descriptors.c
-tusb.h
-/home/ddreise/pico/nfc/src/usb/tusb.h
-
-/home/ddreise/pico/nfc/src/usb/usb_msc.c
-bsp/board.h
-/home/ddreise/pico/nfc/src/usb/bsp/board.h
-tusb.h
-/home/ddreise/pico/nfc/src/usb/tusb.h
-
 /home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/ansi_escape.h
 
 /home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/board.h
@@ -86,25 +64,9 @@ tusb.h
 pico/time.h
 /home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/pico/time.h
 
-/home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.c
-pico/stdlib.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/pico/stdlib.h
-../board.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/board.h
-
 /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/audio.h
 common/tusb_common.h
 /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/common/tusb_common.h
-
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c
-tusb_option.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/tusb_option.h
-audio_device.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.h
-class/audio/audio.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/class/audio/audio.h
-device/usbd_pvt.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/device/usbd_pvt.h
 
 /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.h
 assert.h
@@ -126,14 +88,6 @@ device/usbd.h
 common/tusb_common.h
 /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/cdc/common/tusb_common.h
 
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c
-tusb_option.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/cdc/tusb_option.h
-cdc_device.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.h
-device/usbd_pvt.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/cdc/device/usbd_pvt.h
-
 /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.h
 common/tusb_common.h
 /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/cdc/common/tusb_common.h
@@ -150,14 +104,6 @@ host/usbh.h
 cdc.h
 /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc.h
 
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c
-tusb_option.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/tusb_option.h
-dfu_rt_device.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.h
-device/usbd_pvt.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/device/usbd_pvt.h
-
 /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.h
 common/tusb_common.h
 /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/common/tusb_common.h
@@ -167,16 +113,6 @@ device/usbd.h
 /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/hid/hid.h
 common/tusb_common.h
 /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/hid/common/tusb_common.h
-
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c
-tusb_option.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/hid/tusb_option.h
-common/tusb_common.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/hid/common/tusb_common.h
-hid_device.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.h
-device/usbd_pvt.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/hid/device/usbd_pvt.h
 
 /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.h
 common/tusb_common.h
@@ -198,16 +134,6 @@ hid.h
 common/tusb_common.h
 /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/midi/common/tusb_common.h
 
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c
-tusb_option.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/midi/tusb_option.h
-midi_device.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.h
-class/audio/audio.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/midi/class/audio/audio.h
-device/usbd_pvt.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/midi/device/usbd_pvt.h
-
 /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.h
 common/tusb_common.h
 /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/midi/common/tusb_common.h
@@ -221,18 +147,6 @@ midi.h
 /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/msc/msc.h
 common/tusb_common.h
 /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/msc/common/tusb_common.h
-
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c
-tusb_option.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/msc/tusb_option.h
-common/tusb_common.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/msc/common/tusb_common.h
-msc_device.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.h
-device/usbd_pvt.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/msc/device/usbd_pvt.h
-device/dcd.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/msc/device/dcd.h
 
 /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.h
 common/tusb_common.h
@@ -250,16 +164,6 @@ host/usbh.h
 msc.h
 /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/msc/msc.h
 
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c
-tusb_option.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/net/tusb_option.h
-net_device.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.h
-device/usbd_pvt.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/net/device/usbd_pvt.h
-rndis_protocol.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/net/rndis_protocol.h
-
 /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.h
 common/tusb_common.h
 /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/net/common/tusb_common.h
@@ -272,35 +176,9 @@ class/cdc/cdc.h
 common/tusb_common.h
 /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/common/tusb_common.h
 
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c
-tusb_option.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/tusb_option.h
-string.h
--
-usbtmc.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc.h
-usbtmc_device.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.h
-device/usbd.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/device/usbd.h
-osal/osal.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/osal/osal.h
-device/usbd_pvt.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/device/usbd_pvt.h
-uart_util.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/uart_util.h
-
 /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.h
 usbtmc.h
 /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc.h
-
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c
-tusb_option.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/vendor/tusb_option.h
-vendor_device.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.h
-device/usbd_pvt.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/vendor/device/usbd_pvt.h
 
 /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.h
 common/tusb_common.h
@@ -344,14 +222,6 @@ tusb_types.h
 tusb_option.h
 /home/ddreise/pico/pico-sdk/lib/tinyusb/src/common/tusb_option.h
 
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c
-string.h
--
-osal/osal.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/common/osal/osal.h
-tusb_fifo.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.h
-
 /home/ddreise/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.h
 stdint.h
 -
@@ -384,41 +254,9 @@ tusb_compiler.h
 stdio.h
 -
 
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/dcd.h
-common/tusb_common.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/common/tusb_common.h
-
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd.c
-tusb_option.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/tusb_option.h
-tusb.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/tusb.h
-usbd.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd.h
-device/usbd_pvt.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/device/usbd_pvt.h
-dcd.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/dcd.h
-
 /home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd.h
 common/tusb_common.h
 /home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/common/tusb_common.h
-
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c
-tusb_option.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/tusb_option.h
-tusb.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/tusb.h
-device/usbd_pvt.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/device/usbd_pvt.h
-dcd.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/dcd.h
-
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd_pvt.h
-osal/osal.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/osal/osal.h
-common/tusb_fifo.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/common/tusb_fifo.h
 
 /home/ddreise/pico/pico-sdk/lib/tinyusb/src/host/hcd.h
 common/tusb_common.h
@@ -473,54 +311,6 @@ pico/critical_section.h
 /home/ddreise/pico/pico-sdk/lib/tinyusb/src/osal/pico/critical_section.h
 common/tusb_fifo.h
 /home/ddreise/pico/pico-sdk/lib/tinyusb/src/osal/common/tusb_fifo.h
-
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c
-tusb_option.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/tusb_option.h
-pico.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/pico.h
-rp2040_usb.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.h
-pico/fix/rp2040_usb_device_enumeration.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/pico/fix/rp2040_usb_device_enumeration.h
-device/dcd.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/device/dcd.h
-pico/stdlib.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/pico/stdlib.h
-
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c
-stdlib.h
--
-rp2040_usb.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.h
-hardware/clocks.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/hardware/clocks.h
-tusb_option.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/tusb_option.h
-
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.h
-common/tusb_common.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/common/tusb_common.h
-pico.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/pico.h
-hardware/structs/usb.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/hardware/structs/usb.h
-hardware/irq.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/hardware/irq.h
-hardware/resets.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/hardware/resets.h
-string.h
--
-
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/tusb.c
-tusb_option.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/tusb_option.h
-tusb.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/tusb.h
-device/usbd_pvt.h
-/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd_pvt.h
-ctype.h
--
 
 /home/ddreise/pico/pico-sdk/lib/tinyusb/src/tusb.h
 common/tusb_common.h
@@ -672,33 +462,15 @@ hardware/timer.h
 hardware/platform_defs.h
 /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/hardware/platform_defs.h
 
-/home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/clocks.h
-
 /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/i2c.h
 
-/home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/intctrl.h
-
-/home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h
-
 /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h
-
-/home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/resets.h
 
 /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h
 
 /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h
 
 /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h
-
-/home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/usb.h
-
-/home/ddreise/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/clocks.h
-hardware/address_mapped.h
-/home/ddreise/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/hardware/address_mapped.h
-hardware/platform_defs.h
-/home/ddreise/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/hardware/platform_defs.h
-hardware/regs/clocks.h
-/home/ddreise/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/hardware/regs/clocks.h
 
 /home/ddreise/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/i2c.h
 hardware/address_mapped.h
@@ -722,12 +494,6 @@ hardware/platform_defs.h
 hardware/regs/pads_bank0.h
 /home/ddreise/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/hardware/regs/pads_bank0.h
 
-/home/ddreise/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/resets.h
-hardware/address_mapped.h
-/home/ddreise/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/hardware/address_mapped.h
-hardware/regs/resets.h
-/home/ddreise/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/hardware/regs/resets.h
-
 /home/ddreise/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h
 hardware/address_mapped.h
 /home/ddreise/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/hardware/address_mapped.h
@@ -750,23 +516,11 @@ hardware/address_mapped.h
 hardware/regs/uart.h
 /home/ddreise/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/hardware/regs/uart.h
 
-/home/ddreise/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/usb.h
-hardware/address_mapped.h
-/home/ddreise/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/hardware/address_mapped.h
-hardware/regs/usb.h
-/home/ddreise/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/hardware/regs/usb.h
-
 /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h
 pico.h
 /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_base/include/hardware/pico.h
 hardware/regs/addressmap.h
 /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_base/include/hardware/hardware/regs/addressmap.h
-
-/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_clocks/include/hardware/clocks.h
-pico.h
-/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_clocks/include/hardware/pico.h
-hardware/structs/clocks.h
-/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_clocks/include/hardware/hardware/structs/clocks.h
 
 /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h
 pico.h
@@ -783,22 +537,6 @@ pico/time.h
 /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_i2c/include/hardware/pico/time.h
 hardware/structs/i2c.h
 /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_i2c/include/hardware/hardware/structs/i2c.h
-
-/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_irq/include/hardware/irq.h
-pico.h
-/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_irq/include/hardware/pico.h
-hardware/address_mapped.h
-/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_irq/include/hardware/hardware/address_mapped.h
-hardware/regs/intctrl.h
-/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_irq/include/hardware/hardware/regs/intctrl.h
-hardware/regs/m0plus.h
-/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_irq/include/hardware/hardware/regs/m0plus.h
-
-/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_resets/include/hardware/resets.h
-pico.h
-/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_resets/include/hardware/pico.h
-hardware/structs/resets.h
-/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_resets/include/hardware/hardware/structs/resets.h
 
 /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_sync/include/hardware/sync.h
 pico.h
@@ -819,8 +557,6 @@ pico.h
 /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_uart/include/hardware/pico.h
 hardware/structs/uart.h
 /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_uart/include/hardware/hardware/structs/uart.h
-
-/home/ddreise/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/include/pico/fix/rp2040_usb_device_enumeration.h
 
 /home/ddreise/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
 sys/cdefs.h
