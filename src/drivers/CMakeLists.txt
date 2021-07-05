@@ -15,5 +15,6 @@ target_include_directories(drivers INTERFACE ${CMAKE_CURRENT_LIST_DIR}/include)
 target_link_libraries(drivers INTERFACE
         pico_stdlib
         pico_time
-        hardware_irq    
+        hardware_irq
+        FreeRTOS
 )

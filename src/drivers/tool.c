@@ -14,6 +14,9 @@
 
 #include <time.h>
 #include "tool.h"
+#include "FreeRTOS.h"
+#include "FreeRTOSConfig.h"
+#include "task.h"
 #include "pico/time.h"
 
 /* LOOP_REF and CLOCK_CALL_TIME must be adapted according to the CPU execution time */
@@ -22,7 +25,8 @@
 
 void Sleep(unsigned int ms)
 {
-	sleep_ms(ms);
+	//sleep_ms(ms);
+	vTaskDelay(ms);
 //	int i;
 /* #ifndef DEBUG_SEMIHOSTING
 	for(i=0; i<(ms * LOOP_REF); i++) asm("nop");

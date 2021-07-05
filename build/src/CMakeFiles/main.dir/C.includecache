@@ -223,6 +223,8 @@ i2c.h
 /home/ddreise/pico/nfc/src/i2c.h
 FreeRTOS.h
 /home/ddreise/pico/nfc/src/FreeRTOS.h
+FreeRTOSConfig.h
+/home/ddreise/pico/nfc/src/FreeRTOSConfig.h
 task.h
 /home/ddreise/pico/nfc/src/task.h
 

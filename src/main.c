@@ -41,6 +41,7 @@
 #include "gpio.h"
 #include "i2c.h"
 #include "FreeRTOS.h"
+#include "FreeRTOSConfig.h"
 #include "task.h"
 
 void vUSBTask(void* pvParameters);
@@ -70,7 +71,7 @@ int main(void)
    xReturned = xTaskCreate(
     vUSBTask,
     "USB Task",
-    512,
+    1024,
     NULL,
     tskIDLE_PRIORITY + 1,
     &xUSBHandle
@@ -79,7 +80,7 @@ int main(void)
   xReturned = xTaskCreate(
     vLEDTask,
     "LED Task",
-    512,
+    1024,
     NULL,
     tskIDLE_PRIORITY + 1,
     &xLEDHandle
@@ -105,14 +106,12 @@ int main(void)
     //tud_task();             // usb task
     //led_blinking_task();    // led task
     //task_nfc();             // nfc task
+
+    configASSERT(0);  // We should never get here
   } 
     
   return 0;
 }
-
-
-
-
 
 // Callbacks
 void vUSBTask(void* pvParameters){
@@ -120,6 +119,7 @@ void vUSBTask(void* pvParameters){
 
   while(1){
     tud_task();
+    vTaskDelay(10);
   }
 } 
 
@@ -128,13 +128,15 @@ void vLEDTask(void* pvParameters){
 
   while(1){
     led_blinking_task();
+    vTaskDelay(10);
   }
-}
+} 
 
 void vNFCTask(void* pvParameters){
   (void) pvParameters;
 
   while(1){
     task_nfc();
+    vTaskDelay(10);
   }
 }

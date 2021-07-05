@@ -10,6 +10,8 @@ set(CMAKE_CXX_STANDARD 17)
 # Set nfc as project source directory
 set(PICO_NFC_PATH ${PROJECT_SOURCE_DIR})
 
+#set(CMAKE_BUILD_TYPE Debug)
+
 # Initialize the SDK
 pico_sdk_init()
 

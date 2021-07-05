@@ -156,6 +156,18 @@ src/CMakeFiles/main.dir/drivers/i2c.c.obj: generated/pico_base/pico/config_autog
 src/CMakeFiles/main.dir/drivers/i2c.c.obj: generated/pico_base/pico/version.h
 
 src/CMakeFiles/main.dir/drivers/tool.c.obj: ../src/drivers/include/tool.h
+src/CMakeFiles/main.dir/drivers/tool.c.obj: ../src/freertos/include/FreeRTOS.h
+src/CMakeFiles/main.dir/drivers/tool.c.obj: ../src/freertos/include/FreeRTOSConfig.h
+src/CMakeFiles/main.dir/drivers/tool.c.obj: ../src/freertos/include/deprecated_definitions.h
+src/CMakeFiles/main.dir/drivers/tool.c.obj: ../src/freertos/include/list.h
+src/CMakeFiles/main.dir/drivers/tool.c.obj: ../src/freertos/include/mpu_wrappers.h
+src/CMakeFiles/main.dir/drivers/tool.c.obj: ../src/freertos/include/portable.h
+src/CMakeFiles/main.dir/drivers/tool.c.obj: ../src/freertos/include/projdefs.h
+src/CMakeFiles/main.dir/drivers/tool.c.obj: ../src/freertos/include/task.h
+src/CMakeFiles/main.dir/drivers/tool.c.obj: ../src/freertos/portable/BCC/16BitDOS/PC/prtmacro.h
+src/CMakeFiles/main.dir/drivers/tool.c.obj: ../src/freertos/portable/GCC/ARM_CM0/portmacro.h
+src/CMakeFiles/main.dir/drivers/tool.c.obj: ../src/freertos/portable/GCC/ATMega323/portmacro.h
+src/CMakeFiles/main.dir/drivers/tool.c.obj: ../src/freertos/portable/IAR/ATMega323/portmacro.h
 src/CMakeFiles/main.dir/drivers/tool.c.obj: ../src/drivers/tool.c
 src/CMakeFiles/main.dir/drivers/tool.c.obj: /home/ddreise/pico/pico-sdk/src/boards/include/boards/pico.h
 src/CMakeFiles/main.dir/drivers/tool.c.obj: /home/ddreise/pico/pico-sdk/src/common/pico_base/include/pico.h
