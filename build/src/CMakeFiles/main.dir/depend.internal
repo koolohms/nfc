@@ -1741,6 +1741,20 @@ src/CMakeFiles/main.dir/led/led.c.obj
 src/CMakeFiles/main.dir/main.c.obj
  ../src/drivers/include/gpio.h
  ../src/drivers/include/i2c.h
+ ../src/freertos/include/FreeRTOS.h
+ ../src/freertos/include/FreeRTOSConfig.h
+ ../src/freertos/include/deprecated_definitions.h
+ ../src/freertos/include/list.h
+ ../src/freertos/include/mpu_wrappers.h
+ ../src/freertos/include/portable.h
+ ../src/freertos/include/projdefs.h
+ ../src/freertos/include/queue.h
+ ../src/freertos/include/semphr.h
+ ../src/freertos/include/task.h
+ ../src/freertos/portable/BCC/16BitDOS/PC/prtmacro.h
+ ../src/freertos/portable/GCC/ARM_CM0/portmacro.h
+ ../src/freertos/portable/GCC/ATMega323/portmacro.h
+ ../src/freertos/portable/IAR/ATMega323/portmacro.h
  ../src/led/led.h
  ../src/nfcc/include/nfc_task.h
  ../src/test/include/test.h
@@ -1803,18 +1817,23 @@ src/CMakeFiles/main.dir/main.c.obj
  /home/ddreise/pico/pico-sdk/src/common/pico_time/include/pico/time.h
  /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h
  /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h
+ /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/clocks.h
  /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/i2c.h
  /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h
+ /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pll.h
  /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h
  /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h
  /home/ddreise/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h
+ /home/ddreise/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/clocks.h
  /home/ddreise/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/i2c.h
  /home/ddreise/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h
  /home/ddreise/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/padsbank0.h
+ /home/ddreise/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/pll.h
  /home/ddreise/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h
  /home/ddreise/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h
  /home/ddreise/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h
  /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h
+ /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_clocks/include/hardware/clocks.h
  /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h
  /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_i2c/include/hardware/i2c.h
  /home/ddreise/pico/pico-sdk/src/rp2_common/hardware_sync/include/hardware/sync.h

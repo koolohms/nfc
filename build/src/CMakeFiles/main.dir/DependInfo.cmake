@@ -98,6 +98,8 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "../src/test/include"
   "../src/nfcc/include"
   "../src/drivers/include"
+  "../src/freertos/include"
+  "../src/freertos/portable/GCC/ARM_CM0"
   )
 set(CMAKE_DEPENDS_CHECK_C
   "/home/ddreise/pico/nfc/src/drivers/gpio.c" "/home/ddreise/pico/nfc/build/src/CMakeFiles/main.dir/drivers/gpio.c.obj"
@@ -245,6 +247,8 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../src/test/include"
   "../src/nfcc/include"
   "../src/drivers/include"
+  "../src/freertos/include"
+  "../src/freertos/portable/GCC/ARM_CM0"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp" "/home/ddreise/pico/nfc/build/src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj"
@@ -329,10 +333,13 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../src/test/include"
   "../src/nfcc/include"
   "../src/drivers/include"
+  "../src/freertos/include"
+  "../src/freertos/portable/GCC/ARM_CM0"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/ddreise/pico/nfc/build/src/CMakeFiles/FreeRTOS.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

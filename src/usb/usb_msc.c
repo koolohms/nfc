@@ -181,11 +181,11 @@ int32_t tud_msc_write10_cb(uint8_t lun, uint32_t lba, uint32_t offset, uint8_t* 
   (void) lun; (void) lba; (void) offset; (void) buffer;
 #endif
 
-  printf("File saved to:\n"
+/*   printf("File saved to:\n"
   " Logical unit number = %d\n"
   " Logical block address = %d\n"
   " Offset = %d\n"
-  " Size = %d\n", lun, lba, offset, bufsize);
+  " Size = %d\n", lun, lba, offset, bufsize); */
 
   return bufsize;
 }

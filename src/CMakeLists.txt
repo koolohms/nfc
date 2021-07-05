@@ -17,7 +17,26 @@ target_link_libraries(main PRIVATE
         pico_time
         pico_mem_ops
         drivers
+        FreeRTOS
         )
+
+# Add FreeRTOS library
+add_library(FreeRTOS STATIC
+        freertos/croutine.c
+        freertos/event_groups.c
+        freertos/list.c
+        freertos/queue.c
+        freertos/stream_buffer.c
+        freertos/tasks.c
+        freertos/timers.c
+        freertos/portable/GCC/ARM_CM0/port.c
+        freertos/portable/MemMang/heap_4.c
+)
+target_include_directories(FreeRTOS PUBLIC 
+        freertos/include
+        freertos/portable/GCC/ARM_CM0
+)
+
 
 # Declare global defines
 target_compile_definitions(main PRIVATE P2P_SUPPORT)

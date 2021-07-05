@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/ddreise/pico/nfc/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -124,6 +124,21 @@ ELF2UF2Build: src/CMakeFiles/ELF2UF2Build.dir/rule
 ELF2UF2Build/fast:
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/ELF2UF2Build.dir/build.make src/CMakeFiles/ELF2UF2Build.dir/build
 .PHONY : ELF2UF2Build/fast
+
+# Convenience name for target.
+src/CMakeFiles/FreeRTOS.dir/rule:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/FreeRTOS.dir/rule
+.PHONY : src/CMakeFiles/FreeRTOS.dir/rule
+
+# Convenience name for target.
+FreeRTOS: src/CMakeFiles/FreeRTOS.dir/rule
+
+.PHONY : FreeRTOS
+
+# fast build rule for target.
+FreeRTOS/fast:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/build
+.PHONY : FreeRTOS/fast
 
 # Convenience name for target.
 src/CMakeFiles/main.dir/rule:
@@ -220,6 +235,249 @@ drivers/tool.s: drivers/tool.c.s
 drivers/tool.c.s:
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/drivers/tool.c.s
 .PHONY : drivers/tool.c.s
+
+freertos/croutine.obj: freertos/croutine.c.obj
+
+.PHONY : freertos/croutine.obj
+
+# target to build an object file
+freertos/croutine.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/freertos/croutine.c.obj
+.PHONY : freertos/croutine.c.obj
+
+freertos/croutine.i: freertos/croutine.c.i
+
+.PHONY : freertos/croutine.i
+
+# target to preprocess a source file
+freertos/croutine.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/freertos/croutine.c.i
+.PHONY : freertos/croutine.c.i
+
+freertos/croutine.s: freertos/croutine.c.s
+
+.PHONY : freertos/croutine.s
+
+# target to generate assembly for a file
+freertos/croutine.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/freertos/croutine.c.s
+.PHONY : freertos/croutine.c.s
+
+freertos/event_groups.obj: freertos/event_groups.c.obj
+
+.PHONY : freertos/event_groups.obj
+
+# target to build an object file
+freertos/event_groups.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/freertos/event_groups.c.obj
+.PHONY : freertos/event_groups.c.obj
+
+freertos/event_groups.i: freertos/event_groups.c.i
+
+.PHONY : freertos/event_groups.i
+
+# target to preprocess a source file
+freertos/event_groups.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/freertos/event_groups.c.i
+.PHONY : freertos/event_groups.c.i
+
+freertos/event_groups.s: freertos/event_groups.c.s
+
+.PHONY : freertos/event_groups.s
+
+# target to generate assembly for a file
+freertos/event_groups.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/freertos/event_groups.c.s
+.PHONY : freertos/event_groups.c.s
+
+freertos/list.obj: freertos/list.c.obj
+
+.PHONY : freertos/list.obj
+
+# target to build an object file
+freertos/list.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/freertos/list.c.obj
+.PHONY : freertos/list.c.obj
+
+freertos/list.i: freertos/list.c.i
+
+.PHONY : freertos/list.i
+
+# target to preprocess a source file
+freertos/list.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/freertos/list.c.i
+.PHONY : freertos/list.c.i
+
+freertos/list.s: freertos/list.c.s
+
+.PHONY : freertos/list.s
+
+# target to generate assembly for a file
+freertos/list.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/freertos/list.c.s
+.PHONY : freertos/list.c.s
+
+freertos/portable/GCC/ARM_CM0/port.obj: freertos/portable/GCC/ARM_CM0/port.c.obj
+
+.PHONY : freertos/portable/GCC/ARM_CM0/port.obj
+
+# target to build an object file
+freertos/portable/GCC/ARM_CM0/port.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/freertos/portable/GCC/ARM_CM0/port.c.obj
+.PHONY : freertos/portable/GCC/ARM_CM0/port.c.obj
+
+freertos/portable/GCC/ARM_CM0/port.i: freertos/portable/GCC/ARM_CM0/port.c.i
+
+.PHONY : freertos/portable/GCC/ARM_CM0/port.i
+
+# target to preprocess a source file
+freertos/portable/GCC/ARM_CM0/port.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/freertos/portable/GCC/ARM_CM0/port.c.i
+.PHONY : freertos/portable/GCC/ARM_CM0/port.c.i
+
+freertos/portable/GCC/ARM_CM0/port.s: freertos/portable/GCC/ARM_CM0/port.c.s
+
+.PHONY : freertos/portable/GCC/ARM_CM0/port.s
+
+# target to generate assembly for a file
+freertos/portable/GCC/ARM_CM0/port.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/freertos/portable/GCC/ARM_CM0/port.c.s
+.PHONY : freertos/portable/GCC/ARM_CM0/port.c.s
+
+freertos/portable/MemMang/heap_4.obj: freertos/portable/MemMang/heap_4.c.obj
+
+.PHONY : freertos/portable/MemMang/heap_4.obj
+
+# target to build an object file
+freertos/portable/MemMang/heap_4.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/freertos/portable/MemMang/heap_4.c.obj
+.PHONY : freertos/portable/MemMang/heap_4.c.obj
+
+freertos/portable/MemMang/heap_4.i: freertos/portable/MemMang/heap_4.c.i
+
+.PHONY : freertos/portable/MemMang/heap_4.i
+
+# target to preprocess a source file
+freertos/portable/MemMang/heap_4.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/freertos/portable/MemMang/heap_4.c.i
+.PHONY : freertos/portable/MemMang/heap_4.c.i
+
+freertos/portable/MemMang/heap_4.s: freertos/portable/MemMang/heap_4.c.s
+
+.PHONY : freertos/portable/MemMang/heap_4.s
+
+# target to generate assembly for a file
+freertos/portable/MemMang/heap_4.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/freertos/portable/MemMang/heap_4.c.s
+.PHONY : freertos/portable/MemMang/heap_4.c.s
+
+freertos/queue.obj: freertos/queue.c.obj
+
+.PHONY : freertos/queue.obj
+
+# target to build an object file
+freertos/queue.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/freertos/queue.c.obj
+.PHONY : freertos/queue.c.obj
+
+freertos/queue.i: freertos/queue.c.i
+
+.PHONY : freertos/queue.i
+
+# target to preprocess a source file
+freertos/queue.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/freertos/queue.c.i
+.PHONY : freertos/queue.c.i
+
+freertos/queue.s: freertos/queue.c.s
+
+.PHONY : freertos/queue.s
+
+# target to generate assembly for a file
+freertos/queue.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/freertos/queue.c.s
+.PHONY : freertos/queue.c.s
+
+freertos/stream_buffer.obj: freertos/stream_buffer.c.obj
+
+.PHONY : freertos/stream_buffer.obj
+
+# target to build an object file
+freertos/stream_buffer.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/freertos/stream_buffer.c.obj
+.PHONY : freertos/stream_buffer.c.obj
+
+freertos/stream_buffer.i: freertos/stream_buffer.c.i
+
+.PHONY : freertos/stream_buffer.i
+
+# target to preprocess a source file
+freertos/stream_buffer.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/freertos/stream_buffer.c.i
+.PHONY : freertos/stream_buffer.c.i
+
+freertos/stream_buffer.s: freertos/stream_buffer.c.s
+
+.PHONY : freertos/stream_buffer.s
+
+# target to generate assembly for a file
+freertos/stream_buffer.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/freertos/stream_buffer.c.s
+.PHONY : freertos/stream_buffer.c.s
+
+freertos/tasks.obj: freertos/tasks.c.obj
+
+.PHONY : freertos/tasks.obj
+
+# target to build an object file
+freertos/tasks.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/freertos/tasks.c.obj
+.PHONY : freertos/tasks.c.obj
+
+freertos/tasks.i: freertos/tasks.c.i
+
+.PHONY : freertos/tasks.i
+
+# target to preprocess a source file
+freertos/tasks.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/freertos/tasks.c.i
+.PHONY : freertos/tasks.c.i
+
+freertos/tasks.s: freertos/tasks.c.s
+
+.PHONY : freertos/tasks.s
+
+# target to generate assembly for a file
+freertos/tasks.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/freertos/tasks.c.s
+.PHONY : freertos/tasks.c.s
+
+freertos/timers.obj: freertos/timers.c.obj
+
+.PHONY : freertos/timers.obj
+
+# target to build an object file
+freertos/timers.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/freertos/timers.c.obj
+.PHONY : freertos/timers.c.obj
+
+freertos/timers.i: freertos/timers.c.i
+
+.PHONY : freertos/timers.i
+
+# target to preprocess a source file
+freertos/timers.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/freertos/timers.c.i
+.PHONY : freertos/timers.c.i
+
+freertos/timers.s: freertos/timers.c.s
+
+.PHONY : freertos/timers.s
+
+# target to generate assembly for a file
+freertos/timers.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/freertos/timers.c.s
+.PHONY : freertos/timers.c.s
 
 home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.obj: home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.c.obj
 
@@ -2000,9 +2258,10 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... ELF2UF2Build"
+	@echo "... rebuild_cache"
+	@echo "... FreeRTOS"
 	@echo "... main"
 	@echo "... drivers/gpio.obj"
 	@echo "... drivers/gpio.i"
@@ -2013,6 +2272,33 @@ help:
 	@echo "... drivers/tool.obj"
 	@echo "... drivers/tool.i"
 	@echo "... drivers/tool.s"
+	@echo "... freertos/croutine.obj"
+	@echo "... freertos/croutine.i"
+	@echo "... freertos/croutine.s"
+	@echo "... freertos/event_groups.obj"
+	@echo "... freertos/event_groups.i"
+	@echo "... freertos/event_groups.s"
+	@echo "... freertos/list.obj"
+	@echo "... freertos/list.i"
+	@echo "... freertos/list.s"
+	@echo "... freertos/portable/GCC/ARM_CM0/port.obj"
+	@echo "... freertos/portable/GCC/ARM_CM0/port.i"
+	@echo "... freertos/portable/GCC/ARM_CM0/port.s"
+	@echo "... freertos/portable/MemMang/heap_4.obj"
+	@echo "... freertos/portable/MemMang/heap_4.i"
+	@echo "... freertos/portable/MemMang/heap_4.s"
+	@echo "... freertos/queue.obj"
+	@echo "... freertos/queue.i"
+	@echo "... freertos/queue.s"
+	@echo "... freertos/stream_buffer.obj"
+	@echo "... freertos/stream_buffer.i"
+	@echo "... freertos/stream_buffer.s"
+	@echo "... freertos/tasks.obj"
+	@echo "... freertos/tasks.i"
+	@echo "... freertos/tasks.s"
+	@echo "... freertos/timers.obj"
+	@echo "... freertos/timers.i"
+	@echo "... freertos/timers.s"
 	@echo "... home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.obj"
 	@echo "... home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.i"
 	@echo "... home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.s"
