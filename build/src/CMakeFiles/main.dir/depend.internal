@@ -1858,6 +1858,18 @@ src/CMakeFiles/main.dir/main.c.obj
  generated/pico_base/pico/version.h
 src/CMakeFiles/main.dir/nfcc/NxpNci.c.obj
  ../src/drivers/include/tool.h
+ ../src/freertos/include/FreeRTOS.h
+ ../src/freertos/include/FreeRTOSConfig.h
+ ../src/freertos/include/deprecated_definitions.h
+ ../src/freertos/include/list.h
+ ../src/freertos/include/mpu_wrappers.h
+ ../src/freertos/include/portable.h
+ ../src/freertos/include/projdefs.h
+ ../src/freertos/include/task.h
+ ../src/freertos/portable/BCC/16BitDOS/PC/prtmacro.h
+ ../src/freertos/portable/GCC/ARM_CM0/portmacro.h
+ ../src/freertos/portable/GCC/ATMega323/portmacro.h
+ ../src/freertos/portable/IAR/ATMega323/portmacro.h
  ../src/nfcc/include/Nfc.h
  ../src/nfcc/include/Nfc_settings.h
  ../src/nfcc/include/NxpNci.h

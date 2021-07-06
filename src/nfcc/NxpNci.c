@@ -16,6 +16,8 @@
 #include "tml.h"
 #include "NxpNci.h"
 #include "Nfc_settings.h"
+#include "FreeRTOS.h"
+#include "task.h"
 
 #define MAX_NCI_FRAME_SIZE    258
 
@@ -956,6 +958,8 @@ bool NxpNci_StopDiscovery(void)
 
 bool NxpNci_WaitForDiscoveryNotification(NxpNci_RfIntf_t *pRfIntf)
 {
+    vTaskDelay(10);
+
     uint8_t NCIRfDiscoverSelect[] = {0x21, 0x04, 0x03, 0x01, PROT_ISODEP, INTF_ISODEP};
     uint8_t Answer[MAX_NCI_FRAME_SIZE];
     uint16_t AnswerSize;

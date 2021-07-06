@@ -1857,6 +1857,18 @@ src/CMakeFiles/main.dir/main.c.obj: generated/pico_base/pico/config_autogen.h
 src/CMakeFiles/main.dir/main.c.obj: generated/pico_base/pico/version.h
 
 src/CMakeFiles/main.dir/nfcc/NxpNci.c.obj: ../src/drivers/include/tool.h
+src/CMakeFiles/main.dir/nfcc/NxpNci.c.obj: ../src/freertos/include/FreeRTOS.h
+src/CMakeFiles/main.dir/nfcc/NxpNci.c.obj: ../src/freertos/include/FreeRTOSConfig.h
+src/CMakeFiles/main.dir/nfcc/NxpNci.c.obj: ../src/freertos/include/deprecated_definitions.h
+src/CMakeFiles/main.dir/nfcc/NxpNci.c.obj: ../src/freertos/include/list.h
+src/CMakeFiles/main.dir/nfcc/NxpNci.c.obj: ../src/freertos/include/mpu_wrappers.h
+src/CMakeFiles/main.dir/nfcc/NxpNci.c.obj: ../src/freertos/include/portable.h
+src/CMakeFiles/main.dir/nfcc/NxpNci.c.obj: ../src/freertos/include/projdefs.h
+src/CMakeFiles/main.dir/nfcc/NxpNci.c.obj: ../src/freertos/include/task.h
+src/CMakeFiles/main.dir/nfcc/NxpNci.c.obj: ../src/freertos/portable/BCC/16BitDOS/PC/prtmacro.h
+src/CMakeFiles/main.dir/nfcc/NxpNci.c.obj: ../src/freertos/portable/GCC/ARM_CM0/portmacro.h
+src/CMakeFiles/main.dir/nfcc/NxpNci.c.obj: ../src/freertos/portable/GCC/ATMega323/portmacro.h
+src/CMakeFiles/main.dir/nfcc/NxpNci.c.obj: ../src/freertos/portable/IAR/ATMega323/portmacro.h
 src/CMakeFiles/main.dir/nfcc/NxpNci.c.obj: ../src/nfcc/include/Nfc.h
 src/CMakeFiles/main.dir/nfcc/NxpNci.c.obj: ../src/nfcc/include/Nfc_settings.h
 src/CMakeFiles/main.dir/nfcc/NxpNci.c.obj: ../src/nfcc/include/NxpNci.h

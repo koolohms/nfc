@@ -69,12 +69,12 @@ int main(void)
 
   // Store the handle
    xReturned = xTaskCreate(
-    vUSBTask,
-    "USB Task",
-    1024,
-    NULL,
-    tskIDLE_PRIORITY + 1,
-    &xUSBHandle
+    vUSBTask,         // Pointer to function that implements the task
+    "USB Task",       // Not used by FreeRTOS. Mostly for debugging.
+    1024,             // Stack size in words (not bytes)
+    NULL,             // Value to pass into the task function
+    tskIDLE_PRIORITY + 1,   // Task priority
+    &xUSBHandle             // Handle to pass out to the task being created
   ); 
 
   xReturned = xTaskCreate(
@@ -89,7 +89,7 @@ int main(void)
   xReturned = xTaskCreate(
     vNFCTask,
     "NFC Task",
-    512,
+    1024,
     NULL,
     tskIDLE_PRIORITY + 1,
     &xNFCHandle
@@ -115,7 +115,9 @@ int main(void)
 
 // Callbacks
 void vUSBTask(void* pvParameters){
-  (void) pvParameters;
+
+  const char *pcTaskName = "USB Task is running\r\n";
+  printf(pcTaskName);
 
   while(1){
     tud_task();
@@ -124,7 +126,9 @@ void vUSBTask(void* pvParameters){
 } 
 
 void vLEDTask(void* pvParameters){
-  (void) pvParameters;
+
+  const char *pcTaskName = "LED Task is running\r\n";
+  printf(pcTaskName);
 
   while(1){
     led_blinking_task();
@@ -133,10 +137,12 @@ void vLEDTask(void* pvParameters){
 } 
 
 void vNFCTask(void* pvParameters){
-  (void) pvParameters;
+
+  const char *pcTaskName = "NFC Task is running\r\n";
+  printf(pcTaskName);
 
   while(1){
     task_nfc();
-    vTaskDelay(10);
+    vTaskDelay(10);   // There is another task delay in 
   }
 }
