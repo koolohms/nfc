@@ -28,6 +28,7 @@ set(CMAKE_TARGET_DEFINITIONS_ASM
   "P2P_SUPPORT"
   "PICO_BIT_OPS_PICO=1"
   "PICO_BOARD=\"pico\""
+  "PICO_BOOT2_NAME=\"boot2_w25q080\""
   "PICO_BUILD=1"
   "PICO_CMAKE_BUILD_TYPE=\"Release\""
   "PICO_COPY_TO_RAM=0"
@@ -84,7 +85,6 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/home/ddreise/pico/pico-sdk/src/rp2_common/pico_int64_ops/include"
   "/home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/include"
   "/home/ddreise/pico/pico-sdk/src/rp2_common/pico_malloc/include"
-  "/home/ddreise/pico/pico-sdk/src/rp2_common/boot_stage2/include"
   "/home/ddreise/pico/pico-sdk/src/common/pico_binary_info/include"
   "/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio/include"
   "/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio_uart/include"
@@ -98,6 +98,8 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "../src/test/include"
   "../src/nfcc/include"
   "../src/drivers/include"
+  "../src/freertos/include"
+  "../src/freertos/portable/GCC/ARM_CM0"
   )
 set(CMAKE_DEPENDS_CHECK_C
   "/home/ddreise/pico/nfc/src/drivers/gpio.c" "/home/ddreise/pico/nfc/build/src/CMakeFiles/main.dir/drivers/gpio.c.obj"
@@ -175,6 +177,7 @@ set(CMAKE_TARGET_DEFINITIONS_C
   "P2P_SUPPORT"
   "PICO_BIT_OPS_PICO=1"
   "PICO_BOARD=\"pico\""
+  "PICO_BOOT2_NAME=\"boot2_w25q080\""
   "PICO_BUILD=1"
   "PICO_CMAKE_BUILD_TYPE=\"Release\""
   "PICO_COPY_TO_RAM=0"
@@ -231,7 +234,6 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "/home/ddreise/pico/pico-sdk/src/rp2_common/pico_int64_ops/include"
   "/home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/include"
   "/home/ddreise/pico/pico-sdk/src/rp2_common/pico_malloc/include"
-  "/home/ddreise/pico/pico-sdk/src/rp2_common/boot_stage2/include"
   "/home/ddreise/pico/pico-sdk/src/common/pico_binary_info/include"
   "/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio/include"
   "/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio_uart/include"
@@ -245,6 +247,8 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../src/test/include"
   "../src/nfcc/include"
   "../src/drivers/include"
+  "../src/freertos/include"
+  "../src/freertos/portable/GCC/ARM_CM0"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp" "/home/ddreise/pico/nfc/build/src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj"
@@ -259,6 +263,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
   "P2P_SUPPORT"
   "PICO_BIT_OPS_PICO=1"
   "PICO_BOARD=\"pico\""
+  "PICO_BOOT2_NAME=\"boot2_w25q080\""
   "PICO_BUILD=1"
   "PICO_CMAKE_BUILD_TYPE=\"Release\""
   "PICO_COPY_TO_RAM=0"
@@ -315,7 +320,6 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/ddreise/pico/pico-sdk/src/rp2_common/pico_int64_ops/include"
   "/home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/include"
   "/home/ddreise/pico/pico-sdk/src/rp2_common/pico_malloc/include"
-  "/home/ddreise/pico/pico-sdk/src/rp2_common/boot_stage2/include"
   "/home/ddreise/pico/pico-sdk/src/common/pico_binary_info/include"
   "/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio/include"
   "/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio_uart/include"
@@ -329,10 +333,13 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../src/test/include"
   "../src/nfcc/include"
   "../src/drivers/include"
+  "../src/freertos/include"
+  "../src/freertos/portable/GCC/ARM_CM0"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/ddreise/pico/nfc/build/src/CMakeFiles/FreeRTOS.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

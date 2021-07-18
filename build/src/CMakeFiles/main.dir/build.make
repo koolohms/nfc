@@ -1116,6 +1116,7 @@ src/main.elf: src/CMakeFiles/main.dir/drivers/tool.c.obj
 src/main.elf: src/CMakeFiles/main.dir/drivers/gpio.c.obj
 src/main.elf: src/CMakeFiles/main.dir/drivers/i2c.c.obj
 src/main.elf: src/CMakeFiles/main.dir/build.make
+src/main.elf: src/libFreeRTOS.a
 src/main.elf: pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S
 src/main.elf: src/CMakeFiles/main.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Linking CXX executable main.elf"

@@ -80,11 +80,11 @@
 /home/ddreise/pico/nfc/build/pico-sdk/src/rp2_common/pico_bootrom/CMakeFiles/edit_cache.dir
 /home/ddreise/pico/nfc/build/pico-sdk/src/rp2_common/pico_platform/CMakeFiles/rebuild_cache.dir
 /home/ddreise/pico/nfc/build/pico-sdk/src/rp2_common/pico_platform/CMakeFiles/edit_cache.dir
+/home/ddreise/pico/nfc/build/pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/rebuild_cache.dir
 /home/ddreise/pico/nfc/build/pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir
 /home/ddreise/pico/nfc/build/pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir
 /home/ddreise/pico/nfc/build/pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/edit_cache.dir
 /home/ddreise/pico/nfc/build/pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir
-/home/ddreise/pico/nfc/build/pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/rebuild_cache.dir
 /home/ddreise/pico/nfc/build/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/CMakeFiles/rebuild_cache.dir
 /home/ddreise/pico/nfc/build/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/CMakeFiles/edit_cache.dir
 /home/ddreise/pico/nfc/build/pico-sdk/src/rp2_common/pico_multicore/CMakeFiles/rebuild_cache.dir
@@ -137,9 +137,10 @@
 /home/ddreise/pico/nfc/build/pico-sdk/src/rp2040/hardware_structs/CMakeFiles/edit_cache.dir
 /home/ddreise/pico/nfc/build/pico-sdk/docs/CMakeFiles/rebuild_cache.dir
 /home/ddreise/pico/nfc/build/pico-sdk/docs/CMakeFiles/edit_cache.dir
-/home/ddreise/pico/nfc/build/src/CMakeFiles/rebuild_cache.dir
 /home/ddreise/pico/nfc/build/src/CMakeFiles/edit_cache.dir
 /home/ddreise/pico/nfc/build/src/CMakeFiles/ELF2UF2Build.dir
+/home/ddreise/pico/nfc/build/src/CMakeFiles/rebuild_cache.dir
+/home/ddreise/pico/nfc/build/src/CMakeFiles/FreeRTOS.dir
 /home/ddreise/pico/nfc/build/src/CMakeFiles/main.dir
 /home/ddreise/pico/nfc/build/src/drivers/CMakeFiles/rebuild_cache.dir
 /home/ddreise/pico/nfc/build/src/drivers/CMakeFiles/edit_cache.dir

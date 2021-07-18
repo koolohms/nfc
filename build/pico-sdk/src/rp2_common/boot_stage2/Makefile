@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/ddreise/pico/nfc/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -77,6 +66,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -155,14 +155,14 @@ bs2_default/fast:
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/build.make pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/build
 .PHONY : bs2_default/fast
 
-compile_time_choice.obj: compile_time_choice.S.obj
+boot2_w25q080.obj: boot2_w25q080.S.obj
 
-.PHONY : compile_time_choice.obj
+.PHONY : boot2_w25q080.obj
 
 # target to build an object file
-compile_time_choice.S.obj:
-	cd /home/ddreise/pico/nfc/build && $(MAKE) -f pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/build.make pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/compile_time_choice.S.obj
-.PHONY : compile_time_choice.S.obj
+boot2_w25q080.S.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/build.make pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/boot2_w25q080.S.obj
+.PHONY : boot2_w25q080.S.obj
 
 # Help Target
 help:
@@ -170,12 +170,12 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... rebuild_cache"
 	@echo "... bs2_default_padded_checksummed_asm"
 	@echo "... bs2_default_bin"
 	@echo "... edit_cache"
 	@echo "... bs2_default"
-	@echo "... rebuild_cache"
-	@echo "... compile_time_choice.obj"
+	@echo "... boot2_w25q080.obj"
 .PHONY : help
 
 

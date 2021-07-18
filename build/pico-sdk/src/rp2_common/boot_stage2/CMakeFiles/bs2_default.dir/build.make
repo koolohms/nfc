@@ -57,19 +57,19 @@ include pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/progress.
 # Include the compile flags for this target's objects.
 include pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/flags.make
 
-pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/compile_time_choice.S.obj: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/flags.make
-pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/compile_time_choice.S.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/boot_stage2/compile_time_choice.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building ASM object pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/compile_time_choice.S.obj"
-	cd /home/ddreise/pico/nfc/build/pico-sdk/src/rp2_common/boot_stage2 && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/bs2_default.dir/compile_time_choice.S.obj   -c /home/ddreise/pico/pico-sdk/src/rp2_common/boot_stage2/compile_time_choice.S
+pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/boot2_w25q080.S.obj: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/flags.make
+pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/boot2_w25q080.S.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building ASM object pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/boot2_w25q080.S.obj"
+	cd /home/ddreise/pico/nfc/build/pico-sdk/src/rp2_common/boot_stage2 && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/bs2_default.dir/boot2_w25q080.S.obj   -c /home/ddreise/pico/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S
 
 # Object files for target bs2_default
 bs2_default_OBJECTS = \
-"CMakeFiles/bs2_default.dir/compile_time_choice.S.obj"
+"CMakeFiles/bs2_default.dir/boot2_w25q080.S.obj"
 
 # External object files for target bs2_default
 bs2_default_EXTERNAL_OBJECTS =
 
-pico-sdk/src/rp2_common/boot_stage2/bs2_default.elf: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/compile_time_choice.S.obj
+pico-sdk/src/rp2_common/boot_stage2/bs2_default.elf: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/boot2_w25q080.S.obj
 pico-sdk/src/rp2_common/boot_stage2/bs2_default.elf: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/build.make
 pico-sdk/src/rp2_common/boot_stage2/bs2_default.elf: /home/ddreise/pico/pico-sdk/src/rp2_common/boot_stage2/boot_stage2.ld
 pico-sdk/src/rp2_common/boot_stage2/bs2_default.elf: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/link.txt

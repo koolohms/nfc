@@ -163,6 +163,19 @@ ELF2UF2Build/fast:
 .PHONY : ELF2UF2Build/fast
 
 #=============================================================================
+# Target rules for targets named FreeRTOS
+
+# Build rule for target.
+FreeRTOS: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 FreeRTOS
+.PHONY : FreeRTOS
+
+# fast build rule for target.
+FreeRTOS/fast:
+	$(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/build
+.PHONY : FreeRTOS/fast
+
+#=============================================================================
 # Target rules for targets named main
 
 # Build rule for target.
@@ -187,6 +200,7 @@ help:
 	@echo "... bs2_default_bin"
 	@echo "... bs2_default"
 	@echo "... ELF2UF2Build"
+	@echo "... FreeRTOS"
 	@echo "... main"
 .PHONY : help
 
