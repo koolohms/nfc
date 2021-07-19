@@ -50,6 +50,8 @@ boot2_helpers/wait_ssi_ready.S
 boot2_helpers/read_flash_sreg.S
 /home/ddreise/pico/pico-sdk/src/rp2_common/boot_stage2/boot2_helpers/read_flash_sreg.S
 
+/home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
+
 /home/ddreise/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/asm_helper.S
 hardware/platform_defs.h
 /home/ddreise/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/hardware/platform_defs.h
@@ -58,5 +60,7 @@ pico/config.h
 
 generated/pico_base/pico/config_autogen.h
 /home/ddreise/pico/pico-sdk/src/boards/include/boards/pico.h
+-
+/home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
 -
 

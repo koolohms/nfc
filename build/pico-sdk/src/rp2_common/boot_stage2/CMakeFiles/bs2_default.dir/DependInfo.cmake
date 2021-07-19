@@ -25,6 +25,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "generated/pico_base"
   "/home/ddreise/pico/pico-sdk/src/boards/include"
   "/home/ddreise/pico/pico-sdk/src/rp2_common/pico_platform/include"
+  "/home/ddreise/pico/pico-sdk/src/rp2_common/boot_stage2/include"
   )
 
 # Targets to which this target links.

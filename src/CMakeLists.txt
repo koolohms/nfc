@@ -18,6 +18,7 @@ target_link_libraries(main PRIVATE
         pico_mem_ops
         drivers
         FreeRTOS
+        cmsis_core
         )
 
 # Add FreeRTOS library
@@ -35,6 +36,21 @@ add_library(FreeRTOS STATIC
 target_include_directories(FreeRTOS PUBLIC 
         freertos/include
         freertos/portable/GCC/ARM_CM0
+)
+target_link_libraries(FreeRTOS PUBLIC
+        pico
+        pico_stdlib 
+        hardware_i2c 
+        usb
+        tinyusb_device 
+        tinyusb_board
+        led
+        test
+        nfcc
+        pico_time
+        pico_mem_ops
+        drivers
+        cmsis_core
 )
 
 

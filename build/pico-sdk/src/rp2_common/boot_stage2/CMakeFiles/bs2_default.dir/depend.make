@@ -12,6 +12,7 @@ pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/boot2_w25q080.S.o
 pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/boot2_w25q080.S.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/boot_stage2/asminclude/boot2_helpers/read_flash_sreg.S
 pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/boot2_w25q080.S.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/boot_stage2/asminclude/boot2_helpers/wait_ssi_ready.S
 pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/boot2_w25q080.S.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/boot_stage2/boot2_w25q080.S
+pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/boot2_w25q080.S.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
 pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/boot2_w25q080.S.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/asm_helper.S
 pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/boot2_w25q080.S.obj: generated/pico_base/pico/config_autogen.h
 

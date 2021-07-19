@@ -5,6 +5,7 @@ add_library(usb INTERFACE)
 target_sources(usb INTERFACE
         ${CMAKE_CURRENT_LIST_DIR}/usb_descriptors.c
         ${CMAKE_CURRENT_LIST_DIR}/usb_msc.c
+        ${CMAKE_CURRENT_LIST_DIR}/freertos_hook.c
 )
 
 # Add include files
@@ -15,4 +16,7 @@ target_link_libraries(usb INTERFACE
         pico_stdlib
         tinyusb_device 
         tinyusb_board
+        FreeRTOS
+        cmsis_core
 )
+
