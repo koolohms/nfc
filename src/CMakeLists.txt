@@ -38,7 +38,6 @@ target_include_directories(FreeRTOS PUBLIC
         freertos/portable/GCC/ARM_CM0
 )
 target_link_libraries(FreeRTOS PUBLIC
-        pico
         pico_stdlib 
         hardware_i2c 
         usb

@@ -121,7 +121,9 @@ void vUSBTask(void* pvParameters){
   printf(pcTaskName);
 
   while(1){
+    taskENTER_CRITICAL();
     tud_task();
+    taskEXIT_CRITICAL();  
     vTaskDelay(10);
   }
 } 
