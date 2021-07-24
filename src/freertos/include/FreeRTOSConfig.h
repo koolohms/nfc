@@ -150,8 +150,8 @@ extern uint32_t SystemCoreClock;
 #else
 
 /* FreeRTOS hooks to NVIC vectors */
-#define vPortSVCHandler isr_svcall
-#define xPortPendSVHandler isr_pendsv
+#define vPortSVCHandler     isr_svcall
+#define xPortPendSVHandler  isr_pendsv
 #define xPortSysTickHandler isr_systick
 
 //--------------------------------------------------------------------+
