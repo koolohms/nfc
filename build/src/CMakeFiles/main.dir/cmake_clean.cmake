@@ -72,6 +72,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/main.dir/nfcc/NxpNci.c.obj"
   "CMakeFiles/main.dir/nfcc/P2P_NDEF.c.obj"
   "CMakeFiles/main.dir/nfcc/ndef_helper.c.obj"
+  "CMakeFiles/main.dir/nfcc/ndef_message_setup.c.obj"
   "CMakeFiles/main.dir/nfcc/nfc_task.c.obj"
   "CMakeFiles/main.dir/nfcc/tml.c.obj"
   "CMakeFiles/main.dir/test/i2c_test.c.obj"

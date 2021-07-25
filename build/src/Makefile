@@ -2365,6 +2365,36 @@ nfcc/ndef_helper.c.s:
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/nfcc/ndef_helper.c.s
 .PHONY : nfcc/ndef_helper.c.s
 
+nfcc/ndef_message_setup.obj: nfcc/ndef_message_setup.c.obj
+
+.PHONY : nfcc/ndef_message_setup.obj
+
+# target to build an object file
+nfcc/ndef_message_setup.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/nfcc/ndef_message_setup.c.obj
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/nfcc/ndef_message_setup.c.obj
+.PHONY : nfcc/ndef_message_setup.c.obj
+
+nfcc/ndef_message_setup.i: nfcc/ndef_message_setup.c.i
+
+.PHONY : nfcc/ndef_message_setup.i
+
+# target to preprocess a source file
+nfcc/ndef_message_setup.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/nfcc/ndef_message_setup.c.i
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/nfcc/ndef_message_setup.c.i
+.PHONY : nfcc/ndef_message_setup.c.i
+
+nfcc/ndef_message_setup.s: nfcc/ndef_message_setup.c.s
+
+.PHONY : nfcc/ndef_message_setup.s
+
+# target to generate assembly for a file
+nfcc/ndef_message_setup.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/nfcc/ndef_message_setup.c.s
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/nfcc/ndef_message_setup.c.s
+.PHONY : nfcc/ndef_message_setup.c.s
+
 nfcc/nfc_task.obj: nfcc/nfc_task.c.obj
 
 .PHONY : nfcc/nfc_task.obj
@@ -2780,6 +2810,9 @@ help:
 	@echo "... nfcc/ndef_helper.obj"
 	@echo "... nfcc/ndef_helper.i"
 	@echo "... nfcc/ndef_helper.s"
+	@echo "... nfcc/ndef_message_setup.obj"
+	@echo "... nfcc/ndef_message_setup.i"
+	@echo "... nfcc/ndef_message_setup.s"
 	@echo "... nfcc/nfc_task.obj"
 	@echo "... nfcc/nfc_task.i"
 	@echo "... nfcc/nfc_task.s"

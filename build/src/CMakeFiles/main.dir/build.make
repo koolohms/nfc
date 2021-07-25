@@ -944,9 +944,22 @@ src/CMakeFiles/main.dir/nfcc/nfc_task.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/nfcc/nfc_task.c.s"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ddreise/pico/nfc/src/nfcc/nfc_task.c -o CMakeFiles/main.dir/nfcc/nfc_task.c.s
 
+src/CMakeFiles/main.dir/nfcc/ndef_message_setup.c.obj: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/nfcc/ndef_message_setup.c.obj: ../src/nfcc/ndef_message_setup.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object src/CMakeFiles/main.dir/nfcc/ndef_message_setup.c.obj"
+	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/nfcc/ndef_message_setup.c.obj   -c /home/ddreise/pico/nfc/src/nfcc/ndef_message_setup.c
+
+src/CMakeFiles/main.dir/nfcc/ndef_message_setup.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/nfcc/ndef_message_setup.c.i"
+	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ddreise/pico/nfc/src/nfcc/ndef_message_setup.c > CMakeFiles/main.dir/nfcc/ndef_message_setup.c.i
+
+src/CMakeFiles/main.dir/nfcc/ndef_message_setup.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/nfcc/ndef_message_setup.c.s"
+	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ddreise/pico/nfc/src/nfcc/ndef_message_setup.c -o CMakeFiles/main.dir/nfcc/ndef_message_setup.c.s
+
 src/CMakeFiles/main.dir/drivers/tool.c.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/drivers/tool.c.obj: ../src/drivers/tool.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object src/CMakeFiles/main.dir/drivers/tool.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object src/CMakeFiles/main.dir/drivers/tool.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/drivers/tool.c.obj   -c /home/ddreise/pico/nfc/src/drivers/tool.c
 
 src/CMakeFiles/main.dir/drivers/tool.c.i: cmake_force
@@ -959,7 +972,7 @@ src/CMakeFiles/main.dir/drivers/tool.c.s: cmake_force
 
 src/CMakeFiles/main.dir/drivers/gpio.c.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/drivers/gpio.c.obj: ../src/drivers/gpio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object src/CMakeFiles/main.dir/drivers/gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object src/CMakeFiles/main.dir/drivers/gpio.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/drivers/gpio.c.obj   -c /home/ddreise/pico/nfc/src/drivers/gpio.c
 
 src/CMakeFiles/main.dir/drivers/gpio.c.i: cmake_force
@@ -972,7 +985,7 @@ src/CMakeFiles/main.dir/drivers/gpio.c.s: cmake_force
 
 src/CMakeFiles/main.dir/drivers/i2c.c.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/drivers/i2c.c.obj: ../src/drivers/i2c.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object src/CMakeFiles/main.dir/drivers/i2c.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object src/CMakeFiles/main.dir/drivers/i2c.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/drivers/i2c.c.obj   -c /home/ddreise/pico/nfc/src/drivers/i2c.c
 
 src/CMakeFiles/main.dir/drivers/i2c.c.i: cmake_force
@@ -985,7 +998,7 @@ src/CMakeFiles/main.dir/drivers/i2c.c.s: cmake_force
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Source/system_RP2040.c.obj: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Source/system_RP2040.c.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Source/system_RP2040.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Source/system_RP2040.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Source/system_RP2040.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Source/system_RP2040.c.obj   -c /home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Source/system_RP2040.c
 
 src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Source/system_RP2040.c.i: cmake_force
@@ -1073,6 +1086,7 @@ main_OBJECTS = \
 "CMakeFiles/main.dir/nfcc/tml.c.obj" \
 "CMakeFiles/main.dir/nfcc/ndef_helper.c.obj" \
 "CMakeFiles/main.dir/nfcc/nfc_task.c.obj" \
+"CMakeFiles/main.dir/nfcc/ndef_message_setup.c.obj" \
 "CMakeFiles/main.dir/drivers/tool.c.obj" \
 "CMakeFiles/main.dir/drivers/gpio.c.obj" \
 "CMakeFiles/main.dir/drivers/i2c.c.obj" \
@@ -1156,6 +1170,7 @@ src/main.elf: src/CMakeFiles/main.dir/nfcc/P2P_NDEF.c.obj
 src/main.elf: src/CMakeFiles/main.dir/nfcc/tml.c.obj
 src/main.elf: src/CMakeFiles/main.dir/nfcc/ndef_helper.c.obj
 src/main.elf: src/CMakeFiles/main.dir/nfcc/nfc_task.c.obj
+src/main.elf: src/CMakeFiles/main.dir/nfcc/ndef_message_setup.c.obj
 src/main.elf: src/CMakeFiles/main.dir/drivers/tool.c.obj
 src/main.elf: src/CMakeFiles/main.dir/drivers/gpio.c.obj
 src/main.elf: src/CMakeFiles/main.dir/drivers/i2c.c.obj
@@ -1165,7 +1180,7 @@ src/main.elf: src/libFreeRTOS.a
 src/main.elf: src/libFreeRTOS.a
 src/main.elf: pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S
 src/main.elf: src/CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Linking CXX executable main.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Linking CXX executable main.elf"
 	cd /home/ddreise/pico/nfc/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-objcopy -Oihex main.elf main.hex
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-objcopy -Obinary main.elf main.bin

@@ -38,6 +38,7 @@
 #include "tusb_config.h"
 #include "test.h"
 #include "nfc_task.h"
+#include "ndef_message_setup.h"
 #include "gpio.h"
 #include "i2c.h"
 #include "FreeRTOS.h"
@@ -144,8 +145,13 @@ void vNFCTask(void* pvParameters){
   const char *pcTaskName = "NFC Task is running\r\n";
   printf(pcTaskName);
 
+  char test_message[3] = {'F','U','N'};
+  unsigned int MessageSize, RecordSize;
+  MessageSize = 3;
+  RecordSize = create_NDEFRecord(test_message, MessageSize); 
+  free_NDEFRecord();
+
   while(1){
-    //set_NDEFMessage();  // Concatenate file pointer to NDEF message
     task_nfc();
     vTaskDelay(10);   // There is another task delay in 
   }

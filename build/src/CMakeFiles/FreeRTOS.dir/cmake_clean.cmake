@@ -80,6 +80,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/FreeRTOS.dir/nfcc/NxpNci.c.obj"
   "CMakeFiles/FreeRTOS.dir/nfcc/P2P_NDEF.c.obj"
   "CMakeFiles/FreeRTOS.dir/nfcc/ndef_helper.c.obj"
+  "CMakeFiles/FreeRTOS.dir/nfcc/ndef_message_setup.c.obj"
   "CMakeFiles/FreeRTOS.dir/nfcc/nfc_task.c.obj"
   "CMakeFiles/FreeRTOS.dir/nfcc/tml.c.obj"
   "CMakeFiles/FreeRTOS.dir/test/i2c_test.c.obj"

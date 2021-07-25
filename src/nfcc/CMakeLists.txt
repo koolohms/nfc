@@ -8,6 +8,7 @@ target_sources(nfcc INTERFACE
         ${CMAKE_CURRENT_LIST_DIR}/tml.c
         ${CMAKE_CURRENT_LIST_DIR}/ndef_helper.c
         ${CMAKE_CURRENT_LIST_DIR}/nfc_task.c
+        ${CMAKE_CURRENT_LIST_DIR}/ndef_message_setup.c
 
 )
 
@@ -22,4 +23,5 @@ target_link_libraries(nfcc INTERFACE
         pico_time
         pico_mem_ops
         drivers
+        FreeRTOS
 )

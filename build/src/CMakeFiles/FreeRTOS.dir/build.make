@@ -1048,9 +1048,22 @@ src/CMakeFiles/FreeRTOS.dir/nfcc/nfc_task.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FreeRTOS.dir/nfcc/nfc_task.c.s"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ddreise/pico/nfc/src/nfcc/nfc_task.c -o CMakeFiles/FreeRTOS.dir/nfcc/nfc_task.c.s
 
+src/CMakeFiles/FreeRTOS.dir/nfcc/ndef_message_setup.c.obj: src/CMakeFiles/FreeRTOS.dir/flags.make
+src/CMakeFiles/FreeRTOS.dir/nfcc/ndef_message_setup.c.obj: ../src/nfcc/ndef_message_setup.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object src/CMakeFiles/FreeRTOS.dir/nfcc/ndef_message_setup.c.obj"
+	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FreeRTOS.dir/nfcc/ndef_message_setup.c.obj   -c /home/ddreise/pico/nfc/src/nfcc/ndef_message_setup.c
+
+src/CMakeFiles/FreeRTOS.dir/nfcc/ndef_message_setup.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/FreeRTOS.dir/nfcc/ndef_message_setup.c.i"
+	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ddreise/pico/nfc/src/nfcc/ndef_message_setup.c > CMakeFiles/FreeRTOS.dir/nfcc/ndef_message_setup.c.i
+
+src/CMakeFiles/FreeRTOS.dir/nfcc/ndef_message_setup.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FreeRTOS.dir/nfcc/ndef_message_setup.c.s"
+	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ddreise/pico/nfc/src/nfcc/ndef_message_setup.c -o CMakeFiles/FreeRTOS.dir/nfcc/ndef_message_setup.c.s
+
 src/CMakeFiles/FreeRTOS.dir/drivers/tool.c.obj: src/CMakeFiles/FreeRTOS.dir/flags.make
 src/CMakeFiles/FreeRTOS.dir/drivers/tool.c.obj: ../src/drivers/tool.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object src/CMakeFiles/FreeRTOS.dir/drivers/tool.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object src/CMakeFiles/FreeRTOS.dir/drivers/tool.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FreeRTOS.dir/drivers/tool.c.obj   -c /home/ddreise/pico/nfc/src/drivers/tool.c
 
 src/CMakeFiles/FreeRTOS.dir/drivers/tool.c.i: cmake_force
@@ -1063,7 +1076,7 @@ src/CMakeFiles/FreeRTOS.dir/drivers/tool.c.s: cmake_force
 
 src/CMakeFiles/FreeRTOS.dir/drivers/gpio.c.obj: src/CMakeFiles/FreeRTOS.dir/flags.make
 src/CMakeFiles/FreeRTOS.dir/drivers/gpio.c.obj: ../src/drivers/gpio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object src/CMakeFiles/FreeRTOS.dir/drivers/gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object src/CMakeFiles/FreeRTOS.dir/drivers/gpio.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FreeRTOS.dir/drivers/gpio.c.obj   -c /home/ddreise/pico/nfc/src/drivers/gpio.c
 
 src/CMakeFiles/FreeRTOS.dir/drivers/gpio.c.i: cmake_force
@@ -1076,7 +1089,7 @@ src/CMakeFiles/FreeRTOS.dir/drivers/gpio.c.s: cmake_force
 
 src/CMakeFiles/FreeRTOS.dir/drivers/i2c.c.obj: src/CMakeFiles/FreeRTOS.dir/flags.make
 src/CMakeFiles/FreeRTOS.dir/drivers/i2c.c.obj: ../src/drivers/i2c.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object src/CMakeFiles/FreeRTOS.dir/drivers/i2c.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object src/CMakeFiles/FreeRTOS.dir/drivers/i2c.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FreeRTOS.dir/drivers/i2c.c.obj   -c /home/ddreise/pico/nfc/src/drivers/i2c.c
 
 src/CMakeFiles/FreeRTOS.dir/drivers/i2c.c.i: cmake_force
@@ -1089,7 +1102,7 @@ src/CMakeFiles/FreeRTOS.dir/drivers/i2c.c.s: cmake_force
 
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Source/system_RP2040.c.obj: src/CMakeFiles/FreeRTOS.dir/flags.make
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Source/system_RP2040.c.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Source/system_RP2040.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Source/system_RP2040.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Source/system_RP2040.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Source/system_RP2040.c.obj   -c /home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Source/system_RP2040.c
 
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Source/system_RP2040.c.i: cmake_force
@@ -1185,6 +1198,7 @@ FreeRTOS_OBJECTS = \
 "CMakeFiles/FreeRTOS.dir/nfcc/tml.c.obj" \
 "CMakeFiles/FreeRTOS.dir/nfcc/ndef_helper.c.obj" \
 "CMakeFiles/FreeRTOS.dir/nfcc/nfc_task.c.obj" \
+"CMakeFiles/FreeRTOS.dir/nfcc/ndef_message_setup.c.obj" \
 "CMakeFiles/FreeRTOS.dir/drivers/tool.c.obj" \
 "CMakeFiles/FreeRTOS.dir/drivers/gpio.c.obj" \
 "CMakeFiles/FreeRTOS.dir/drivers/i2c.c.obj" \
@@ -1276,13 +1290,14 @@ src/libFreeRTOS.a: src/CMakeFiles/FreeRTOS.dir/nfcc/P2P_NDEF.c.obj
 src/libFreeRTOS.a: src/CMakeFiles/FreeRTOS.dir/nfcc/tml.c.obj
 src/libFreeRTOS.a: src/CMakeFiles/FreeRTOS.dir/nfcc/ndef_helper.c.obj
 src/libFreeRTOS.a: src/CMakeFiles/FreeRTOS.dir/nfcc/nfc_task.c.obj
+src/libFreeRTOS.a: src/CMakeFiles/FreeRTOS.dir/nfcc/ndef_message_setup.c.obj
 src/libFreeRTOS.a: src/CMakeFiles/FreeRTOS.dir/drivers/tool.c.obj
 src/libFreeRTOS.a: src/CMakeFiles/FreeRTOS.dir/drivers/gpio.c.obj
 src/libFreeRTOS.a: src/CMakeFiles/FreeRTOS.dir/drivers/i2c.c.obj
 src/libFreeRTOS.a: src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Source/system_RP2040.c.obj
 src/libFreeRTOS.a: src/CMakeFiles/FreeRTOS.dir/build.make
 src/libFreeRTOS.a: src/CMakeFiles/FreeRTOS.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Linking CXX static library libFreeRTOS.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Linking CXX static library libFreeRTOS.a"
 	cd /home/ddreise/pico/nfc/build/src && $(CMAKE_COMMAND) -P CMakeFiles/FreeRTOS.dir/cmake_clean_target.cmake
 	cd /home/ddreise/pico/nfc/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/FreeRTOS.dir/link.txt --verbose=$(VERBOSE)
 

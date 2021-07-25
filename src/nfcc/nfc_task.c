@@ -18,6 +18,7 @@
 #include "tool.h"
 #include "Nfc.h"
 #include "ndef_helper.h"
+#include "ndef_message_setup.h"
 
 //#define RW_NDEF_WRITING
 //#define RW_RAW_EXCHANGE
@@ -549,7 +550,10 @@ void task_nfc(void)
 
 #ifdef P2P_SUPPORT
     /* Register NDEF message to be sent to remote peer */
+    
+    //! RIGHT HERE
     P2P_NDEF_SetMessage((unsigned char *) NDEF_MESSAGE, sizeof(NDEF_MESSAGE), *NdefPush_Cb);
+
     /* Register callback for reception of NDEF message from remote peer */
     P2P_NDEF_RegisterPullCallback(*NdefPull_Cb);
 #endif // ifdef P2P_SUPPORT

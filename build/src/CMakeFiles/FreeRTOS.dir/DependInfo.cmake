@@ -193,6 +193,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/ddreise/pico/nfc/src/nfcc/NxpNci.c" "/home/ddreise/pico/nfc/build/src/CMakeFiles/FreeRTOS.dir/nfcc/NxpNci.c.obj"
   "/home/ddreise/pico/nfc/src/nfcc/P2P_NDEF.c" "/home/ddreise/pico/nfc/build/src/CMakeFiles/FreeRTOS.dir/nfcc/P2P_NDEF.c.obj"
   "/home/ddreise/pico/nfc/src/nfcc/ndef_helper.c" "/home/ddreise/pico/nfc/build/src/CMakeFiles/FreeRTOS.dir/nfcc/ndef_helper.c.obj"
+  "/home/ddreise/pico/nfc/src/nfcc/ndef_message_setup.c" "/home/ddreise/pico/nfc/build/src/CMakeFiles/FreeRTOS.dir/nfcc/ndef_message_setup.c.obj"
   "/home/ddreise/pico/nfc/src/nfcc/nfc_task.c" "/home/ddreise/pico/nfc/build/src/CMakeFiles/FreeRTOS.dir/nfcc/nfc_task.c.obj"
   "/home/ddreise/pico/nfc/src/nfcc/tml.c" "/home/ddreise/pico/nfc/build/src/CMakeFiles/FreeRTOS.dir/nfcc/tml.c.obj"
   "/home/ddreise/pico/nfc/src/test/i2c_test.c" "/home/ddreise/pico/nfc/build/src/CMakeFiles/FreeRTOS.dir/test/i2c_test.c.obj"
