@@ -145,11 +145,8 @@ void vNFCTask(void* pvParameters){
   const char *pcTaskName = "NFC Task is running\r\n";
   printf(pcTaskName);
 
-  char test_message[3] = {'F','U','N'};
-  unsigned int MessageSize, RecordSize;
-  MessageSize = 3;
-  RecordSize = create_NDEFRecord(test_message, MessageSize); 
-  free_NDEFRecord();
+  unsigned char test_message[] = "this is a test";
+  Record_sz = create_NDEFRecord(test_message, sizeof(test_message));
 
   while(1){
     task_nfc();

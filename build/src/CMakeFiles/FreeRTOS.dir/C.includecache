@@ -96,6 +96,18 @@ xc.h
 stddef.h
 -
 
+../src/drivers/include/tool.h
+stdio.h
+-
+string.h
+-
+stdbool.h
+-
+stdint.h
+-
+stddef.h
+-
+
 ../src/freertos/include/FreeRTOS.h
 stddef.h
 -
@@ -256,6 +268,12 @@ list.h
 
 ../src/freertos/portable/IAR/ATMega323/portmacro.h
 
+../src/nfcc/include/Nfc.h
+stdbool.h
+-
+
+../src/nfcc/include/ndef_helper.h
+
 ../src/nfcc/include/ndef_message_setup.h
 
 ../src/usb/tusb_config.h
@@ -273,6 +291,22 @@ FreeRTOS.h
 /home/ddreise/pico/nfc/src/nfcc/FreeRTOS.h
 task.h
 /home/ddreise/pico/nfc/src/nfcc/task.h
+
+/home/ddreise/pico/nfc/src/nfcc/nfc_task.c
+stdio.h
+-
+stdint.h
+-
+string.h
+-
+tool.h
+/home/ddreise/pico/nfc/src/nfcc/tool.h
+Nfc.h
+/home/ddreise/pico/nfc/src/nfcc/Nfc.h
+ndef_helper.h
+/home/ddreise/pico/nfc/src/nfcc/ndef_helper.h
+ndef_message_setup.h
+/home/ddreise/pico/nfc/src/nfcc/ndef_message_setup.h
 
 /home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/board_mcu.h
 tusb_option.h

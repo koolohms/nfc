@@ -308,7 +308,9 @@ ADC_TPR	freertos/portable/IAR/AtmelSAM7S64/AT91SAM7X128.h	/^	AT91_REG	 ADC_TPR; 
 ADC_TPR	freertos/portable/IAR/AtmelSAM7S64/AT91SAM7X128_inc.h	1376;"	d
 ADC_TPR	freertos/portable/IAR/AtmelSAM7S64/AT91SAM7X256.h	/^	AT91_REG	 ADC_TPR; 	\/\/ Transmit Pointer Register$/;"	m	struct:_AT91S_ADC
 ADC_TPR	freertos/portable/IAR/AtmelSAM7S64/AT91SAM7X256_inc.h	1376;"	d
-ADD	nfcc/nfc_task.c	219;"	d	file:
+ADD	nfcc/include/ndef_message_setup.h	10;"	d
+ADD	nfcc/ndef_message_setup.c	16;"	d	file:
+ADD	nfcc/nfc_task.c	202;"	d	file:
 AES_CR	freertos/portable/GCC/ARM7_AT91SAM7S/AT91SAM7X256.h	/^	AT91_REG	 AES_CR; 	\/\/ Control Register$/;"	m	struct:_AT91S_AES
 AES_CR	freertos/portable/GCC/ARM7_AT91SAM7S/ioat91sam7x256.h	/^	AT91_REG	 AES_CR; 	\/\/ Control Register$/;"	m	struct:_AT91S_AES
 AES_CR	freertos/portable/IAR/AtmelSAM7S64/AT91SAM7X128.h	/^	AT91_REG	 AES_CR; 	\/\/ Control Register$/;"	m	struct:_AT91S_AES
@@ -14306,9 +14308,9 @@ BLDROOT	freertos/portable/ThirdParty/XCC/Xtensa/Makefile	/^BLDROOT     = $(TSTRO
 BLINK_MOUNTED	led/led.h	/^  BLINK_MOUNTED = 1000,$/;"	e	enum:__anon16
 BLINK_NOT_MOUNTED	led/led.h	/^  BLINK_NOT_MOUNTED = 250,$/;"	e	enum:__anon16
 BLINK_SUSPENDED	led/led.h	/^  BLINK_SUSPENDED = 2500,$/;"	e	enum:__anon16
-BLK_NB_ISO14443_3A	nfcc/nfc_task.c	340;"	d	file:
-BLK_NB_ISO15693	nfcc/nfc_task.c	302;"	d	file:
-BLK_NB_MFC	nfcc/nfc_task.c	242;"	d	file:
+BLK_NB_ISO14443_3A	nfcc/nfc_task.c	323;"	d	file:
+BLK_NB_ISO15693	nfcc/nfc_task.c	285;"	d	file:
+BLK_NB_MFC	nfcc/nfc_task.c	225;"	d	file:
 BOARD_DEVICE_RHPORT_NUM	usb/tusb_config.h	21;"	d
 BOARD_DEVICE_RHPORT_SPEED	usb/tusb_config.h	26;"	d
 BOARD_NXPNCI_I2C_ADDR	drivers/include/driver_config.h	41;"	d
@@ -14759,9 +14761,9 @@ CSR_MTVEC	freertos/portable/IAR/RISC-V/portASM.s	/^#define CSR_MTVEC			0x305$/;"
 CallbackParameters_t	freertos/timers.c	/^    } CallbackParameters_t;$/;"	t	typeref:struct:tmrCallbackParameters	file:
 CoRoutineHandle_t	freertos/include/croutine.h	/^typedef void * CoRoutineHandle_t;$/;"	t
 DATA_MODEL_H	freertos/portable/IAR/MSP430X/data_model.h	29;"	d
-DATA_WRITE_ISO14443_3A	nfcc/nfc_task.c	341;"	d	file:
-DATA_WRITE_ISO15693	nfcc/nfc_task.c	303;"	d	file:
-DATA_WRITE_MFC	nfcc/nfc_task.c	244;"	d	file:
+DATA_WRITE_ISO14443_3A	nfcc/nfc_task.c	324;"	d	file:
+DATA_WRITE_ISO15693	nfcc/nfc_task.c	286;"	d	file:
+DATA_WRITE_MFC	nfcc/nfc_task.c	227;"	d	file:
 DBGU_BRGR	freertos/portable/GCC/ARM7_AT91SAM7S/AT91SAM7X256.h	/^	AT91_REG	 DBGU_BRGR; 	\/\/ Baud Rate Generator Register$/;"	m	struct:_AT91S_DBGU
 DBGU_BRGR	freertos/portable/GCC/ARM7_AT91SAM7S/AT91SAM7X256.h	/^	AT91_REG	 DBGU_BRGR; 	\/\/ Baud Rate Generator Register$/;"	m	struct:_AT91S_SYS
 DBGU_BRGR	freertos/portable/GCC/ARM7_AT91SAM7S/ioat91sam7x256.h	/^	AT91_REG	 DBGU_BRGR; 	\/\/ Baud Rate Generator Register$/;"	m	struct:_AT91S_DBGU
@@ -15557,7 +15559,7 @@ If	freertos/portable/IAR/ARM_CA9/portASM.h	/^	; Does the task have a floating po
 Info	nfcc/include/Nfc.h	/^    NxpNci_RfIntf_Info_t Info;$/;"	m	struct:__anon25
 Initial	nfcc/P2P_NDEF.c	/^    Initial,$/;"	e	enum:__anon17	file:
 Interface	nfcc/include/Nfc.h	/^    unsigned char Interface;$/;"	m	struct:__anon25
-KEY_MFC	nfcc/nfc_task.c	243;"	d	file:
+KEY_MFC	nfcc/nfc_task.c	226;"	d	file:
 LEVEL_HIGH	drivers/include/gpio.h	11;"	d
 LEVEL_LOW	drivers/include/gpio.h	10;"	d
 LIB_C_O	freertos/portable/ThirdParty/XCC/Xtensa/Makefile	/^LIB_C_O     = $(patsubst %.c,%.o,$(XT_C_FILES) $(FR_C_FILES))$/;"	m
@@ -15949,7 +15951,7 @@ NDEF_ABSOLUTE_URI	nfcc/include/ndef_helper.h	18;"	d
 NDEF_EMPTY	nfcc/include/ndef_helper.h	15;"	d
 NDEF_EXTERNAL	nfcc/include/ndef_helper.h	19;"	d
 NDEF_MEDIA	nfcc/include/ndef_helper.h	17;"	d
-NDEF_MESSAGE	nfcc/nfc_task.c	/^const char NDEF_MESSAGE[23 + ADD] = { 0xC2,   \/\/ MB\/ME\/CF\/1\/IL\/TNF$/;"	v
+NDEF_MESSAGE	nfcc/nfc_task.c	/^char NDEF_MESSAGE[23 + ADD] = { 0xC2,   \/\/ MB\/ME\/CF\/1\/IL\/TNF$/;"	v
 NDEF_MESSAGE_SETUP_H	nfcc/include/ndef_message_setup.h	4;"	d
 NDEF_PUSH_DELAY_COUNT	nfcc/P2P_NDEF.c	66;"	d	file:
 NDEF_RECORD_CF_MASK	nfcc/include/ndef_helper.h	26;"	d
@@ -17395,6 +17397,7 @@ RTTC_RTVR	freertos/portable/IAR/AtmelSAM7S64/AT91SAM7X256_inc.h	336;"	d
 RW	nfcc/P2P_NDEF.c	53;"	d	file:
 Rats	nfcc/include/Nfc.h	/^    unsigned char Rats[20];$/;"	m	struct:__anon20
 RatsLen	nfcc/include/Nfc.h	/^    unsigned char RatsLen;$/;"	m	struct:__anon20
+Record_sz	nfcc/ndef_message_setup.c	/^uint32_t Record_sz;$/;"	v
 Reserved0	freertos/portable/GCC/ARM7_AT91SAM7S/AT91SAM7X256.h	/^	AT91_REG	 Reserved0[1]; 	\/\/ $/;"	m	struct:_AT91S_CKGR
 Reserved0	freertos/portable/GCC/ARM7_AT91SAM7S/AT91SAM7X256.h	/^	AT91_REG	 Reserved0[1]; 	\/\/ $/;"	m	struct:_AT91S_PIO
 Reserved0	freertos/portable/GCC/ARM7_AT91SAM7S/AT91SAM7X256.h	/^	AT91_REG	 Reserved0[1]; 	\/\/ $/;"	m	struct:_AT91S_PMC
@@ -20901,7 +20904,7 @@ crQUEUE_SEND_FROM_ISR	freertos/include/croutine.h	605;"	d
 crSET_STATE0	freertos/include/croutine.h	253;"	d
 crSET_STATE1	freertos/include/croutine.h	256;"	d
 crSTART	freertos/include/croutine.h	212;"	d
-create_NDEFRecord	nfcc/ndef_message_setup.c	/^uint32_t create_NDEFRecord(char* pMessage, unsigned int MessageSize){$/;"	f
+create_NDEFRecord	nfcc/ndef_message_setup.c	/^uint32_t create_NDEFRecord(unsigned char* pMessage, unsigned int MessageSize){$/;"	f
 debug_loop	nfcc/include/NxpNci.h	/^unsigned short debug_loop;$/;"	v
 definitions	freertos/portable/IAR/AtmelSAM7S64/ISR_Support.h	/^; Context save and restore macro definitions$/;"	v
 definitions	freertos/portable/IAR/AtmelSAM9XE/ISR_Support.h	/^; Context save and restore macro definitions$/;"	v
@@ -21240,7 +21243,7 @@ owner	freertos/portable/ThirdParty/GCC/Xtensa_ESP32_IDF3/include/portmacro.h	/^ 
 pNdefMessage	nfcc/P2P_NDEF.c	/^unsigned char *pNdefMessage;$/;"	v
 pP2P_NDEF_PullCb	nfcc/P2P_NDEF.c	/^static P2P_NDEF_PullCallback_t *pP2P_NDEF_PullCb = NULL;$/;"	v	file:
 pP2P_NDEF_PushCb	nfcc/P2P_NDEF.c	/^static P2P_NDEF_PushCallback_t *pP2P_NDEF_PushCb = NULL;$/;"	v	file:
-pRecord	nfcc/ndef_message_setup.c	/^char* pRecord;$/;"	v
+pRecord	nfcc/ndef_message_setup.c	/^unsigned char* pRecord;$/;"	v
 p_vSoftwareInterruptEntry	freertos/portable/Renesas/RX100/port.c	/^const BaseType_t * p_vSoftwareInterruptEntry = &vSoftwareInterruptEntry;$/;"	v
 p_vSoftwareInterruptEntry	freertos/portable/Renesas/RX200/port.c	/^const BaseType_t * p_vSoftwareInterruptEntry = &vSoftwareInterruptEntry;$/;"	v
 p_vSoftwareInterruptEntry	freertos/portable/Renesas/RX600/port.c	/^const BaseType_t * p_vSoftwareInterruptEntry = &vSoftwareInterruptEntry;$/;"	v
@@ -29304,6 +29307,7 @@ taskstamp	freertos/portable/ThirdParty/XCC/Xtensa/portmacro.h	/^		int taskstamp;
 taskstampcount	freertos/portable/ThirdParty/GCC/Xtensa_ESP32/include/portmacro.h	/^                int taskstampcount; \/* A counter usually incremented when we restart the task's loop *\/$/;"	m	struct:__anon6::__anon7
 taskstampcount	freertos/portable/ThirdParty/GCC/Xtensa_ESP32_IDF3/include/portmacro.h	/^                int taskstampcount; \/* A counter usually incremented when we restart the task's loop *\/$/;"	m	struct:__anon3::__anon4
 taskstampcount	freertos/portable/ThirdParty/XCC/Xtensa/portmacro.h	/^		int taskstampcount;   \/* A counter usually incremented when we restart the task's loop *\/$/;"	m	struct:__anon8::__anon9
+test	nfcc/ndef_message_setup.c	/^char test[23 + ADD] = { 0xC2,   \/\/ MB\/ME\/CF\/1\/IL\/TNF$/;"	v
 test_if_asynchronous	freertos/portable/GCC/RISC-V/portASM.S	/^test_if_asynchronous:$/;"	l
 test_if_asynchronous	freertos/portable/IAR/RISC-V/portASM.s	/^test_if_asynchronous:$/;"	l
 test_if_environment_call	freertos/portable/GCC/RISC-V/portASM.S	/^test_if_environment_call:$/;"	l
