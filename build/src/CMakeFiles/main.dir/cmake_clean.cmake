@@ -78,6 +78,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/main.dir/test/i2c_test.c.obj"
   "CMakeFiles/main.dir/usb/freertos_hook.c.obj"
   "CMakeFiles/main.dir/usb/usb_descriptors.c.obj"
+  "CMakeFiles/main.dir/usb/usb_helper.c.obj"
   "CMakeFiles/main.dir/usb/usb_msc.c.obj"
   "main.elf"
   "main.pdb"

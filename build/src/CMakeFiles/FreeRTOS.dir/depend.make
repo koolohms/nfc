@@ -3697,6 +3697,9 @@ src/CMakeFiles/FreeRTOS.dir/usb/usb_descriptors.c.obj: /home/ddreise/pico/pico-s
 src/CMakeFiles/FreeRTOS.dir/usb/usb_descriptors.c.obj: generated/pico_base/pico/config_autogen.h
 src/CMakeFiles/FreeRTOS.dir/usb/usb_descriptors.c.obj: generated/pico_base/pico/version.h
 
+src/CMakeFiles/FreeRTOS.dir/usb/usb_helper.c.obj: ../src/usb/usb_helper.c
+src/CMakeFiles/FreeRTOS.dir/usb/usb_helper.c.obj: ../src/usb/usb_helper.h
+
 src/CMakeFiles/FreeRTOS.dir/usb/usb_msc.c.obj: ../Source/portable/CodeWarrior/ColdFire_V2/portmacro.h
 src/CMakeFiles/FreeRTOS.dir/usb/usb_msc.c.obj: ../Source/portable/CodeWarrior/HCS12/portmacro.h
 src/CMakeFiles/FreeRTOS.dir/usb/usb_msc.c.obj: ../Source/portable/GCC/ARM7_AT91FR40008/portmacro.h
@@ -3747,6 +3750,7 @@ src/CMakeFiles/FreeRTOS.dir/usb/usb_msc.c.obj: ../src/freertos/portable/GCC/ARM_
 src/CMakeFiles/FreeRTOS.dir/usb/usb_msc.c.obj: ../src/freertos/portable/GCC/ATMega323/portmacro.h
 src/CMakeFiles/FreeRTOS.dir/usb/usb_msc.c.obj: ../src/freertos/portable/IAR/ATMega323/portmacro.h
 src/CMakeFiles/FreeRTOS.dir/usb/usb_msc.c.obj: ../src/usb/tusb_config.h
+src/CMakeFiles/FreeRTOS.dir/usb/usb_msc.c.obj: ../src/usb/usb_helper.h
 src/CMakeFiles/FreeRTOS.dir/usb/usb_msc.c.obj: ../src/usb/usb_msc.c
 src/CMakeFiles/FreeRTOS.dir/usb/usb_msc.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/ansi_escape.h
 src/CMakeFiles/FreeRTOS.dir/usb/usb_msc.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/board.h

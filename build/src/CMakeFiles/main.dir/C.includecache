@@ -102,18 +102,6 @@ stddef.h
 stdint.h
 -
 
-../src/drivers/include/tool.h
-stdio.h
--
-string.h
--
-stdbool.h
--
-stdint.h
--
-stddef.h
--
-
 ../src/freertos/include/FreeRTOS.h
 stddef.h
 -
@@ -284,12 +272,6 @@ list.h
 
 ../src/led/led.h
 
-../src/nfcc/include/Nfc.h
-stdbool.h
--
-
-../src/nfcc/include/ndef_helper.h
-
 ../src/nfcc/include/ndef_message_setup.h
 
 ../src/nfcc/include/nfc_task.h
@@ -297,6 +279,8 @@ stdbool.h
 ../src/test/include/test.h
 
 ../src/usb/tusb_config.h
+
+../src/usb/usb_helper.h
 
 /home/ddreise/pico/nfc/src/main.c
 stdlib.h
@@ -325,6 +309,8 @@ led.h
 /home/ddreise/pico/nfc/src/led.h
 tusb_config.h
 /home/ddreise/pico/nfc/src/tusb_config.h
+usb_helper.h
+/home/ddreise/pico/nfc/src/usb_helper.h
 test.h
 /home/ddreise/pico/nfc/src/test.h
 nfc_task.h
@@ -342,35 +328,23 @@ FreeRTOSConfig.h
 task.h
 /home/ddreise/pico/nfc/src/task.h
 
-/home/ddreise/pico/nfc/src/nfcc/ndef_message_setup.c
-stdio.h
--
-stdlib.h
--
-string.h
--
-ndef_message_setup.h
-/home/ddreise/pico/nfc/src/nfcc/ndef_message_setup.h
-FreeRTOS.h
-/home/ddreise/pico/nfc/src/nfcc/FreeRTOS.h
-task.h
-/home/ddreise/pico/nfc/src/nfcc/task.h
-
-/home/ddreise/pico/nfc/src/nfcc/nfc_task.c
+/home/ddreise/pico/nfc/src/usb/usb_helper.c
 stdio.h
 -
 stdint.h
 -
-string.h
--
-tool.h
-/home/ddreise/pico/nfc/src/nfcc/tool.h
-Nfc.h
-/home/ddreise/pico/nfc/src/nfcc/Nfc.h
-ndef_helper.h
-/home/ddreise/pico/nfc/src/nfcc/ndef_helper.h
-ndef_message_setup.h
-/home/ddreise/pico/nfc/src/nfcc/ndef_message_setup.h
+usb_helper.h
+/home/ddreise/pico/nfc/src/usb/usb_helper.h
+
+/home/ddreise/pico/nfc/src/usb/usb_helper.h
+
+/home/ddreise/pico/nfc/src/usb/usb_msc.c
+bsp/board.h
+/home/ddreise/pico/nfc/src/usb/bsp/board.h
+tusb.h
+/home/ddreise/pico/nfc/src/usb/tusb.h
+usb_helper.h
+/home/ddreise/pico/nfc/src/usb/usb_helper.h
 
 /home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/ansi_escape.h
 

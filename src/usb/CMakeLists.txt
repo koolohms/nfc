@@ -6,6 +6,7 @@ target_sources(usb INTERFACE
         ${CMAKE_CURRENT_LIST_DIR}/usb_descriptors.c
         ${CMAKE_CURRENT_LIST_DIR}/usb_msc.c
         ${CMAKE_CURRENT_LIST_DIR}/freertos_hook.c
+        ${CMAKE_CURRENT_LIST_DIR}/usb_helper.c
 )
 
 # Add include files

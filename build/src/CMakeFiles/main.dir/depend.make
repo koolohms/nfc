@@ -2850,6 +2850,7 @@ src/CMakeFiles/main.dir/main.c.obj: ../src/nfcc/include/ndef_message_setup.h
 src/CMakeFiles/main.dir/main.c.obj: ../src/nfcc/include/nfc_task.h
 src/CMakeFiles/main.dir/main.c.obj: ../src/test/include/test.h
 src/CMakeFiles/main.dir/main.c.obj: ../src/usb/tusb_config.h
+src/CMakeFiles/main.dir/main.c.obj: ../src/usb/usb_helper.h
 src/CMakeFiles/main.dir/main.c.obj: ../src/main.c
 src/CMakeFiles/main.dir/main.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/ansi_escape.h
 src/CMakeFiles/main.dir/main.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/board.h
@@ -3268,6 +3269,9 @@ src/CMakeFiles/main.dir/usb/usb_descriptors.c.obj: /home/ddreise/pico/pico-sdk/s
 src/CMakeFiles/main.dir/usb/usb_descriptors.c.obj: generated/pico_base/pico/config_autogen.h
 src/CMakeFiles/main.dir/usb/usb_descriptors.c.obj: generated/pico_base/pico/version.h
 
+src/CMakeFiles/main.dir/usb/usb_helper.c.obj: ../src/usb/usb_helper.c
+src/CMakeFiles/main.dir/usb/usb_helper.c.obj: ../src/usb/usb_helper.h
+
 src/CMakeFiles/main.dir/usb/usb_msc.c.obj: ../Source/portable/CodeWarrior/ColdFire_V2/portmacro.h
 src/CMakeFiles/main.dir/usb/usb_msc.c.obj: ../Source/portable/CodeWarrior/HCS12/portmacro.h
 src/CMakeFiles/main.dir/usb/usb_msc.c.obj: ../Source/portable/GCC/ARM7_AT91FR40008/portmacro.h
@@ -3318,6 +3322,7 @@ src/CMakeFiles/main.dir/usb/usb_msc.c.obj: ../src/freertos/portable/GCC/ARM_CM0/
 src/CMakeFiles/main.dir/usb/usb_msc.c.obj: ../src/freertos/portable/GCC/ATMega323/portmacro.h
 src/CMakeFiles/main.dir/usb/usb_msc.c.obj: ../src/freertos/portable/IAR/ATMega323/portmacro.h
 src/CMakeFiles/main.dir/usb/usb_msc.c.obj: ../src/usb/tusb_config.h
+src/CMakeFiles/main.dir/usb/usb_msc.c.obj: ../src/usb/usb_helper.h
 src/CMakeFiles/main.dir/usb/usb_msc.c.obj: ../src/usb/usb_msc.c
 src/CMakeFiles/main.dir/usb/usb_msc.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/ansi_escape.h
 src/CMakeFiles/main.dir/usb/usb_msc.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/board.h

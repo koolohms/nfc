@@ -723,9 +723,22 @@ src/CMakeFiles/FreeRTOS.dir/usb/freertos_hook.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FreeRTOS.dir/usb/freertos_hook.c.s"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ddreise/pico/nfc/src/usb/freertos_hook.c -o CMakeFiles/FreeRTOS.dir/usb/freertos_hook.c.s
 
+src/CMakeFiles/FreeRTOS.dir/usb/usb_helper.c.obj: src/CMakeFiles/FreeRTOS.dir/flags.make
+src/CMakeFiles/FreeRTOS.dir/usb/usb_helper.c.obj: ../src/usb/usb_helper.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object src/CMakeFiles/FreeRTOS.dir/usb/usb_helper.c.obj"
+	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FreeRTOS.dir/usb/usb_helper.c.obj   -c /home/ddreise/pico/nfc/src/usb/usb_helper.c
+
+src/CMakeFiles/FreeRTOS.dir/usb/usb_helper.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/FreeRTOS.dir/usb/usb_helper.c.i"
+	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ddreise/pico/nfc/src/usb/usb_helper.c > CMakeFiles/FreeRTOS.dir/usb/usb_helper.c.i
+
+src/CMakeFiles/FreeRTOS.dir/usb/usb_helper.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FreeRTOS.dir/usb/usb_helper.c.s"
+	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ddreise/pico/nfc/src/usb/usb_helper.c -o CMakeFiles/FreeRTOS.dir/usb/usb_helper.c.s
+
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj: src/CMakeFiles/FreeRTOS.dir/flags.make
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj   -c /home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c
 
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i: cmake_force
@@ -738,7 +751,7 @@ src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/
 
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj: src/CMakeFiles/FreeRTOS.dir/flags.make
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj   -c /home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c
 
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i: cmake_force
@@ -751,7 +764,7 @@ src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/
 
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj: src/CMakeFiles/FreeRTOS.dir/flags.make
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj   -c /home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd.c
 
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i: cmake_force
@@ -764,7 +777,7 @@ src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/us
 
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj: src/CMakeFiles/FreeRTOS.dir/flags.make
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj   -c /home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c
 
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i: cmake_force
@@ -777,7 +790,7 @@ src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/us
 
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj: src/CMakeFiles/FreeRTOS.dir/flags.make
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj   -c /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c
 
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i: cmake_force
@@ -790,7 +803,7 @@ src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/aud
 
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj: src/CMakeFiles/FreeRTOS.dir/flags.make
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj   -c /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c
 
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i: cmake_force
@@ -803,7 +816,7 @@ src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/cdc
 
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj: src/CMakeFiles/FreeRTOS.dir/flags.make
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj   -c /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c
 
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i: cmake_force
@@ -816,7 +829,7 @@ src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu
 
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj: src/CMakeFiles/FreeRTOS.dir/flags.make
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj   -c /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c
 
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i: cmake_force
@@ -829,7 +842,7 @@ src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu
 
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj: src/CMakeFiles/FreeRTOS.dir/flags.make
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj   -c /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c
 
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i: cmake_force
@@ -842,7 +855,7 @@ src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/hid
 
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj: src/CMakeFiles/FreeRTOS.dir/flags.make
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj   -c /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c
 
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i: cmake_force
@@ -855,7 +868,7 @@ src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/mid
 
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj: src/CMakeFiles/FreeRTOS.dir/flags.make
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj   -c /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c
 
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i: cmake_force
@@ -868,7 +881,7 @@ src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/msc
 
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.obj: src/CMakeFiles/FreeRTOS.dir/flags.make
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.obj   -c /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c
 
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.i: cmake_force
@@ -881,7 +894,7 @@ src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/net
 
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj: src/CMakeFiles/FreeRTOS.dir/flags.make
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj   -c /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c
 
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i: cmake_force
@@ -894,7 +907,7 @@ src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/usb
 
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj: src/CMakeFiles/FreeRTOS.dir/flags.make
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj   -c /home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c
 
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i: cmake_force
@@ -907,7 +920,7 @@ src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/ven
 
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj: src/CMakeFiles/FreeRTOS.dir/flags.make
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/tusb.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj   -c /home/ddreise/pico/pico-sdk/lib/tinyusb/src/tusb.c
 
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/tusb.c.i: cmake_force
@@ -920,7 +933,7 @@ src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/tusb.c.s:
 
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj: src/CMakeFiles/FreeRTOS.dir/flags.make
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj   -c /home/ddreise/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c
 
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i: cmake_force
@@ -933,7 +946,7 @@ src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/common/tu
 
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj: src/CMakeFiles/FreeRTOS.dir/flags.make
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj   -c /home/ddreise/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c
 
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i: cmake_force
@@ -946,7 +959,7 @@ src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_fix/r
 
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj: src/CMakeFiles/FreeRTOS.dir/flags.make
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj: /home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj   -c /home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c
 
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.i: cmake_force
@@ -959,7 +972,7 @@ src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040
 
 src/CMakeFiles/FreeRTOS.dir/led/led.c.obj: src/CMakeFiles/FreeRTOS.dir/flags.make
 src/CMakeFiles/FreeRTOS.dir/led/led.c.obj: ../src/led/led.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object src/CMakeFiles/FreeRTOS.dir/led/led.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object src/CMakeFiles/FreeRTOS.dir/led/led.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FreeRTOS.dir/led/led.c.obj   -c /home/ddreise/pico/nfc/src/led/led.c
 
 src/CMakeFiles/FreeRTOS.dir/led/led.c.i: cmake_force
@@ -972,7 +985,7 @@ src/CMakeFiles/FreeRTOS.dir/led/led.c.s: cmake_force
 
 src/CMakeFiles/FreeRTOS.dir/test/i2c_test.c.obj: src/CMakeFiles/FreeRTOS.dir/flags.make
 src/CMakeFiles/FreeRTOS.dir/test/i2c_test.c.obj: ../src/test/i2c_test.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object src/CMakeFiles/FreeRTOS.dir/test/i2c_test.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object src/CMakeFiles/FreeRTOS.dir/test/i2c_test.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FreeRTOS.dir/test/i2c_test.c.obj   -c /home/ddreise/pico/nfc/src/test/i2c_test.c
 
 src/CMakeFiles/FreeRTOS.dir/test/i2c_test.c.i: cmake_force
@@ -985,7 +998,7 @@ src/CMakeFiles/FreeRTOS.dir/test/i2c_test.c.s: cmake_force
 
 src/CMakeFiles/FreeRTOS.dir/nfcc/NxpNci.c.obj: src/CMakeFiles/FreeRTOS.dir/flags.make
 src/CMakeFiles/FreeRTOS.dir/nfcc/NxpNci.c.obj: ../src/nfcc/NxpNci.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object src/CMakeFiles/FreeRTOS.dir/nfcc/NxpNci.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object src/CMakeFiles/FreeRTOS.dir/nfcc/NxpNci.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FreeRTOS.dir/nfcc/NxpNci.c.obj   -c /home/ddreise/pico/nfc/src/nfcc/NxpNci.c
 
 src/CMakeFiles/FreeRTOS.dir/nfcc/NxpNci.c.i: cmake_force
@@ -998,7 +1011,7 @@ src/CMakeFiles/FreeRTOS.dir/nfcc/NxpNci.c.s: cmake_force
 
 src/CMakeFiles/FreeRTOS.dir/nfcc/P2P_NDEF.c.obj: src/CMakeFiles/FreeRTOS.dir/flags.make
 src/CMakeFiles/FreeRTOS.dir/nfcc/P2P_NDEF.c.obj: ../src/nfcc/P2P_NDEF.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object src/CMakeFiles/FreeRTOS.dir/nfcc/P2P_NDEF.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object src/CMakeFiles/FreeRTOS.dir/nfcc/P2P_NDEF.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FreeRTOS.dir/nfcc/P2P_NDEF.c.obj   -c /home/ddreise/pico/nfc/src/nfcc/P2P_NDEF.c
 
 src/CMakeFiles/FreeRTOS.dir/nfcc/P2P_NDEF.c.i: cmake_force
@@ -1011,7 +1024,7 @@ src/CMakeFiles/FreeRTOS.dir/nfcc/P2P_NDEF.c.s: cmake_force
 
 src/CMakeFiles/FreeRTOS.dir/nfcc/tml.c.obj: src/CMakeFiles/FreeRTOS.dir/flags.make
 src/CMakeFiles/FreeRTOS.dir/nfcc/tml.c.obj: ../src/nfcc/tml.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object src/CMakeFiles/FreeRTOS.dir/nfcc/tml.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object src/CMakeFiles/FreeRTOS.dir/nfcc/tml.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FreeRTOS.dir/nfcc/tml.c.obj   -c /home/ddreise/pico/nfc/src/nfcc/tml.c
 
 src/CMakeFiles/FreeRTOS.dir/nfcc/tml.c.i: cmake_force
@@ -1024,7 +1037,7 @@ src/CMakeFiles/FreeRTOS.dir/nfcc/tml.c.s: cmake_force
 
 src/CMakeFiles/FreeRTOS.dir/nfcc/ndef_helper.c.obj: src/CMakeFiles/FreeRTOS.dir/flags.make
 src/CMakeFiles/FreeRTOS.dir/nfcc/ndef_helper.c.obj: ../src/nfcc/ndef_helper.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object src/CMakeFiles/FreeRTOS.dir/nfcc/ndef_helper.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object src/CMakeFiles/FreeRTOS.dir/nfcc/ndef_helper.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FreeRTOS.dir/nfcc/ndef_helper.c.obj   -c /home/ddreise/pico/nfc/src/nfcc/ndef_helper.c
 
 src/CMakeFiles/FreeRTOS.dir/nfcc/ndef_helper.c.i: cmake_force
@@ -1037,7 +1050,7 @@ src/CMakeFiles/FreeRTOS.dir/nfcc/ndef_helper.c.s: cmake_force
 
 src/CMakeFiles/FreeRTOS.dir/nfcc/nfc_task.c.obj: src/CMakeFiles/FreeRTOS.dir/flags.make
 src/CMakeFiles/FreeRTOS.dir/nfcc/nfc_task.c.obj: ../src/nfcc/nfc_task.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object src/CMakeFiles/FreeRTOS.dir/nfcc/nfc_task.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object src/CMakeFiles/FreeRTOS.dir/nfcc/nfc_task.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FreeRTOS.dir/nfcc/nfc_task.c.obj   -c /home/ddreise/pico/nfc/src/nfcc/nfc_task.c
 
 src/CMakeFiles/FreeRTOS.dir/nfcc/nfc_task.c.i: cmake_force
@@ -1050,7 +1063,7 @@ src/CMakeFiles/FreeRTOS.dir/nfcc/nfc_task.c.s: cmake_force
 
 src/CMakeFiles/FreeRTOS.dir/nfcc/ndef_message_setup.c.obj: src/CMakeFiles/FreeRTOS.dir/flags.make
 src/CMakeFiles/FreeRTOS.dir/nfcc/ndef_message_setup.c.obj: ../src/nfcc/ndef_message_setup.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object src/CMakeFiles/FreeRTOS.dir/nfcc/ndef_message_setup.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object src/CMakeFiles/FreeRTOS.dir/nfcc/ndef_message_setup.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FreeRTOS.dir/nfcc/ndef_message_setup.c.obj   -c /home/ddreise/pico/nfc/src/nfcc/ndef_message_setup.c
 
 src/CMakeFiles/FreeRTOS.dir/nfcc/ndef_message_setup.c.i: cmake_force
@@ -1063,7 +1076,7 @@ src/CMakeFiles/FreeRTOS.dir/nfcc/ndef_message_setup.c.s: cmake_force
 
 src/CMakeFiles/FreeRTOS.dir/drivers/tool.c.obj: src/CMakeFiles/FreeRTOS.dir/flags.make
 src/CMakeFiles/FreeRTOS.dir/drivers/tool.c.obj: ../src/drivers/tool.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object src/CMakeFiles/FreeRTOS.dir/drivers/tool.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object src/CMakeFiles/FreeRTOS.dir/drivers/tool.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FreeRTOS.dir/drivers/tool.c.obj   -c /home/ddreise/pico/nfc/src/drivers/tool.c
 
 src/CMakeFiles/FreeRTOS.dir/drivers/tool.c.i: cmake_force
@@ -1076,7 +1089,7 @@ src/CMakeFiles/FreeRTOS.dir/drivers/tool.c.s: cmake_force
 
 src/CMakeFiles/FreeRTOS.dir/drivers/gpio.c.obj: src/CMakeFiles/FreeRTOS.dir/flags.make
 src/CMakeFiles/FreeRTOS.dir/drivers/gpio.c.obj: ../src/drivers/gpio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object src/CMakeFiles/FreeRTOS.dir/drivers/gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object src/CMakeFiles/FreeRTOS.dir/drivers/gpio.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FreeRTOS.dir/drivers/gpio.c.obj   -c /home/ddreise/pico/nfc/src/drivers/gpio.c
 
 src/CMakeFiles/FreeRTOS.dir/drivers/gpio.c.i: cmake_force
@@ -1089,7 +1102,7 @@ src/CMakeFiles/FreeRTOS.dir/drivers/gpio.c.s: cmake_force
 
 src/CMakeFiles/FreeRTOS.dir/drivers/i2c.c.obj: src/CMakeFiles/FreeRTOS.dir/flags.make
 src/CMakeFiles/FreeRTOS.dir/drivers/i2c.c.obj: ../src/drivers/i2c.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object src/CMakeFiles/FreeRTOS.dir/drivers/i2c.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object src/CMakeFiles/FreeRTOS.dir/drivers/i2c.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FreeRTOS.dir/drivers/i2c.c.obj   -c /home/ddreise/pico/nfc/src/drivers/i2c.c
 
 src/CMakeFiles/FreeRTOS.dir/drivers/i2c.c.i: cmake_force
@@ -1102,7 +1115,7 @@ src/CMakeFiles/FreeRTOS.dir/drivers/i2c.c.s: cmake_force
 
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Source/system_RP2040.c.obj: src/CMakeFiles/FreeRTOS.dir/flags.make
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Source/system_RP2040.c.obj: /home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Source/system_RP2040.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Source/system_RP2040.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Source/system_RP2040.c.obj"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Source/system_RP2040.c.obj   -c /home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Source/system_RP2040.c
 
 src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Source/system_RP2040.c.i: cmake_force
@@ -1173,6 +1186,7 @@ FreeRTOS_OBJECTS = \
 "CMakeFiles/FreeRTOS.dir/usb/usb_descriptors.c.obj" \
 "CMakeFiles/FreeRTOS.dir/usb/usb_msc.c.obj" \
 "CMakeFiles/FreeRTOS.dir/usb/freertos_hook.c.obj" \
+"CMakeFiles/FreeRTOS.dir/usb/usb_helper.c.obj" \
 "CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj" \
 "CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj" \
 "CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj" \
@@ -1265,6 +1279,7 @@ src/libFreeRTOS.a: src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp
 src/libFreeRTOS.a: src/CMakeFiles/FreeRTOS.dir/usb/usb_descriptors.c.obj
 src/libFreeRTOS.a: src/CMakeFiles/FreeRTOS.dir/usb/usb_msc.c.obj
 src/libFreeRTOS.a: src/CMakeFiles/FreeRTOS.dir/usb/freertos_hook.c.obj
+src/libFreeRTOS.a: src/CMakeFiles/FreeRTOS.dir/usb/usb_helper.c.obj
 src/libFreeRTOS.a: src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
 src/libFreeRTOS.a: src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
 src/libFreeRTOS.a: src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
@@ -1297,7 +1312,7 @@ src/libFreeRTOS.a: src/CMakeFiles/FreeRTOS.dir/drivers/i2c.c.obj
 src/libFreeRTOS.a: src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Source/system_RP2040.c.obj
 src/libFreeRTOS.a: src/CMakeFiles/FreeRTOS.dir/build.make
 src/libFreeRTOS.a: src/CMakeFiles/FreeRTOS.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Linking CXX static library libFreeRTOS.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Linking CXX static library libFreeRTOS.a"
 	cd /home/ddreise/pico/nfc/build/src && $(CMAKE_COMMAND) -P CMakeFiles/FreeRTOS.dir/cmake_clean_target.cmake
 	cd /home/ddreise/pico/nfc/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/FreeRTOS.dir/link.txt --verbose=$(VERBOSE)
 

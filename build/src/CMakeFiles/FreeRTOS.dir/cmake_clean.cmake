@@ -86,6 +86,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/FreeRTOS.dir/test/i2c_test.c.obj"
   "CMakeFiles/FreeRTOS.dir/usb/freertos_hook.c.obj"
   "CMakeFiles/FreeRTOS.dir/usb/usb_descriptors.c.obj"
+  "CMakeFiles/FreeRTOS.dir/usb/usb_helper.c.obj"
   "CMakeFiles/FreeRTOS.dir/usb/usb_msc.c.obj"
   "libFreeRTOS.a"
   "libFreeRTOS.pdb"

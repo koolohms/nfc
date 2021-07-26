@@ -2545,6 +2545,36 @@ usb/usb_descriptors.c.s:
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/usb/usb_descriptors.c.s
 .PHONY : usb/usb_descriptors.c.s
 
+usb/usb_helper.obj: usb/usb_helper.c.obj
+
+.PHONY : usb/usb_helper.obj
+
+# target to build an object file
+usb/usb_helper.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/usb/usb_helper.c.obj
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/usb/usb_helper.c.obj
+.PHONY : usb/usb_helper.c.obj
+
+usb/usb_helper.i: usb/usb_helper.c.i
+
+.PHONY : usb/usb_helper.i
+
+# target to preprocess a source file
+usb/usb_helper.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/usb/usb_helper.c.i
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/usb/usb_helper.c.i
+.PHONY : usb/usb_helper.c.i
+
+usb/usb_helper.s: usb/usb_helper.c.s
+
+.PHONY : usb/usb_helper.s
+
+# target to generate assembly for a file
+usb/usb_helper.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/usb/usb_helper.c.s
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/usb/usb_helper.c.s
+.PHONY : usb/usb_helper.c.s
+
 usb/usb_msc.obj: usb/usb_msc.c.obj
 
 .PHONY : usb/usb_msc.obj
@@ -2828,6 +2858,9 @@ help:
 	@echo "... usb/usb_descriptors.obj"
 	@echo "... usb/usb_descriptors.i"
 	@echo "... usb/usb_descriptors.s"
+	@echo "... usb/usb_helper.obj"
+	@echo "... usb/usb_helper.i"
+	@echo "... usb/usb_helper.s"
 	@echo "... usb/usb_msc.obj"
 	@echo "... usb/usb_msc.i"
 	@echo "... usb/usb_msc.s"

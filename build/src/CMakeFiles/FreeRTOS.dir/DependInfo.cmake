@@ -199,6 +199,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/ddreise/pico/nfc/src/test/i2c_test.c" "/home/ddreise/pico/nfc/build/src/CMakeFiles/FreeRTOS.dir/test/i2c_test.c.obj"
   "/home/ddreise/pico/nfc/src/usb/freertos_hook.c" "/home/ddreise/pico/nfc/build/src/CMakeFiles/FreeRTOS.dir/usb/freertos_hook.c.obj"
   "/home/ddreise/pico/nfc/src/usb/usb_descriptors.c" "/home/ddreise/pico/nfc/build/src/CMakeFiles/FreeRTOS.dir/usb/usb_descriptors.c.obj"
+  "/home/ddreise/pico/nfc/src/usb/usb_helper.c" "/home/ddreise/pico/nfc/build/src/CMakeFiles/FreeRTOS.dir/usb/usb_helper.c.obj"
   "/home/ddreise/pico/nfc/src/usb/usb_msc.c" "/home/ddreise/pico/nfc/build/src/CMakeFiles/FreeRTOS.dir/usb/usb_msc.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")

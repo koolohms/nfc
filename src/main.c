@@ -36,6 +36,7 @@
 #include "hardware/structs/clocks.h"
 #include "led.h"
 #include "tusb_config.h"
+#include "usb_helper.h"
 #include "test.h"
 #include "nfc_task.h"
 #include "ndef_message_setup.h"
@@ -122,6 +123,13 @@ void vUSBTask(void* pvParameters){
   printf(pcTaskName);
 
   while(1){
+
+    // Put here a conditional if statement that will create a new record if new
+    // file received in USB memory
+
+    if(checkfileReceived()){
+      //Record_sz = create_NDEFRecord(test_message, sizeof(test_message));
+    }
     taskENTER_CRITICAL();
     tud_task();
     taskEXIT_CRITICAL();  
@@ -145,10 +153,10 @@ void vNFCTask(void* pvParameters){
   const char *pcTaskName = "NFC Task is running\r\n";
   printf(pcTaskName);
 
-  unsigned char test_message[] = "this is a test";
-  Record_sz = create_NDEFRecord(test_message, sizeof(test_message));
-
+  //unsigned char test_message[] = "this is a test";
+  
   while(1){
+
     task_nfc();
     vTaskDelay(10);   // There is another task delay in 
   }

@@ -308,9 +308,6 @@ ADC_TPR	freertos/portable/IAR/AtmelSAM7S64/AT91SAM7X128.h	/^	AT91_REG	 ADC_TPR; 
 ADC_TPR	freertos/portable/IAR/AtmelSAM7S64/AT91SAM7X128_inc.h	1376;"	d
 ADC_TPR	freertos/portable/IAR/AtmelSAM7S64/AT91SAM7X256.h	/^	AT91_REG	 ADC_TPR; 	\/\/ Transmit Pointer Register$/;"	m	struct:_AT91S_ADC
 ADC_TPR	freertos/portable/IAR/AtmelSAM7S64/AT91SAM7X256_inc.h	1376;"	d
-ADD	nfcc/include/ndef_message_setup.h	10;"	d
-ADD	nfcc/ndef_message_setup.c	16;"	d	file:
-ADD	nfcc/nfc_task.c	202;"	d	file:
 AES_CR	freertos/portable/GCC/ARM7_AT91SAM7S/AT91SAM7X256.h	/^	AT91_REG	 AES_CR; 	\/\/ Control Register$/;"	m	struct:_AT91S_AES
 AES_CR	freertos/portable/GCC/ARM7_AT91SAM7S/ioat91sam7x256.h	/^	AT91_REG	 AES_CR; 	\/\/ Control Register$/;"	m	struct:_AT91S_AES
 AES_CR	freertos/portable/IAR/AtmelSAM7S64/AT91SAM7X128.h	/^	AT91_REG	 AES_CR; 	\/\/ Control Register$/;"	m	struct:_AT91S_AES
@@ -15378,6 +15375,7 @@ EventGroupDef_t	freertos/event_groups.c	/^typedef struct EventGroupDef_t$/;"	s	f
 EventGroupHandle_t	freertos/include/event_groups.h	/^typedef struct EventGroupDef_t   * EventGroupHandle_t;$/;"	t	typeref:struct:EventGroupDef_t
 EventGroup_t	freertos/event_groups.c	/^} EventGroup_t;$/;"	t	typeref:struct:EventGroupDef_t	file:
 Exit_IRQ_No_Context_Switch	freertos/portable/GCC/ARM_CA53_64_BIT/portASM.S	/^Exit_IRQ_No_Context_Switch:$/;"	l
+FALSE	usb/usb_helper.h	5;"	d
 FED	freertos/portable/WizC/PIC18/Install.bat	/^  set FED=C:\\Program Files\\FED\\PIC_C$/;"	v
 FED	freertos/portable/WizC/PIC18/Install.bat	/^  set FED=C:\\Program Files\\FED\\PIXIE$/;"	v
 FEDLIBS	freertos/portable/WizC/PIC18/Install.bat	/^  set FEDLIBS=%FED%\\Libs$/;"	v
@@ -15395,6 +15393,7 @@ FRMR	nfcc/P2P_NDEF.c	39;"	d	file:
 FR_C_FILES	freertos/portable/ThirdParty/XCC/Xtensa/Makefile	/^FR_C_FILES  = $(notdir $(wildcard $(FR_SRCDIR)\/*.c)) $(notdir $(wildcard $(FR_SRCDIR2)\/*.c))$/;"	m
 FR_SRCDIR	freertos/portable/ThirdParty/XCC/Xtensa/Makefile	/^FR_SRCDIR   = $(abspath $(SRCROOT)$(S)..$(S)..$(S)..)$/;"	m
 FR_SRCDIR2	freertos/portable/ThirdParty/XCC/Xtensa/Makefile	/^FR_SRCDIR2  = $(FR_SRCDIR)$(S)portable$(S)MemMang$/;"	m
+FileSize	usb/usb_helper.c	/^uint32_t FileSize;$/;"	v
 FillLlcp	nfcc/P2P_NDEF.c	/^static void FillLlcp(P2P_NDEF_LlcpHeader_t LlcpHeader, unsigned char *pBuf)$/;"	f	file:
 FreeRTOS_Abort	freertos/portable/GCC/ARM_CA53_64_BIT/portASM.S	/^FreeRTOS_Abort:$/;"	l
 FreeRTOS_IRQ_Handler	freertos/portable/GCC/ARM_CA53_64_BIT/portASM.S	/^FreeRTOS_IRQ_Handler:$/;"	l
@@ -15951,7 +15950,6 @@ NDEF_ABSOLUTE_URI	nfcc/include/ndef_helper.h	18;"	d
 NDEF_EMPTY	nfcc/include/ndef_helper.h	15;"	d
 NDEF_EXTERNAL	nfcc/include/ndef_helper.h	19;"	d
 NDEF_MEDIA	nfcc/include/ndef_helper.h	17;"	d
-NDEF_MESSAGE	nfcc/nfc_task.c	/^char NDEF_MESSAGE[23 + ADD] = { 0xC2,   \/\/ MB\/ME\/CF\/1\/IL\/TNF$/;"	v
 NDEF_MESSAGE_SETUP_H	nfcc/include/ndef_message_setup.h	4;"	d
 NDEF_PUSH_DELAY_COUNT	nfcc/P2P_NDEF.c	66;"	d	file:
 NDEF_RECORD_CF_MASK	nfcc/include/ndef_helper.h	26;"	d
@@ -17288,7 +17286,7 @@ R3	freertos/portable/IAR/ARM_CA5_No_GIC/portASM.h	/^	CMP		R3, #0$/;"	v
 R3	freertos/portable/IAR/ARM_CA9/portASM.h	/^	CMP		R3, #0$/;"	v
 R4	freertos/portable/IAR/ARM_CA9/portASM.h	/^	LDRNE	R4, =( configMAX_API_CALL_INTERRUPT_PRIORITY << portPRIORITY_SHIFT )$/;"	v
 R4	freertos/portable/IAR/ARM_CA9/portASM.h	/^	MOVEQ	R4, #255$/;"	v
-README0_CONTENTS	usb/usb_msc.c	21;"	d	file:
+README0_CONTENTS	usb/usb_msc.c	22;"	d	file:
 READ_NDEF	nfcc/include/Nfc.h	/^    READ_NDEF,$/;"	e	enum:__anon19
 RESERVED_FF	freertos/portable/IAR/78K0R/portmacro.h	135;"	d
 RESET_READONLY	freertos/portable/WizC/PIC18/Install.bat	/^:RESET_READONLY$/;"	l
@@ -19057,6 +19055,7 @@ TOOL_H	drivers/include/tool.h	4;"	d
 TOPOFSTACK_OFFS	freertos/portable/ThirdParty/GCC/Xtensa_ESP32/portasm.S	/^#define TOPOFSTACK_OFFS                 0x00    \/* StackType_t *pxTopOfStack *\/$/;"	d
 TOPOFSTACK_OFFS	freertos/portable/ThirdParty/GCC/Xtensa_ESP32_IDF3/portasm.S	/^#define TOPOFSTACK_OFFS                 0x00    \/* StackType_t *pxTopOfStack *\/$/;"	d
 TOPOFSTACK_OFFS	freertos/portable/ThirdParty/XCC/Xtensa/portasm.S	/^#define TOPOFSTACK_OFFS                 0x00    \/* StackType_t *pxTopOfStack *\/$/;"	d
+TRUE	usb/usb_helper.h	4;"	d
 TSTROOT	freertos/portable/ThirdParty/XCC/Xtensa/Makefile	/^TSTROOT     = $(abspath $(SRCROOT)$(S)..$(S)..$(S)..$(S)..$(S)..$(S)demos$(S)cadence$(S)sim$(SMALL))$/;"	m
 TWI_CR	freertos/portable/GCC/ARM7_AT91SAM7S/AT91SAM7X256.h	/^	AT91_REG	 TWI_CR; 	\/\/ Control Register$/;"	m	struct:_AT91S_TWI
 TWI_CR	freertos/portable/GCC/ARM7_AT91SAM7S/ioat91sam7x256.h	/^	AT91_REG	 TWI_CR; 	\/\/ Control Register$/;"	m	struct:_AT91S_TWI
@@ -19630,6 +19629,7 @@ UDP_TXVC	freertos/portable/IAR/AtmelSAM7S64/AT91SAM7X256.h	/^	AT91_REG	 UDP_TXVC
 UDP_TXVC	freertos/portable/IAR/AtmelSAM7S64/AT91SAM7X256_inc.h	855;"	d
 UI	nfcc/P2P_NDEF.c	34;"	d	file:
 UNSUPPORTED_NDEF_RECORD	nfcc/include/ndef_helper.h	/^    UNSUPPORTED_NDEF_RECORD = 0xFF$/;"	e	enum:__anon28
+USB_HELPER_H	usb/usb_helper.h	2;"	d
 USB_PID	usb/usb_descriptors.c	35;"	d	file:
 USED	freertos/portable/ThirdParty/GCC/Xtensa_ESP32/FreeRTOS-openocd.c	17;"	d	file:
 USED	freertos/portable/ThirdParty/GCC/Xtensa_ESP32/FreeRTOS-openocd.c	19;"	d	file:
@@ -20637,6 +20637,7 @@ brk_siz	freertos/portable/Softune/MB96340/__STD_LIB_sbrk.c	/^	static  long      
 cRxLock	freertos/queue.c	/^    volatile int8_t cRxLock;                \/*< Stores the number of items received from the queue (removed from the queue) while the queue was locked.  Set to queueUNLOCKED when the queue is not locked. *\/$/;"	m	struct:QueueDefinition	file:
 cTxLock	freertos/queue.c	/^    volatile int8_t cTxLock;                \/*< Stores the number of items transmitted to the queue (added to the queue) while the queue was locked.  Set to queueUNLOCKED when the queue is not locked. *\/$/;"	m	struct:QueueDefinition	file:
 call_scheduler	freertos/portable/GCC/NiosII/port_asm.S	/^call_scheduler:$/;"	l
+checkfileReceived	usb/usb_helper.c	/^uint8_t checkfileReceived(void){$/;"	f
 chip_specific_stack_frame	freertos/portable/GCC/RISC-V/portASM.S	/^chip_specific_stack_frame:				\/* First add any chip specific registers to the stack frame being created. *\/$/;"	l
 chip_specific_stack_frame	freertos/portable/IAR/RISC-V/portASM.s	/^chip_specific_stack_frame:				\/* First add any chip specific registers to the stack frame being created. *\/$/;"	l
 cmp_x	freertos/portable/IAR/MSP430X/data_model.h	37;"	d
@@ -21240,6 +21241,7 @@ os_wrapper_mutex_release	freertos/portable/ThirdParty/GCC/ARM_CM33_TFM/os_wrappe
 outb	freertos/portable/IAR/ATMega323/portmacro.h	98;"	d
 owner	freertos/portable/ThirdParty/GCC/Xtensa_ESP32/include/portmacro.h	/^        uint32_t owner;$/;"	m	struct:__anon5
 owner	freertos/portable/ThirdParty/GCC/Xtensa_ESP32_IDF3/include/portmacro.h	/^        uint32_t owner;$/;"	m	struct:__anon2
+pFile	usb/usb_helper.c	/^uint8_t *pFile = 0;$/;"	v
 pNdefMessage	nfcc/P2P_NDEF.c	/^unsigned char *pNdefMessage;$/;"	v
 pP2P_NDEF_PullCb	nfcc/P2P_NDEF.c	/^static P2P_NDEF_PullCallback_t *pP2P_NDEF_PullCb = NULL;$/;"	v	file:
 pP2P_NDEF_PushCb	nfcc/P2P_NDEF.c	/^static P2P_NDEF_PushCallback_t *pP2P_NDEF_PushCb = NULL;$/;"	v	file:
@@ -29307,7 +29309,7 @@ taskstamp	freertos/portable/ThirdParty/XCC/Xtensa/portmacro.h	/^		int taskstamp;
 taskstampcount	freertos/portable/ThirdParty/GCC/Xtensa_ESP32/include/portmacro.h	/^                int taskstampcount; \/* A counter usually incremented when we restart the task's loop *\/$/;"	m	struct:__anon6::__anon7
 taskstampcount	freertos/portable/ThirdParty/GCC/Xtensa_ESP32_IDF3/include/portmacro.h	/^                int taskstampcount; \/* A counter usually incremented when we restart the task's loop *\/$/;"	m	struct:__anon3::__anon4
 taskstampcount	freertos/portable/ThirdParty/XCC/Xtensa/portmacro.h	/^		int taskstampcount;   \/* A counter usually incremented when we restart the task's loop *\/$/;"	m	struct:__anon8::__anon9
-test	nfcc/ndef_message_setup.c	/^char test[23 + ADD] = { 0xC2,   \/\/ MB\/ME\/CF\/1\/IL\/TNF$/;"	v
+temp	usb/usb_helper.c	/^uint8_t temp = 0;$/;"	v
 test_if_asynchronous	freertos/portable/GCC/RISC-V/portASM.S	/^test_if_asynchronous:$/;"	l
 test_if_asynchronous	freertos/portable/IAR/RISC-V/portASM.s	/^test_if_asynchronous:$/;"	l
 test_if_environment_call	freertos/portable/GCC/RISC-V/portASM.S	/^test_if_environment_call:$/;"	l

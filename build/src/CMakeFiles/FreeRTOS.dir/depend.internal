@@ -3697,6 +3697,9 @@ src/CMakeFiles/FreeRTOS.dir/usb/usb_descriptors.c.obj
  /home/ddreise/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
  generated/pico_base/pico/config_autogen.h
  generated/pico_base/pico/version.h
+src/CMakeFiles/FreeRTOS.dir/usb/usb_helper.c.obj
+ /home/ddreise/pico/nfc/src/usb/usb_helper.c
+ /home/ddreise/pico/nfc/src/usb/usb_helper.h
 src/CMakeFiles/FreeRTOS.dir/usb/usb_msc.c.obj
  ../Source/portable/CodeWarrior/ColdFire_V2/portmacro.h
  ../Source/portable/CodeWarrior/HCS12/portmacro.h
@@ -3748,6 +3751,7 @@ src/CMakeFiles/FreeRTOS.dir/usb/usb_msc.c.obj
  ../src/freertos/portable/GCC/ATMega323/portmacro.h
  ../src/freertos/portable/IAR/ATMega323/portmacro.h
  ../src/usb/tusb_config.h
+ /home/ddreise/pico/nfc/src/usb/usb_helper.h
  /home/ddreise/pico/nfc/src/usb/usb_msc.c
  /home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/ansi_escape.h
  /home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/board.h
