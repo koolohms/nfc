@@ -89,14 +89,22 @@ uint32_t create_NDEFRecord(unsigned char* pMessage, unsigned int MessageSize){
     //memcpy(pRecord + index, pMessage, MessageSize);
     //index = index + MessageSize;
 
-    //Record_sz = index; // Since we kept track using index, it can be used for size
+    Record_sz = index; // Since we kept track using index, it can be used for size
+
+    // Print out contents of pMessage
+    printf("\nContents of pMessage: ");
+    for (int i = 0; i < MessageSize; i++){
+      printf("%c", pMessage[i]);
+      printf("\n");
+    } 
+    printf("Size of pMessage: %d", MessageSize);
 
     // Print out contents of pRecord
-    //printf("\nContents of pRecord: ");
-    //for (int i = 0; i < index; i++){
-    //  printf("%x\n", pRecord[i]);
-    //}
-    //printf("\nSize of pRecord: %d\n" ,Record_sz);
+    printf("\nContents of pRecord: ");
+    for (int i = 0; i < index; i++){
+      printf("%.2x\n", pRecord[i]);
+    }
+    printf("\nSize of pRecord: %d\n" ,Record_sz);
 
     // populate array with pointer values
     //for (int i = 0; i < tot_sz; i++){

@@ -20,6 +20,7 @@ uint8_t checkfileReceived(void){
   if(logic_addr > temp){
     printf("New location of file: %x\n", pFile);
     printf("Size of file: %d\n", FileSize);
+    printf("Contents of file: ");
     for(int i = 0; i < FileSize; i++){
       printf("%c", pFile[i]);
     }

@@ -46,6 +46,11 @@
 #include "FreeRTOSConfig.h"
 #include "task.h"
 
+#define TRUE 1
+#define FALSE 0
+
+uint8_t received = FALSE;
+
 void vUSBTask(void* pvParameters);
 void vLEDTask(void* pvParameters);
 void vNFCTask(void* pvParameters);
@@ -127,9 +132,12 @@ void vUSBTask(void* pvParameters){
     // Put here a conditional if statement that will create a new record if new
     // file received in USB memory
 
+    //unsigned char test_message[] = "this is a test";
     if(checkfileReceived()){
-      //Record_sz = create_NDEFRecord(test_message, sizeof(test_message));
+      Record_sz = create_NDEFRecord(pFile, FileSize);
+      received = TRUE;
     }
+
     taskENTER_CRITICAL();
     tud_task();
     taskEXIT_CRITICAL();  
@@ -153,11 +161,12 @@ void vNFCTask(void* pvParameters){
   const char *pcTaskName = "NFC Task is running\r\n";
   printf(pcTaskName);
 
-  //unsigned char test_message[] = "this is a test";
   
   while(1){
-
-    task_nfc();
+    if(received == TRUE){
+      received = FALSE;
+      task_nfc();
+    }
     vTaskDelay(10);   // There is another task delay in 
   }
 }

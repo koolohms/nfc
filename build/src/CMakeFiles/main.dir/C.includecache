@@ -328,24 +328,6 @@ FreeRTOSConfig.h
 task.h
 /home/ddreise/pico/nfc/src/task.h
 
-/home/ddreise/pico/nfc/src/usb/usb_helper.c
-stdio.h
--
-stdint.h
--
-usb_helper.h
-/home/ddreise/pico/nfc/src/usb/usb_helper.h
-
-/home/ddreise/pico/nfc/src/usb/usb_helper.h
-
-/home/ddreise/pico/nfc/src/usb/usb_msc.c
-bsp/board.h
-/home/ddreise/pico/nfc/src/usb/bsp/board.h
-tusb.h
-/home/ddreise/pico/nfc/src/usb/tusb.h
-usb_helper.h
-/home/ddreise/pico/nfc/src/usb/usb_helper.h
-
 /home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/ansi_escape.h
 
 /home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/board.h
