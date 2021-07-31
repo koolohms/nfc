@@ -18,6 +18,7 @@
 #include "tool.h"
 #include "Nfc.h"
 #include "ndef_helper.h"
+#include "ndef_message_setup.h"
 
 //#define RW_NDEF_WRITING
 //#define RW_RAW_EXCHANGE
@@ -196,20 +197,21 @@ void NdefPull_Cb(unsigned char *pNdefMessage, unsigned short ReceivedSize, unsig
     printf("\n");
 }
 #endif // if defined P2P_SUPPORT || defined RW_SUPPORT
-
 #if defined P2P_SUPPORT || defined CARDEMU_SUPPORT || defined RW_NDEF_WRITING
-#define ADD 0 // Enlarge NDEF message by adding dummy content
-const char NDEF_MESSAGE[14 + ADD] = { 0xC1,   // MB/ME/CF/1/IL/TNF
-        0x01,   // TYPE LENGTH
-        (0x07 + ADD) >> 24,   // PAYLOAD LENTGH MSB
-        (0x07 + ADD) >> 16,   // PAYLOAD LENTGH
-        (0x07 + ADD) >> 8,    // PAYLOAD LENTGH
-        (0x07 + ADD) & 0xFF,  // PAYLOAD LENTGH LSB
-        'T',    // TYPE
-		// PAYLOAD
-        0x02,   // Status
-        'e', 'n', // Language
-        'T', 'e', 's', 't' };
+
+//#define ADD 50 // Enlarge NDEF message by adding dummy content
+//char NDEF_MESSAGE[23 + ADD] = { 0xC2,   // MB/ME/CF/1/IL/TNF
+//        0x0A,   // TYPE LENGTH
+//        (0x07 + ADD) >> 24,   // PAYLOAD LENTGH MSB
+//        (0x07 + ADD) >> 16,   // PAYLOAD LENTGH
+//        (0x07 + ADD) >> 8,    // PAYLOAD LENTGH
+//        (0x07 + ADD) & 0xFF,  // PAYLOAD LENTGH LSB
+//        't','e','x','t','/','p','l','a','i','n',    // TYPE
+//        //'i','m','a','g','e','/','j','p','e','g',    // TYPE
+//		// PAYLOAD
+//        0x02,   // Status
+//        'e', 'n', // Language
+//        'T', 'e', 's', 't',0 };
 
 void NdefPush_Cb(unsigned char *pNdefRecord, unsigned short NdefRecordSize) {
     printf("--- NDEF Record sent\n\n");
@@ -531,7 +533,10 @@ void task_nfc(void)
 
 #ifdef P2P_SUPPORT
     /* Register NDEF message to be sent to remote peer */
-    P2P_NDEF_SetMessage((unsigned char *) NDEF_MESSAGE, sizeof(NDEF_MESSAGE), *NdefPush_Cb);
+    
+    //! RIGHT HERE
+    P2P_NDEF_SetMessage(pRecord, Record_sz, *NdefPush_Cb);
+    //P2P_NDEF_SetMessage((unsigned char *) NDEF_MESSAGE, sizeof(NDEF_MESSAGE), *NdefPush_Cb);
     /* Register callback for reception of NDEF message from remote peer */
     P2P_NDEF_RegisterPullCallback(*NdefPull_Cb);
 #endif // ifdef P2P_SUPPORT
@@ -558,8 +563,7 @@ void task_nfc(void)
         return;
     }
 
-    /* Start Discovery */
-    if (NxpNci_StartDiscovery(DiscoveryTechnologies,sizeof(DiscoveryTechnologies)) != NFC_SUCCESS)
+    /* Start Discovery */ if (NxpNci_StartDiscovery(DiscoveryTechnologies,sizeof(DiscoveryTechnologies)) != NFC_SUCCESS)
     {
         printf("Error: cannot start discovery\n");
         return;

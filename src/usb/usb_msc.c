@@ -1,6 +1,7 @@
 
 #include "bsp/board.h"
 #include "tusb.h"
+#include "usb_helper.h"
 
 #if CFG_TUD_MSC
 
@@ -177,15 +178,21 @@ int32_t tud_msc_write10_cb(uint8_t lun, uint32_t lba, uint32_t offset, uint8_t* 
 #ifndef CFG_EXAMPLE_MSC_READONLY
   uint8_t* addr = msc_disk0[lba];
   memcpy(addr, buffer, bufsize);
+
+  // Set current address pointer to file pointer for NFC
+  pFile = addr;
+  logic_addr = lba;
+  FileSize = bufsize;
+
 #else
   (void) lun; (void) lba; (void) offset; (void) buffer;
 #endif
 
-/*   printf("File saved to:\n"
+  printf("File saved to:\n"
   " Logical unit number = %d\n"
   " Logical block address = %d\n"
   " Offset = %d\n"
-  " Size = %d\n", lun, lba, offset, bufsize); */
+  " Size = %d\n", lun, lba, offset, bufsize);
 
   return bufsize;
 }

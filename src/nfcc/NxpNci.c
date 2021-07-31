@@ -49,7 +49,6 @@ static bool NxpNci_CheckDevPres(void)
     // if (NbBytes != 0)
     // {
     //     NCI_PRINT_BUF("NCI << ", Answer, NbBytes);
-    //     //printf("NCI << %d, ,%d, %d\n", Answer[0], Answer[1], NbBytes);
     //     /* Is CORE_GENERIC_ERROR_NTF ? */
     //     if ((Answer[0] == 0x60) && (Answer[1] == 0x07))
     //     {

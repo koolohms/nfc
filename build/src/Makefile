@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/ddreise/pico/nfc/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -126,6 +126,21 @@ ELF2UF2Build/fast:
 .PHONY : ELF2UF2Build/fast
 
 # Convenience name for target.
+src/CMakeFiles/FreeRTOS.dir/rule:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/FreeRTOS.dir/rule
+.PHONY : src/CMakeFiles/FreeRTOS.dir/rule
+
+# Convenience name for target.
+FreeRTOS: src/CMakeFiles/FreeRTOS.dir/rule
+
+.PHONY : FreeRTOS
+
+# fast build rule for target.
+FreeRTOS/fast:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/build
+.PHONY : FreeRTOS/fast
+
+# Convenience name for target.
 src/CMakeFiles/main.dir/rule:
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/main.dir/rule
 .PHONY : src/CMakeFiles/main.dir/rule
@@ -146,6 +161,7 @@ drivers/gpio.obj: drivers/gpio.c.obj
 
 # target to build an object file
 drivers/gpio.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/drivers/gpio.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/drivers/gpio.c.obj
 .PHONY : drivers/gpio.c.obj
 
@@ -155,6 +171,7 @@ drivers/gpio.i: drivers/gpio.c.i
 
 # target to preprocess a source file
 drivers/gpio.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/drivers/gpio.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/drivers/gpio.c.i
 .PHONY : drivers/gpio.c.i
 
@@ -164,6 +181,7 @@ drivers/gpio.s: drivers/gpio.c.s
 
 # target to generate assembly for a file
 drivers/gpio.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/drivers/gpio.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/drivers/gpio.c.s
 .PHONY : drivers/gpio.c.s
 
@@ -173,6 +191,7 @@ drivers/i2c.obj: drivers/i2c.c.obj
 
 # target to build an object file
 drivers/i2c.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/drivers/i2c.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/drivers/i2c.c.obj
 .PHONY : drivers/i2c.c.obj
 
@@ -182,6 +201,7 @@ drivers/i2c.i: drivers/i2c.c.i
 
 # target to preprocess a source file
 drivers/i2c.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/drivers/i2c.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/drivers/i2c.c.i
 .PHONY : drivers/i2c.c.i
 
@@ -191,6 +211,7 @@ drivers/i2c.s: drivers/i2c.c.s
 
 # target to generate assembly for a file
 drivers/i2c.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/drivers/i2c.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/drivers/i2c.c.s
 .PHONY : drivers/i2c.c.s
 
@@ -200,6 +221,7 @@ drivers/tool.obj: drivers/tool.c.obj
 
 # target to build an object file
 drivers/tool.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/drivers/tool.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/drivers/tool.c.obj
 .PHONY : drivers/tool.c.obj
 
@@ -209,6 +231,7 @@ drivers/tool.i: drivers/tool.c.i
 
 # target to preprocess a source file
 drivers/tool.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/drivers/tool.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/drivers/tool.c.i
 .PHONY : drivers/tool.c.i
 
@@ -218,35 +241,282 @@ drivers/tool.s: drivers/tool.c.s
 
 # target to generate assembly for a file
 drivers/tool.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/drivers/tool.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/drivers/tool.c.s
 .PHONY : drivers/tool.c.s
 
-home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.obj: home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.c.obj
+freertos/croutine.obj: freertos/croutine.c.obj
 
-.PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.obj
+.PHONY : freertos/croutine.obj
 
 # target to build an object file
-home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.c.obj:
-	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.c.obj
-.PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.c.obj
+freertos/croutine.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/freertos/croutine.c.obj
+.PHONY : freertos/croutine.c.obj
 
-home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.i: home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.c.i
+freertos/croutine.i: freertos/croutine.c.i
 
-.PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.i
+.PHONY : freertos/croutine.i
 
 # target to preprocess a source file
-home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.c.i:
-	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.c.i
-.PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.c.i
+freertos/croutine.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/freertos/croutine.c.i
+.PHONY : freertos/croutine.c.i
 
-home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.s: home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.c.s
+freertos/croutine.s: freertos/croutine.c.s
 
-.PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.s
+.PHONY : freertos/croutine.s
 
 # target to generate assembly for a file
-home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.c.s:
-	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.c.s
-.PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.c.s
+freertos/croutine.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/freertos/croutine.c.s
+.PHONY : freertos/croutine.c.s
+
+freertos/event_groups.obj: freertos/event_groups.c.obj
+
+.PHONY : freertos/event_groups.obj
+
+# target to build an object file
+freertos/event_groups.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/freertos/event_groups.c.obj
+.PHONY : freertos/event_groups.c.obj
+
+freertos/event_groups.i: freertos/event_groups.c.i
+
+.PHONY : freertos/event_groups.i
+
+# target to preprocess a source file
+freertos/event_groups.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/freertos/event_groups.c.i
+.PHONY : freertos/event_groups.c.i
+
+freertos/event_groups.s: freertos/event_groups.c.s
+
+.PHONY : freertos/event_groups.s
+
+# target to generate assembly for a file
+freertos/event_groups.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/freertos/event_groups.c.s
+.PHONY : freertos/event_groups.c.s
+
+freertos/list.obj: freertos/list.c.obj
+
+.PHONY : freertos/list.obj
+
+# target to build an object file
+freertos/list.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/freertos/list.c.obj
+.PHONY : freertos/list.c.obj
+
+freertos/list.i: freertos/list.c.i
+
+.PHONY : freertos/list.i
+
+# target to preprocess a source file
+freertos/list.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/freertos/list.c.i
+.PHONY : freertos/list.c.i
+
+freertos/list.s: freertos/list.c.s
+
+.PHONY : freertos/list.s
+
+# target to generate assembly for a file
+freertos/list.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/freertos/list.c.s
+.PHONY : freertos/list.c.s
+
+freertos/portable/GCC/ARM_CM0/port.obj: freertos/portable/GCC/ARM_CM0/port.c.obj
+
+.PHONY : freertos/portable/GCC/ARM_CM0/port.obj
+
+# target to build an object file
+freertos/portable/GCC/ARM_CM0/port.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/freertos/portable/GCC/ARM_CM0/port.c.obj
+.PHONY : freertos/portable/GCC/ARM_CM0/port.c.obj
+
+freertos/portable/GCC/ARM_CM0/port.i: freertos/portable/GCC/ARM_CM0/port.c.i
+
+.PHONY : freertos/portable/GCC/ARM_CM0/port.i
+
+# target to preprocess a source file
+freertos/portable/GCC/ARM_CM0/port.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/freertos/portable/GCC/ARM_CM0/port.c.i
+.PHONY : freertos/portable/GCC/ARM_CM0/port.c.i
+
+freertos/portable/GCC/ARM_CM0/port.s: freertos/portable/GCC/ARM_CM0/port.c.s
+
+.PHONY : freertos/portable/GCC/ARM_CM0/port.s
+
+# target to generate assembly for a file
+freertos/portable/GCC/ARM_CM0/port.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/freertos/portable/GCC/ARM_CM0/port.c.s
+.PHONY : freertos/portable/GCC/ARM_CM0/port.c.s
+
+freertos/portable/MemMang/heap_4.obj: freertos/portable/MemMang/heap_4.c.obj
+
+.PHONY : freertos/portable/MemMang/heap_4.obj
+
+# target to build an object file
+freertos/portable/MemMang/heap_4.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/freertos/portable/MemMang/heap_4.c.obj
+.PHONY : freertos/portable/MemMang/heap_4.c.obj
+
+freertos/portable/MemMang/heap_4.i: freertos/portable/MemMang/heap_4.c.i
+
+.PHONY : freertos/portable/MemMang/heap_4.i
+
+# target to preprocess a source file
+freertos/portable/MemMang/heap_4.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/freertos/portable/MemMang/heap_4.c.i
+.PHONY : freertos/portable/MemMang/heap_4.c.i
+
+freertos/portable/MemMang/heap_4.s: freertos/portable/MemMang/heap_4.c.s
+
+.PHONY : freertos/portable/MemMang/heap_4.s
+
+# target to generate assembly for a file
+freertos/portable/MemMang/heap_4.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/freertos/portable/MemMang/heap_4.c.s
+.PHONY : freertos/portable/MemMang/heap_4.c.s
+
+freertos/queue.obj: freertos/queue.c.obj
+
+.PHONY : freertos/queue.obj
+
+# target to build an object file
+freertos/queue.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/freertos/queue.c.obj
+.PHONY : freertos/queue.c.obj
+
+freertos/queue.i: freertos/queue.c.i
+
+.PHONY : freertos/queue.i
+
+# target to preprocess a source file
+freertos/queue.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/freertos/queue.c.i
+.PHONY : freertos/queue.c.i
+
+freertos/queue.s: freertos/queue.c.s
+
+.PHONY : freertos/queue.s
+
+# target to generate assembly for a file
+freertos/queue.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/freertos/queue.c.s
+.PHONY : freertos/queue.c.s
+
+freertos/stream_buffer.obj: freertos/stream_buffer.c.obj
+
+.PHONY : freertos/stream_buffer.obj
+
+# target to build an object file
+freertos/stream_buffer.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/freertos/stream_buffer.c.obj
+.PHONY : freertos/stream_buffer.c.obj
+
+freertos/stream_buffer.i: freertos/stream_buffer.c.i
+
+.PHONY : freertos/stream_buffer.i
+
+# target to preprocess a source file
+freertos/stream_buffer.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/freertos/stream_buffer.c.i
+.PHONY : freertos/stream_buffer.c.i
+
+freertos/stream_buffer.s: freertos/stream_buffer.c.s
+
+.PHONY : freertos/stream_buffer.s
+
+# target to generate assembly for a file
+freertos/stream_buffer.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/freertos/stream_buffer.c.s
+.PHONY : freertos/stream_buffer.c.s
+
+freertos/tasks.obj: freertos/tasks.c.obj
+
+.PHONY : freertos/tasks.obj
+
+# target to build an object file
+freertos/tasks.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/freertos/tasks.c.obj
+.PHONY : freertos/tasks.c.obj
+
+freertos/tasks.i: freertos/tasks.c.i
+
+.PHONY : freertos/tasks.i
+
+# target to preprocess a source file
+freertos/tasks.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/freertos/tasks.c.i
+.PHONY : freertos/tasks.c.i
+
+freertos/tasks.s: freertos/tasks.c.s
+
+.PHONY : freertos/tasks.s
+
+# target to generate assembly for a file
+freertos/tasks.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/freertos/tasks.c.s
+.PHONY : freertos/tasks.c.s
+
+freertos/timers.obj: freertos/timers.c.obj
+
+.PHONY : freertos/timers.obj
+
+# target to build an object file
+freertos/timers.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/freertos/timers.c.obj
+.PHONY : freertos/timers.c.obj
+
+freertos/timers.i: freertos/timers.c.i
+
+.PHONY : freertos/timers.i
+
+# target to preprocess a source file
+freertos/timers.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/freertos/timers.c.i
+.PHONY : freertos/timers.c.i
+
+freertos/timers.s: freertos/timers.c.s
+
+.PHONY : freertos/timers.s
+
+# target to generate assembly for a file
+freertos/timers.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/freertos/timers.c.s
+.PHONY : freertos/timers.c.s
+
+home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.obj: home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj
+
+.PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.obj
+
+# target to build an object file
+home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj
+.PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj
+
+home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.i: home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.i
+
+.PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.i
+
+# target to preprocess a source file
+home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.i
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.i
+.PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.i
+
+home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.s: home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.s
+
+.PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.s
+
+# target to generate assembly for a file
+home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.s
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.s
+.PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.s
 
 home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj: home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
 
@@ -254,6 +524,7 @@ home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj: home/dd
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
 .PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
 
@@ -263,6 +534,7 @@ home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i: home/ddre
 
 # target to preprocess a source file
 home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
 .PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
 
@@ -272,6 +544,7 @@ home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s: home/ddre
 
 # target to generate assembly for a file
 home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
 .PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
 
@@ -281,6 +554,7 @@ home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.obj: home/ddreis
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
 .PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
 
@@ -290,6 +564,7 @@ home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i: home/ddreise/
 
 # target to preprocess a source file
 home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
 .PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
 
@@ -299,8 +574,39 @@ home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s: home/ddreise/
 
 # target to generate assembly for a file
 home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
 .PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
+
+home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.obj: home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
+
+.PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.obj
+
+# target to build an object file
+home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
+.PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
+
+home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i: home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
+
+.PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i
+
+# target to preprocess a source file
+home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
+.PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
+
+home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s: home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
+
+.PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s
+
+# target to generate assembly for a file
+home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
+.PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
 
 home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.obj: home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
 
@@ -308,6 +614,7 @@ home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.obj: home/ddr
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
 .PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
 
@@ -317,6 +624,7 @@ home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i: home/ddrei
 
 # target to preprocess a source file
 home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
 .PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
 
@@ -326,6 +634,7 @@ home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s: home/ddrei
 
 # target to generate assembly for a file
 home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
 .PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
 
@@ -335,6 +644,7 @@ home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.obj: home/ddreis
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
 .PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
 
@@ -344,6 +654,7 @@ home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.i: home/ddreise/
 
 # target to preprocess a source file
 home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
 .PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
 
@@ -353,6 +664,7 @@ home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.s: home/ddreise/
 
 # target to generate assembly for a file
 home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
 .PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
 
@@ -362,6 +674,7 @@ home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.obj: home/ddre
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
 .PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
 
@@ -371,6 +684,7 @@ home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.i: home/ddreis
 
 # target to preprocess a source file
 home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
 .PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
 
@@ -380,6 +694,7 @@ home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.s: home/ddreis
 
 # target to generate assembly for a file
 home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
 .PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
 
@@ -389,6 +704,7 @@ home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.obj: home/ddreis
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
 .PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
 
@@ -398,6 +714,7 @@ home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.i: home/ddreise/
 
 # target to preprocess a source file
 home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
 .PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
 
@@ -407,6 +724,7 @@ home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.s: home/ddreise/
 
 # target to generate assembly for a file
 home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
 .PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
 
@@ -416,6 +734,7 @@ home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.obj: home/ddreis
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.obj
 .PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.obj
 
@@ -425,6 +744,7 @@ home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.i: home/ddreise/
 
 # target to preprocess a source file
 home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.i
 .PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.i
 
@@ -434,6 +754,7 @@ home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.s: home/ddreise/
 
 # target to generate assembly for a file
 home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.s
 .PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.s
 
@@ -443,6 +764,7 @@ home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.obj: home/
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
 .PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
 
@@ -452,6 +774,7 @@ home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i: home/dd
 
 # target to preprocess a source file
 home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
 .PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
 
@@ -461,6 +784,7 @@ home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s: home/dd
 
 # target to generate assembly for a file
 home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
 .PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
 
@@ -470,6 +794,7 @@ home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.obj: home/
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
 .PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
 
@@ -479,6 +804,7 @@ home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.i: home/dd
 
 # target to preprocess a source file
 home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
 .PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
 
@@ -488,6 +814,7 @@ home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.s: home/dd
 
 # target to generate assembly for a file
 home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
 .PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
 
@@ -497,6 +824,7 @@ home/ddreise/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.obj: home/ddreise/pi
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
 .PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
 
@@ -506,6 +834,7 @@ home/ddreise/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.i: home/ddreise/pico
 
 # target to preprocess a source file
 home/ddreise/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
 .PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
 
@@ -515,6 +844,7 @@ home/ddreise/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.s: home/ddreise/pico
 
 # target to generate assembly for a file
 home/ddreise/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
 .PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
 
@@ -524,6 +854,7 @@ home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd.obj: home/ddreise/pico/pi
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
 .PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
 
@@ -533,6 +864,7 @@ home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd.i: home/ddreise/pico/pico
 
 # target to preprocess a source file
 home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i
 .PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i
 
@@ -542,6 +874,7 @@ home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd.s: home/ddreise/pico/pico
 
 # target to generate assembly for a file
 home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s
 .PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s
 
@@ -551,6 +884,7 @@ home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.obj: home/ddreise
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
 .PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
 
@@ -560,6 +894,7 @@ home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.i: home/ddreise/p
 
 # target to preprocess a source file
 home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
 .PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
 
@@ -569,6 +904,7 @@ home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.s: home/ddreise/p
 
 # target to generate assembly for a file
 home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
 .PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
 
@@ -578,6 +914,7 @@ home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp204
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
 .PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
 
@@ -587,6 +924,7 @@ home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp204
 
 # target to preprocess a source file
 home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
 .PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
 
@@ -596,6 +934,7 @@ home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp204
 
 # target to generate assembly for a file
 home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
 .PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
 
@@ -605,6 +944,7 @@ home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_us
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
 .PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
 
@@ -614,6 +954,7 @@ home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_us
 
 # target to preprocess a source file
 home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
 .PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
 
@@ -623,6 +964,7 @@ home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_us
 
 # target to generate assembly for a file
 home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
 .PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
 
@@ -632,6 +974,7 @@ home/ddreise/pico/pico-sdk/lib/tinyusb/src/tusb.obj: home/ddreise/pico/pico-sdk/
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
 .PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
 
@@ -641,6 +984,7 @@ home/ddreise/pico/pico-sdk/lib/tinyusb/src/tusb.i: home/ddreise/pico/pico-sdk/li
 
 # target to preprocess a source file
 home/ddreise/pico/pico-sdk/lib/tinyusb/src/tusb.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/tusb.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/tusb.c.i
 .PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/src/tusb.c.i
 
@@ -650,6 +994,7 @@ home/ddreise/pico/pico-sdk/lib/tinyusb/src/tusb.s: home/ddreise/pico/pico-sdk/li
 
 # target to generate assembly for a file
 home/ddreise/pico/pico-sdk/lib/tinyusb/src/tusb.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/tusb.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/lib/tinyusb/src/tusb.c.s
 .PHONY : home/ddreise/pico/pico-sdk/lib/tinyusb/src/tusb.c.s
 
@@ -659,6 +1004,7 @@ home/ddreise/pico/pico-sdk/src/common/pico_sync/critical_section.obj: home/ddrei
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
 .PHONY : home/ddreise/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
 
@@ -668,6 +1014,7 @@ home/ddreise/pico/pico-sdk/src/common/pico_sync/critical_section.i: home/ddreise
 
 # target to preprocess a source file
 home/ddreise/pico/pico-sdk/src/common/pico_sync/critical_section.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
 .PHONY : home/ddreise/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
 
@@ -677,6 +1024,7 @@ home/ddreise/pico/pico-sdk/src/common/pico_sync/critical_section.s: home/ddreise
 
 # target to generate assembly for a file
 home/ddreise/pico/pico-sdk/src/common/pico_sync/critical_section.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
 .PHONY : home/ddreise/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
 
@@ -686,6 +1034,7 @@ home/ddreise/pico/pico-sdk/src/common/pico_sync/lock_core.obj: home/ddreise/pico
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
 .PHONY : home/ddreise/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
 
@@ -695,6 +1044,7 @@ home/ddreise/pico/pico-sdk/src/common/pico_sync/lock_core.i: home/ddreise/pico/p
 
 # target to preprocess a source file
 home/ddreise/pico/pico-sdk/src/common/pico_sync/lock_core.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
 .PHONY : home/ddreise/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
 
@@ -704,6 +1054,7 @@ home/ddreise/pico/pico-sdk/src/common/pico_sync/lock_core.s: home/ddreise/pico/p
 
 # target to generate assembly for a file
 home/ddreise/pico/pico-sdk/src/common/pico_sync/lock_core.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
 .PHONY : home/ddreise/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
 
@@ -713,6 +1064,7 @@ home/ddreise/pico/pico-sdk/src/common/pico_sync/mutex.obj: home/ddreise/pico/pic
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/src/common/pico_sync/mutex.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
 .PHONY : home/ddreise/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
 
@@ -722,6 +1074,7 @@ home/ddreise/pico/pico-sdk/src/common/pico_sync/mutex.i: home/ddreise/pico/pico-
 
 # target to preprocess a source file
 home/ddreise/pico/pico-sdk/src/common/pico_sync/mutex.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/common/pico_sync/mutex.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_sync/mutex.c.i
 .PHONY : home/ddreise/pico/pico-sdk/src/common/pico_sync/mutex.c.i
 
@@ -731,6 +1084,7 @@ home/ddreise/pico/pico-sdk/src/common/pico_sync/mutex.s: home/ddreise/pico/pico-
 
 # target to generate assembly for a file
 home/ddreise/pico/pico-sdk/src/common/pico_sync/mutex.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/common/pico_sync/mutex.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_sync/mutex.c.s
 .PHONY : home/ddreise/pico/pico-sdk/src/common/pico_sync/mutex.c.s
 
@@ -740,6 +1094,7 @@ home/ddreise/pico/pico-sdk/src/common/pico_sync/sem.obj: home/ddreise/pico/pico-
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/src/common/pico_sync/sem.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/common/pico_sync/sem.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_sync/sem.c.obj
 .PHONY : home/ddreise/pico/pico-sdk/src/common/pico_sync/sem.c.obj
 
@@ -749,6 +1104,7 @@ home/ddreise/pico/pico-sdk/src/common/pico_sync/sem.i: home/ddreise/pico/pico-sd
 
 # target to preprocess a source file
 home/ddreise/pico/pico-sdk/src/common/pico_sync/sem.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/common/pico_sync/sem.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_sync/sem.c.i
 .PHONY : home/ddreise/pico/pico-sdk/src/common/pico_sync/sem.c.i
 
@@ -758,6 +1114,7 @@ home/ddreise/pico/pico-sdk/src/common/pico_sync/sem.s: home/ddreise/pico/pico-sd
 
 # target to generate assembly for a file
 home/ddreise/pico/pico-sdk/src/common/pico_sync/sem.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/common/pico_sync/sem.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_sync/sem.c.s
 .PHONY : home/ddreise/pico/pico-sdk/src/common/pico_sync/sem.c.s
 
@@ -767,6 +1124,7 @@ home/ddreise/pico/pico-sdk/src/common/pico_time/time.obj: home/ddreise/pico/pico
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/src/common/pico_time/time.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/common/pico_time/time.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_time/time.c.obj
 .PHONY : home/ddreise/pico/pico-sdk/src/common/pico_time/time.c.obj
 
@@ -776,6 +1134,7 @@ home/ddreise/pico/pico-sdk/src/common/pico_time/time.i: home/ddreise/pico/pico-s
 
 # target to preprocess a source file
 home/ddreise/pico/pico-sdk/src/common/pico_time/time.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/common/pico_time/time.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_time/time.c.i
 .PHONY : home/ddreise/pico/pico-sdk/src/common/pico_time/time.c.i
 
@@ -785,6 +1144,7 @@ home/ddreise/pico/pico-sdk/src/common/pico_time/time.s: home/ddreise/pico/pico-s
 
 # target to generate assembly for a file
 home/ddreise/pico/pico-sdk/src/common/pico_time/time.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/common/pico_time/time.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_time/time.c.s
 .PHONY : home/ddreise/pico/pico-sdk/src/common/pico_time/time.c.s
 
@@ -794,6 +1154,7 @@ home/ddreise/pico/pico-sdk/src/common/pico_time/timeout_helper.obj: home/ddreise
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
 .PHONY : home/ddreise/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
 
@@ -803,6 +1164,7 @@ home/ddreise/pico/pico-sdk/src/common/pico_time/timeout_helper.i: home/ddreise/p
 
 # target to preprocess a source file
 home/ddreise/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
 .PHONY : home/ddreise/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
 
@@ -812,6 +1174,7 @@ home/ddreise/pico/pico-sdk/src/common/pico_time/timeout_helper.s: home/ddreise/p
 
 # target to generate assembly for a file
 home/ddreise/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
 .PHONY : home/ddreise/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
 
@@ -821,6 +1184,7 @@ home/ddreise/pico/pico-sdk/src/common/pico_util/datetime.obj: home/ddreise/pico/
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/src/common/pico_util/datetime.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/common/pico_util/datetime.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_util/datetime.c.obj
 .PHONY : home/ddreise/pico/pico-sdk/src/common/pico_util/datetime.c.obj
 
@@ -830,6 +1194,7 @@ home/ddreise/pico/pico-sdk/src/common/pico_util/datetime.i: home/ddreise/pico/pi
 
 # target to preprocess a source file
 home/ddreise/pico/pico-sdk/src/common/pico_util/datetime.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/common/pico_util/datetime.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_util/datetime.c.i
 .PHONY : home/ddreise/pico/pico-sdk/src/common/pico_util/datetime.c.i
 
@@ -839,6 +1204,7 @@ home/ddreise/pico/pico-sdk/src/common/pico_util/datetime.s: home/ddreise/pico/pi
 
 # target to generate assembly for a file
 home/ddreise/pico/pico-sdk/src/common/pico_util/datetime.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/common/pico_util/datetime.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_util/datetime.c.s
 .PHONY : home/ddreise/pico/pico-sdk/src/common/pico_util/datetime.c.s
 
@@ -848,6 +1214,7 @@ home/ddreise/pico/pico-sdk/src/common/pico_util/pheap.obj: home/ddreise/pico/pic
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/src/common/pico_util/pheap.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/common/pico_util/pheap.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_util/pheap.c.obj
 .PHONY : home/ddreise/pico/pico-sdk/src/common/pico_util/pheap.c.obj
 
@@ -857,6 +1224,7 @@ home/ddreise/pico/pico-sdk/src/common/pico_util/pheap.i: home/ddreise/pico/pico-
 
 # target to preprocess a source file
 home/ddreise/pico/pico-sdk/src/common/pico_util/pheap.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/common/pico_util/pheap.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_util/pheap.c.i
 .PHONY : home/ddreise/pico/pico-sdk/src/common/pico_util/pheap.c.i
 
@@ -866,6 +1234,7 @@ home/ddreise/pico/pico-sdk/src/common/pico_util/pheap.s: home/ddreise/pico/pico-
 
 # target to generate assembly for a file
 home/ddreise/pico/pico-sdk/src/common/pico_util/pheap.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/common/pico_util/pheap.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_util/pheap.c.s
 .PHONY : home/ddreise/pico/pico-sdk/src/common/pico_util/pheap.c.s
 
@@ -875,6 +1244,7 @@ home/ddreise/pico/pico-sdk/src/common/pico_util/queue.obj: home/ddreise/pico/pic
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/src/common/pico_util/queue.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/common/pico_util/queue.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_util/queue.c.obj
 .PHONY : home/ddreise/pico/pico-sdk/src/common/pico_util/queue.c.obj
 
@@ -884,6 +1254,7 @@ home/ddreise/pico/pico-sdk/src/common/pico_util/queue.i: home/ddreise/pico/pico-
 
 # target to preprocess a source file
 home/ddreise/pico/pico-sdk/src/common/pico_util/queue.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/common/pico_util/queue.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_util/queue.c.i
 .PHONY : home/ddreise/pico/pico-sdk/src/common/pico_util/queue.c.i
 
@@ -893,8 +1264,39 @@ home/ddreise/pico/pico-sdk/src/common/pico_util/queue.s: home/ddreise/pico/pico-
 
 # target to generate assembly for a file
 home/ddreise/pico/pico-sdk/src/common/pico_util/queue.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/common/pico_util/queue.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/common/pico_util/queue.c.s
 .PHONY : home/ddreise/pico/pico-sdk/src/common/pico_util/queue.c.s
+
+home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Source/system_RP2040.obj: home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Source/system_RP2040.c.obj
+
+.PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Source/system_RP2040.obj
+
+# target to build an object file
+home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Source/system_RP2040.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Source/system_RP2040.c.obj
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Source/system_RP2040.c.obj
+.PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Source/system_RP2040.c.obj
+
+home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Source/system_RP2040.i: home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Source/system_RP2040.c.i
+
+.PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Source/system_RP2040.i
+
+# target to preprocess a source file
+home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Source/system_RP2040.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Source/system_RP2040.c.i
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Source/system_RP2040.c.i
+.PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Source/system_RP2040.c.i
+
+home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Source/system_RP2040.s: home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Source/system_RP2040.c.s
+
+.PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Source/system_RP2040.s
+
+# target to generate assembly for a file
+home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Source/system_RP2040.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Source/system_RP2040.c.s
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Source/system_RP2040.c.s
+.PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Source/system_RP2040.c.s
 
 home/ddreise/pico/pico-sdk/src/rp2_common/hardware_claim/claim.obj: home/ddreise/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 
@@ -902,6 +1304,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/hardware_claim/claim.obj: home/ddreise
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 
@@ -911,6 +1314,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/hardware_claim/claim.i: home/ddreise/p
 
 # target to preprocess a source file
 home/ddreise/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 
@@ -920,6 +1324,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/hardware_claim/claim.s: home/ddreise/p
 
 # target to generate assembly for a file
 home/ddreise/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 
@@ -929,6 +1334,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.obj: home/ddrei
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 
@@ -938,6 +1344,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.i: home/ddreise
 
 # target to preprocess a source file
 home/ddreise/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 
@@ -947,6 +1354,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.s: home/ddreise
 
 # target to generate assembly for a file
 home/ddreise/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 
@@ -956,6 +1364,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/hardware_divider/divider.obj: home/ddr
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 
@@ -965,6 +1374,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj: home/ddreise/p
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 
@@ -974,6 +1384,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.i: home/ddreise/pic
 
 # target to preprocess a source file
 home/ddreise/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 
@@ -983,6 +1394,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.s: home/ddreise/pic
 
 # target to generate assembly for a file
 home/ddreise/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 
@@ -992,6 +1404,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.obj: home/ddreise/pic
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
 
@@ -1001,6 +1414,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.i: home/ddreise/pico/
 
 # target to preprocess a source file
 home/ddreise/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
 
@@ -1010,6 +1424,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.s: home/ddreise/pico/
 
 # target to generate assembly for a file
 home/ddreise/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
 
@@ -1019,6 +1434,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/hardware_irq/irq.obj: home/ddreise/pic
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 
@@ -1028,6 +1444,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/hardware_irq/irq.i: home/ddreise/pico/
 
 # target to preprocess a source file
 home/ddreise/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 
@@ -1037,6 +1454,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/hardware_irq/irq.s: home/ddreise/pico/
 
 # target to generate assembly for a file
 home/ddreise/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 
@@ -1046,6 +1464,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.obj: ho
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 
@@ -1055,6 +1474,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/hardware_pll/pll.obj: home/ddreise/pic
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 
@@ -1064,6 +1484,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/hardware_pll/pll.i: home/ddreise/pico/
 
 # target to preprocess a source file
 home/ddreise/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 
@@ -1073,6 +1494,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/hardware_pll/pll.s: home/ddreise/pico/
 
 # target to generate assembly for a file
 home/ddreise/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 
@@ -1082,6 +1504,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/hardware_sync/sync.obj: home/ddreise/p
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 
@@ -1091,6 +1514,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/hardware_sync/sync.i: home/ddreise/pic
 
 # target to preprocess a source file
 home/ddreise/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 
@@ -1100,6 +1524,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/hardware_sync/sync.s: home/ddreise/pic
 
 # target to generate assembly for a file
 home/ddreise/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 
@@ -1109,6 +1534,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/hardware_timer/timer.obj: home/ddreise
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
 
@@ -1118,6 +1544,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/hardware_timer/timer.i: home/ddreise/p
 
 # target to preprocess a source file
 home/ddreise/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 
@@ -1127,6 +1554,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/hardware_timer/timer.s: home/ddreise/p
 
 # target to generate assembly for a file
 home/ddreise/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 
@@ -1136,6 +1564,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/hardware_uart/uart.obj: home/ddreise/p
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 
@@ -1145,6 +1574,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/hardware_uart/uart.i: home/ddreise/pic
 
 # target to preprocess a source file
 home/ddreise/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 
@@ -1154,6 +1584,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/hardware_uart/uart.s: home/ddreise/pic
 
 # target to generate assembly for a file
 home/ddreise/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 
@@ -1163,6 +1594,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.obj: home/ddreise/p
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 
@@ -1172,6 +1604,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.i: home/ddreise/pic
 
 # target to preprocess a source file
 home/ddreise/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 
@@ -1181,6 +1614,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.s: home/ddreise/pic
 
 # target to generate assembly for a file
 home/ddreise/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 
@@ -1190,6 +1624,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.obj: home/d
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
 
@@ -1199,6 +1634,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i: home/ddr
 
 # target to preprocess a source file
 home/ddreise/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 
@@ -1208,6 +1644,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s: home/ddr
 
 # target to generate assembly for a file
 home/ddreise/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 
@@ -1217,6 +1654,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.obj: home/ddreise/p
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 
@@ -1226,6 +1664,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.i: home/ddreise/pic
 
 # target to preprocess a source file
 home/ddreise/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 
@@ -1235,6 +1674,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.s: home/ddreise/pic
 
 # target to generate assembly for a file
 home/ddreise/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 
@@ -1244,6 +1684,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj: home/d
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 
@@ -1253,6 +1694,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.obj: home/ddreise
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
 
@@ -1262,6 +1704,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i: home/ddreise/p
 
 # target to preprocess a source file
 home/ddreise/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 
@@ -1271,6 +1714,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s: home/ddreise/p
 
 # target to generate assembly for a file
 home/ddreise/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 
@@ -1280,6 +1724,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/pico_divider/divider.obj: home/ddreise
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 
@@ -1289,6 +1734,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.obj: home/ddr
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
 
@@ -1298,6 +1744,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.obj: home/
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 
@@ -1307,6 +1754,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.i: home/dd
 
 # target to preprocess a source file
 home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
 
@@ -1316,6 +1764,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.s: home/dd
 
 # target to generate assembly for a file
 home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
 
@@ -1325,6 +1774,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_math.obj: home/ddre
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
 
@@ -1334,6 +1784,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_math.i: home/ddreis
 
 # target to preprocess a source file
 home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 
@@ -1343,6 +1794,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_math.s: home/ddreis
 
 # target to generate assembly for a file
 home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 
@@ -1352,6 +1804,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.obj: ho
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 
@@ -1361,6 +1814,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
 
@@ -1370,6 +1824,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration
 
 # target to preprocess a source file
 home/ddreise/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
 
@@ -1379,6 +1834,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration
 
 # target to generate assembly for a file
 home/ddreise/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
 
@@ -1388,6 +1844,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.obj: home/ddrei
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 
@@ -1397,6 +1854,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.obj: home/dd
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 
@@ -1406,6 +1864,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.i: home/ddre
 
 # target to preprocess a source file
 home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
 
@@ -1415,6 +1874,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.s: home/ddre
 
 # target to generate assembly for a file
 home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
 
@@ -1424,6 +1884,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_math.obj: home/ddreis
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
 
@@ -1433,6 +1894,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_math.i: home/ddreise/
 
 # target to preprocess a source file
 home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 
@@ -1442,6 +1904,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_math.s: home/ddreise/
 
 # target to generate assembly for a file
 home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 
@@ -1451,6 +1914,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.obj: home
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 
@@ -1460,6 +1924,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.ob
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 
@@ -1469,6 +1934,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.obj: home/ddre
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 
@@ -1478,6 +1944,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.i: home/ddreis
 
 # target to preprocess a source file
 home/ddreise/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
 
@@ -1487,6 +1954,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.s: home/ddreis
 
 # target to generate assembly for a file
 home/ddreise/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
 
@@ -1496,6 +1964,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj: home/d
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 
@@ -1505,6 +1974,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/pico_platform/platform.obj: home/ddrei
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 
@@ -1514,6 +1984,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/pico_platform/platform.i: home/ddreise
 
 # target to preprocess a source file
 home/ddreise/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
 
@@ -1523,6 +1994,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/pico_platform/platform.s: home/ddreise
 
 # target to generate assembly for a file
 home/ddreise/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
 
@@ -1532,6 +2004,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/pico_printf/printf.obj: home/ddreise/p
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 
@@ -1541,6 +2014,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/pico_printf/printf.i: home/ddreise/pic
 
 # target to preprocess a source file
 home/ddreise/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 
@@ -1550,6 +2024,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/pico_printf/printf.s: home/ddreise/pic
 
 # target to generate assembly for a file
 home/ddreise/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 
@@ -1559,6 +2034,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.obj: home/ddreise
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 
@@ -1568,6 +2044,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.i: home/ddreise/p
 
 # target to preprocess a source file
 home/ddreise/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 
@@ -1577,6 +2054,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.s: home/ddreise/p
 
 # target to generate assembly for a file
 home/ddreise/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 
@@ -1586,6 +2064,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.obj: ho
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 
@@ -1595,6 +2074,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.i: home
 
 # target to preprocess a source file
 home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
 
@@ -1604,6 +2084,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.s: home
 
 # target to generate assembly for a file
 home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
 
@@ -1613,6 +2094,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.obj: home/ddre
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 
@@ -1622,6 +2104,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.obj: hom
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 
@@ -1631,6 +2114,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.i: home/
 
 # target to preprocess a source file
 home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
 
@@ -1640,6 +2124,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.s: home/
 
 # target to generate assembly for a file
 home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
 
@@ -1649,6 +2134,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.obj: home/ddreise/pic
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 
@@ -1658,6 +2144,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.i: home/ddreise/pico/
 
 # target to preprocess a source file
 home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 
@@ -1667,6 +2154,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.s: home/ddreise/pico/
 
 # target to generate assembly for a file
 home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 
@@ -1676,6 +2164,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.obj: home/d
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
 
@@ -1685,6 +2174,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i: home/ddr
 
 # target to preprocess a source file
 home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
 
@@ -1694,6 +2184,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s: home/ddr
 
 # target to generate assembly for a file
 home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 
@@ -1703,6 +2194,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj: home/ddreise/p
 
 # target to build an object file
 home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 
@@ -1712,6 +2204,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: home/ddreise/pic
 
 # target to preprocess a source file
 home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 
@@ -1721,6 +2214,7 @@ home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s: home/ddreise/pic
 
 # target to generate assembly for a file
 home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 .PHONY : home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 
@@ -1730,6 +2224,7 @@ led/led.obj: led/led.c.obj
 
 # target to build an object file
 led/led.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/led/led.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/led/led.c.obj
 .PHONY : led/led.c.obj
 
@@ -1739,6 +2234,7 @@ led/led.i: led/led.c.i
 
 # target to preprocess a source file
 led/led.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/led/led.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/led/led.c.i
 .PHONY : led/led.c.i
 
@@ -1748,6 +2244,7 @@ led/led.s: led/led.c.s
 
 # target to generate assembly for a file
 led/led.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/led/led.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/led/led.c.s
 .PHONY : led/led.c.s
 
@@ -1784,6 +2281,7 @@ nfcc/NxpNci.obj: nfcc/NxpNci.c.obj
 
 # target to build an object file
 nfcc/NxpNci.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/nfcc/NxpNci.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/nfcc/NxpNci.c.obj
 .PHONY : nfcc/NxpNci.c.obj
 
@@ -1793,6 +2291,7 @@ nfcc/NxpNci.i: nfcc/NxpNci.c.i
 
 # target to preprocess a source file
 nfcc/NxpNci.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/nfcc/NxpNci.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/nfcc/NxpNci.c.i
 .PHONY : nfcc/NxpNci.c.i
 
@@ -1802,6 +2301,7 @@ nfcc/NxpNci.s: nfcc/NxpNci.c.s
 
 # target to generate assembly for a file
 nfcc/NxpNci.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/nfcc/NxpNci.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/nfcc/NxpNci.c.s
 .PHONY : nfcc/NxpNci.c.s
 
@@ -1811,6 +2311,7 @@ nfcc/P2P_NDEF.obj: nfcc/P2P_NDEF.c.obj
 
 # target to build an object file
 nfcc/P2P_NDEF.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/nfcc/P2P_NDEF.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/nfcc/P2P_NDEF.c.obj
 .PHONY : nfcc/P2P_NDEF.c.obj
 
@@ -1820,6 +2321,7 @@ nfcc/P2P_NDEF.i: nfcc/P2P_NDEF.c.i
 
 # target to preprocess a source file
 nfcc/P2P_NDEF.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/nfcc/P2P_NDEF.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/nfcc/P2P_NDEF.c.i
 .PHONY : nfcc/P2P_NDEF.c.i
 
@@ -1829,6 +2331,7 @@ nfcc/P2P_NDEF.s: nfcc/P2P_NDEF.c.s
 
 # target to generate assembly for a file
 nfcc/P2P_NDEF.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/nfcc/P2P_NDEF.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/nfcc/P2P_NDEF.c.s
 .PHONY : nfcc/P2P_NDEF.c.s
 
@@ -1838,6 +2341,7 @@ nfcc/ndef_helper.obj: nfcc/ndef_helper.c.obj
 
 # target to build an object file
 nfcc/ndef_helper.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/nfcc/ndef_helper.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/nfcc/ndef_helper.c.obj
 .PHONY : nfcc/ndef_helper.c.obj
 
@@ -1847,6 +2351,7 @@ nfcc/ndef_helper.i: nfcc/ndef_helper.c.i
 
 # target to preprocess a source file
 nfcc/ndef_helper.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/nfcc/ndef_helper.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/nfcc/ndef_helper.c.i
 .PHONY : nfcc/ndef_helper.c.i
 
@@ -1856,8 +2361,39 @@ nfcc/ndef_helper.s: nfcc/ndef_helper.c.s
 
 # target to generate assembly for a file
 nfcc/ndef_helper.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/nfcc/ndef_helper.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/nfcc/ndef_helper.c.s
 .PHONY : nfcc/ndef_helper.c.s
+
+nfcc/ndef_message_setup.obj: nfcc/ndef_message_setup.c.obj
+
+.PHONY : nfcc/ndef_message_setup.obj
+
+# target to build an object file
+nfcc/ndef_message_setup.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/nfcc/ndef_message_setup.c.obj
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/nfcc/ndef_message_setup.c.obj
+.PHONY : nfcc/ndef_message_setup.c.obj
+
+nfcc/ndef_message_setup.i: nfcc/ndef_message_setup.c.i
+
+.PHONY : nfcc/ndef_message_setup.i
+
+# target to preprocess a source file
+nfcc/ndef_message_setup.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/nfcc/ndef_message_setup.c.i
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/nfcc/ndef_message_setup.c.i
+.PHONY : nfcc/ndef_message_setup.c.i
+
+nfcc/ndef_message_setup.s: nfcc/ndef_message_setup.c.s
+
+.PHONY : nfcc/ndef_message_setup.s
+
+# target to generate assembly for a file
+nfcc/ndef_message_setup.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/nfcc/ndef_message_setup.c.s
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/nfcc/ndef_message_setup.c.s
+.PHONY : nfcc/ndef_message_setup.c.s
 
 nfcc/nfc_task.obj: nfcc/nfc_task.c.obj
 
@@ -1865,6 +2401,7 @@ nfcc/nfc_task.obj: nfcc/nfc_task.c.obj
 
 # target to build an object file
 nfcc/nfc_task.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/nfcc/nfc_task.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/nfcc/nfc_task.c.obj
 .PHONY : nfcc/nfc_task.c.obj
 
@@ -1874,6 +2411,7 @@ nfcc/nfc_task.i: nfcc/nfc_task.c.i
 
 # target to preprocess a source file
 nfcc/nfc_task.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/nfcc/nfc_task.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/nfcc/nfc_task.c.i
 .PHONY : nfcc/nfc_task.c.i
 
@@ -1883,6 +2421,7 @@ nfcc/nfc_task.s: nfcc/nfc_task.c.s
 
 # target to generate assembly for a file
 nfcc/nfc_task.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/nfcc/nfc_task.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/nfcc/nfc_task.c.s
 .PHONY : nfcc/nfc_task.c.s
 
@@ -1892,6 +2431,7 @@ nfcc/tml.obj: nfcc/tml.c.obj
 
 # target to build an object file
 nfcc/tml.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/nfcc/tml.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/nfcc/tml.c.obj
 .PHONY : nfcc/tml.c.obj
 
@@ -1901,6 +2441,7 @@ nfcc/tml.i: nfcc/tml.c.i
 
 # target to preprocess a source file
 nfcc/tml.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/nfcc/tml.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/nfcc/tml.c.i
 .PHONY : nfcc/tml.c.i
 
@@ -1910,6 +2451,7 @@ nfcc/tml.s: nfcc/tml.c.s
 
 # target to generate assembly for a file
 nfcc/tml.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/nfcc/tml.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/nfcc/tml.c.s
 .PHONY : nfcc/tml.c.s
 
@@ -1919,6 +2461,7 @@ test/i2c_test.obj: test/i2c_test.c.obj
 
 # target to build an object file
 test/i2c_test.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/test/i2c_test.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/test/i2c_test.c.obj
 .PHONY : test/i2c_test.c.obj
 
@@ -1928,6 +2471,7 @@ test/i2c_test.i: test/i2c_test.c.i
 
 # target to preprocess a source file
 test/i2c_test.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/test/i2c_test.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/test/i2c_test.c.i
 .PHONY : test/i2c_test.c.i
 
@@ -1937,8 +2481,39 @@ test/i2c_test.s: test/i2c_test.c.s
 
 # target to generate assembly for a file
 test/i2c_test.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/test/i2c_test.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/test/i2c_test.c.s
 .PHONY : test/i2c_test.c.s
+
+usb/freertos_hook.obj: usb/freertos_hook.c.obj
+
+.PHONY : usb/freertos_hook.obj
+
+# target to build an object file
+usb/freertos_hook.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/usb/freertos_hook.c.obj
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/usb/freertos_hook.c.obj
+.PHONY : usb/freertos_hook.c.obj
+
+usb/freertos_hook.i: usb/freertos_hook.c.i
+
+.PHONY : usb/freertos_hook.i
+
+# target to preprocess a source file
+usb/freertos_hook.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/usb/freertos_hook.c.i
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/usb/freertos_hook.c.i
+.PHONY : usb/freertos_hook.c.i
+
+usb/freertos_hook.s: usb/freertos_hook.c.s
+
+.PHONY : usb/freertos_hook.s
+
+# target to generate assembly for a file
+usb/freertos_hook.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/usb/freertos_hook.c.s
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/usb/freertos_hook.c.s
+.PHONY : usb/freertos_hook.c.s
 
 usb/usb_descriptors.obj: usb/usb_descriptors.c.obj
 
@@ -1946,6 +2521,7 @@ usb/usb_descriptors.obj: usb/usb_descriptors.c.obj
 
 # target to build an object file
 usb/usb_descriptors.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/usb/usb_descriptors.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/usb/usb_descriptors.c.obj
 .PHONY : usb/usb_descriptors.c.obj
 
@@ -1955,6 +2531,7 @@ usb/usb_descriptors.i: usb/usb_descriptors.c.i
 
 # target to preprocess a source file
 usb/usb_descriptors.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/usb/usb_descriptors.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/usb/usb_descriptors.c.i
 .PHONY : usb/usb_descriptors.c.i
 
@@ -1964,8 +2541,39 @@ usb/usb_descriptors.s: usb/usb_descriptors.c.s
 
 # target to generate assembly for a file
 usb/usb_descriptors.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/usb/usb_descriptors.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/usb/usb_descriptors.c.s
 .PHONY : usb/usb_descriptors.c.s
+
+usb/usb_helper.obj: usb/usb_helper.c.obj
+
+.PHONY : usb/usb_helper.obj
+
+# target to build an object file
+usb/usb_helper.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/usb/usb_helper.c.obj
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/usb/usb_helper.c.obj
+.PHONY : usb/usb_helper.c.obj
+
+usb/usb_helper.i: usb/usb_helper.c.i
+
+.PHONY : usb/usb_helper.i
+
+# target to preprocess a source file
+usb/usb_helper.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/usb/usb_helper.c.i
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/usb/usb_helper.c.i
+.PHONY : usb/usb_helper.c.i
+
+usb/usb_helper.s: usb/usb_helper.c.s
+
+.PHONY : usb/usb_helper.s
+
+# target to generate assembly for a file
+usb/usb_helper.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/usb/usb_helper.c.s
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/usb/usb_helper.c.s
+.PHONY : usb/usb_helper.c.s
 
 usb/usb_msc.obj: usb/usb_msc.c.obj
 
@@ -1973,6 +2581,7 @@ usb/usb_msc.obj: usb/usb_msc.c.obj
 
 # target to build an object file
 usb/usb_msc.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/usb/usb_msc.c.obj
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/usb/usb_msc.c.obj
 .PHONY : usb/usb_msc.c.obj
 
@@ -1982,6 +2591,7 @@ usb/usb_msc.i: usb/usb_msc.c.i
 
 # target to preprocess a source file
 usb/usb_msc.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/usb/usb_msc.c.i
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/usb/usb_msc.c.i
 .PHONY : usb/usb_msc.c.i
 
@@ -1991,6 +2601,7 @@ usb/usb_msc.s: usb/usb_msc.c.s
 
 # target to generate assembly for a file
 usb/usb_msc.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/usb/usb_msc.c.s
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/usb/usb_msc.c.s
 .PHONY : usb/usb_msc.c.s
 
@@ -2000,9 +2611,10 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... ELF2UF2Build"
+	@echo "... rebuild_cache"
+	@echo "... FreeRTOS"
 	@echo "... main"
 	@echo "... drivers/gpio.obj"
 	@echo "... drivers/gpio.i"
@@ -2013,15 +2625,45 @@ help:
 	@echo "... drivers/tool.obj"
 	@echo "... drivers/tool.i"
 	@echo "... drivers/tool.s"
-	@echo "... home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.obj"
-	@echo "... home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.i"
-	@echo "... home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/raspberry_pi_pico/board_raspberry_pi_pico.s"
+	@echo "... freertos/croutine.obj"
+	@echo "... freertos/croutine.i"
+	@echo "... freertos/croutine.s"
+	@echo "... freertos/event_groups.obj"
+	@echo "... freertos/event_groups.i"
+	@echo "... freertos/event_groups.s"
+	@echo "... freertos/list.obj"
+	@echo "... freertos/list.i"
+	@echo "... freertos/list.s"
+	@echo "... freertos/portable/GCC/ARM_CM0/port.obj"
+	@echo "... freertos/portable/GCC/ARM_CM0/port.i"
+	@echo "... freertos/portable/GCC/ARM_CM0/port.s"
+	@echo "... freertos/portable/MemMang/heap_4.obj"
+	@echo "... freertos/portable/MemMang/heap_4.i"
+	@echo "... freertos/portable/MemMang/heap_4.s"
+	@echo "... freertos/queue.obj"
+	@echo "... freertos/queue.i"
+	@echo "... freertos/queue.s"
+	@echo "... freertos/stream_buffer.obj"
+	@echo "... freertos/stream_buffer.i"
+	@echo "... freertos/stream_buffer.s"
+	@echo "... freertos/tasks.obj"
+	@echo "... freertos/tasks.i"
+	@echo "... freertos/tasks.s"
+	@echo "... freertos/timers.obj"
+	@echo "... freertos/timers.i"
+	@echo "... freertos/timers.s"
+	@echo "... home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.obj"
+	@echo "... home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.i"
+	@echo "... home/ddreise/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.s"
 	@echo "... home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj"
 	@echo "... home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i"
 	@echo "... home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s"
 	@echo "... home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.obj"
 	@echo "... home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i"
 	@echo "... home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s"
+	@echo "... home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.obj"
+	@echo "... home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i"
+	@echo "... home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s"
 	@echo "... home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.obj"
 	@echo "... home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i"
 	@echo "... home/ddreise/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s"
@@ -2088,6 +2730,9 @@ help:
 	@echo "... home/ddreise/pico/pico-sdk/src/common/pico_util/queue.obj"
 	@echo "... home/ddreise/pico/pico-sdk/src/common/pico_util/queue.i"
 	@echo "... home/ddreise/pico/pico-sdk/src/common/pico_util/queue.s"
+	@echo "... home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Source/system_RP2040.obj"
+	@echo "... home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Source/system_RP2040.i"
+	@echo "... home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Source/system_RP2040.s"
 	@echo "... home/ddreise/pico/pico-sdk/src/rp2_common/hardware_claim/claim.obj"
 	@echo "... home/ddreise/pico/pico-sdk/src/rp2_common/hardware_claim/claim.i"
 	@echo "... home/ddreise/pico/pico-sdk/src/rp2_common/hardware_claim/claim.s"
@@ -2195,6 +2840,9 @@ help:
 	@echo "... nfcc/ndef_helper.obj"
 	@echo "... nfcc/ndef_helper.i"
 	@echo "... nfcc/ndef_helper.s"
+	@echo "... nfcc/ndef_message_setup.obj"
+	@echo "... nfcc/ndef_message_setup.i"
+	@echo "... nfcc/ndef_message_setup.s"
 	@echo "... nfcc/nfc_task.obj"
 	@echo "... nfcc/nfc_task.i"
 	@echo "... nfcc/nfc_task.s"
@@ -2204,9 +2852,15 @@ help:
 	@echo "... test/i2c_test.obj"
 	@echo "... test/i2c_test.i"
 	@echo "... test/i2c_test.s"
+	@echo "... usb/freertos_hook.obj"
+	@echo "... usb/freertos_hook.i"
+	@echo "... usb/freertos_hook.s"
 	@echo "... usb/usb_descriptors.obj"
 	@echo "... usb/usb_descriptors.i"
 	@echo "... usb/usb_descriptors.s"
+	@echo "... usb/usb_helper.obj"
+	@echo "... usb/usb_helper.i"
+	@echo "... usb/usb_helper.s"
 	@echo "... usb/usb_msc.obj"
 	@echo "... usb/usb_msc.i"
 	@echo "... usb/usb_msc.s"

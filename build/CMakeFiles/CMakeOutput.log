@@ -1,8 +1,8 @@
 The target system is: PICO -  - cortex-m0plus
-The host system is: Linux - 5.8.0-49-generic - x86_64
+The host system is: Linux - 5.8.0-59-generic - x86_64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
 Compiler: /usr/bin/arm-none-eabi-gcc 
-Build flags: 
+Build flags: -mcpu=cortex-m0plus;-mthumb
 Id flags: -c 
 
 The output was:
@@ -15,7 +15,7 @@ The C compiler identification is GNU, found in "/home/ddreise/pico/nfc/build/CMa
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /usr/bin/arm-none-eabi-g++ 
-Build flags: 
+Build flags: -mcpu=cortex-m0plus;-mthumb
 Id flags: -c 
 
 The output was:
