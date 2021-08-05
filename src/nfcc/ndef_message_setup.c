@@ -12,6 +12,7 @@
 #define SIZEOF_PAYLOAD_SIZE 4
 #define SIZEOF_TYPE 10
 #define SIZEOF_STATUS 1
+#define SIZEOF_LANG 2 
 
 unsigned char* pRecord;
 uint32_t Record_sz;
@@ -22,8 +23,7 @@ uint32_t create_NDEFRecord(unsigned char* pMessage, unsigned int MessageSize){
     uint32_t tot_sz, index = 0, i;
 
     // Total size
-    tot_sz = SIZEOF_TNF + SIZEOF_PAYLOAD_SIZE + SIZEOF_TYPE + SIZEOF_STATUS + MessageSize;
-
+    tot_sz = SIZEOF_TNF + SIZEOF_PAYLOAD_SIZE + SIZEOF_TYPE + SIZEOF_STATUS + SIZEOF_LANG + MessageSize;
     pRecord = (unsigned char*)malloc(tot_sz * sizeof(char));
 
     // Beginning of ndef header
@@ -38,10 +38,10 @@ uint32_t create_NDEFRecord(unsigned char* pMessage, unsigned int MessageSize){
 
     // Setting payload length
     char ndef_header_payload_size[SIZEOF_PAYLOAD_SIZE] = {
-        (MessageSize + 1) >> 24,  // Add +1 for status
-        (MessageSize + 1) >> 16,
-        (MessageSize + 1) >> 8,
-        (MessageSize + 1) & 0xFF
+        (MessageSize + 3) >> 24,  // Add +1 for status, and 2 for language
+        (MessageSize + 3) >> 16,
+        (MessageSize + 3) >> 8,
+        (MessageSize + 3) & 0xFF
     };
     
     for(i = 0; i < SIZEOF_PAYLOAD_SIZE; i++){
@@ -64,6 +64,14 @@ uint32_t create_NDEFRecord(unsigned char* pMessage, unsigned int MessageSize){
 
     for(i = 0; i < SIZEOF_STATUS; i++){
       pRecord[index] = ndef_header_status[i];
+      index++;
+    }
+
+    // Setting language
+    char ndef_language[SIZEOF_LANG] = {'e','n'}; 
+
+    for(i = 0; i < SIZEOF_LANG; i++){
+      pRecord[index] = ndef_language[i];
       index++;
     }
 
