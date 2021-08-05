@@ -16,5 +16,6 @@ target_link_libraries(mem INTERFACE
         tinyusb_board
         FreeRTOS
         cmsis_core
+        usb
 )
 

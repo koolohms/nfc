@@ -37,6 +37,7 @@
 #include "led.h"
 #include "tusb_config.h"
 #include "usb_helper.h"
+#include "mem_helper.h"
 #include "test.h"
 #include "nfc_task.h"
 #include "ndef_message_setup.h"
