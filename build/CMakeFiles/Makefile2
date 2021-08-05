@@ -1512,6 +1512,7 @@ src/all: src/usb/all
 src/all: src/led/all
 src/all: src/test/all
 src/all: src/nfcc/all
+src/all: src/mem/all
 
 .PHONY : src/all
 
@@ -1521,6 +1522,7 @@ src/preinstall: src/usb/preinstall
 src/preinstall: src/led/preinstall
 src/preinstall: src/test/preinstall
 src/preinstall: src/nfcc/preinstall
+src/preinstall: src/mem/preinstall
 
 .PHONY : src/preinstall
 
@@ -1533,6 +1535,7 @@ src/clean: src/usb/clean
 src/clean: src/led/clean
 src/clean: src/test/clean
 src/clean: src/nfcc/clean
+src/clean: src/mem/clean
 
 .PHONY : src/clean
 
@@ -1571,6 +1574,24 @@ src/led/preinstall:
 src/led/clean:
 
 .PHONY : src/led/clean
+
+#=============================================================================
+# Directory level rules for directory src/mem
+
+# Recursive "all" directory target.
+src/mem/all:
+
+.PHONY : src/mem/all
+
+# Recursive "preinstall" directory target.
+src/mem/preinstall:
+
+.PHONY : src/mem/preinstall
+
+# Recursive "clean" directory target.
+src/mem/clean:
+
+.PHONY : src/mem/clean
 
 #=============================================================================
 # Directory level rules for directory src/nfcc

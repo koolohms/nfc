@@ -2275,6 +2275,36 @@ main.c.s:
 	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/main.c.s
 .PHONY : main.c.s
 
+mem/mem_helper.obj: mem/mem_helper.c.obj
+
+.PHONY : mem/mem_helper.obj
+
+# target to build an object file
+mem/mem_helper.c.obj:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/mem/mem_helper.c.obj
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/mem/mem_helper.c.obj
+.PHONY : mem/mem_helper.c.obj
+
+mem/mem_helper.i: mem/mem_helper.c.i
+
+.PHONY : mem/mem_helper.i
+
+# target to preprocess a source file
+mem/mem_helper.c.i:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/mem/mem_helper.c.i
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/mem/mem_helper.c.i
+.PHONY : mem/mem_helper.c.i
+
+mem/mem_helper.s: mem/mem_helper.c.s
+
+.PHONY : mem/mem_helper.s
+
+# target to generate assembly for a file
+mem/mem_helper.c.s:
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/FreeRTOS.dir/build.make src/CMakeFiles/FreeRTOS.dir/mem/mem_helper.c.s
+	cd /home/ddreise/pico/nfc/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/mem/mem_helper.c.s
+.PHONY : mem/mem_helper.c.s
+
 nfcc/NxpNci.obj: nfcc/NxpNci.c.obj
 
 .PHONY : nfcc/NxpNci.obj
@@ -2831,6 +2861,9 @@ help:
 	@echo "... main.obj"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... mem/mem_helper.obj"
+	@echo "... mem/mem_helper.i"
+	@echo "... mem/mem_helper.s"
 	@echo "... nfcc/NxpNci.obj"
 	@echo "... nfcc/NxpNci.i"
 	@echo "... nfcc/NxpNci.s"

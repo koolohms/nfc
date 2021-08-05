@@ -3370,6 +3370,8 @@ src/CMakeFiles/FreeRTOS.dir/led/led.c.obj: /home/ddreise/pico/pico-sdk/src/rp2_c
 src/CMakeFiles/FreeRTOS.dir/led/led.c.obj: generated/pico_base/pico/config_autogen.h
 src/CMakeFiles/FreeRTOS.dir/led/led.c.obj: generated/pico_base/pico/version.h
 
+src/CMakeFiles/FreeRTOS.dir/mem/mem_helper.c.obj: ../src/mem/mem_helper.c
+
 src/CMakeFiles/FreeRTOS.dir/nfcc/NxpNci.c.obj: ../src/drivers/include/tool.h
 src/CMakeFiles/FreeRTOS.dir/nfcc/NxpNci.c.obj: ../src/nfcc/include/Nfc.h
 src/CMakeFiles/FreeRTOS.dir/nfcc/NxpNci.c.obj: ../src/nfcc/include/Nfc_settings.h

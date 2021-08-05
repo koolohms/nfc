@@ -77,6 +77,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj"
   "CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj"
   "CMakeFiles/FreeRTOS.dir/led/led.c.obj"
+  "CMakeFiles/FreeRTOS.dir/mem/mem_helper.c.obj"
   "CMakeFiles/FreeRTOS.dir/nfcc/NxpNci.c.obj"
   "CMakeFiles/FreeRTOS.dir/nfcc/P2P_NDEF.c.obj"
   "CMakeFiles/FreeRTOS.dir/nfcc/ndef_helper.c.obj"

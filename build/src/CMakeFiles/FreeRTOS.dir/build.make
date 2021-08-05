@@ -1126,6 +1126,19 @@ src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Source/system_RP2040.c.s"
 	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Source/system_RP2040.c -o CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Source/system_RP2040.c.s
 
+src/CMakeFiles/FreeRTOS.dir/mem/mem_helper.c.obj: src/CMakeFiles/FreeRTOS.dir/flags.make
+src/CMakeFiles/FreeRTOS.dir/mem/mem_helper.c.obj: ../src/mem/mem_helper.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object src/CMakeFiles/FreeRTOS.dir/mem/mem_helper.c.obj"
+	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FreeRTOS.dir/mem/mem_helper.c.obj   -c /home/ddreise/pico/nfc/src/mem/mem_helper.c
+
+src/CMakeFiles/FreeRTOS.dir/mem/mem_helper.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/FreeRTOS.dir/mem/mem_helper.c.i"
+	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ddreise/pico/nfc/src/mem/mem_helper.c > CMakeFiles/FreeRTOS.dir/mem/mem_helper.c.i
+
+src/CMakeFiles/FreeRTOS.dir/mem/mem_helper.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FreeRTOS.dir/mem/mem_helper.c.s"
+	cd /home/ddreise/pico/nfc/build/src && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ddreise/pico/nfc/src/mem/mem_helper.c -o CMakeFiles/FreeRTOS.dir/mem/mem_helper.c.s
+
 # Object files for target FreeRTOS
 FreeRTOS_OBJECTS = \
 "CMakeFiles/FreeRTOS.dir/freertos/croutine.c.obj" \
@@ -1216,7 +1229,8 @@ FreeRTOS_OBJECTS = \
 "CMakeFiles/FreeRTOS.dir/drivers/tool.c.obj" \
 "CMakeFiles/FreeRTOS.dir/drivers/gpio.c.obj" \
 "CMakeFiles/FreeRTOS.dir/drivers/i2c.c.obj" \
-"CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Source/system_RP2040.c.obj"
+"CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Source/system_RP2040.c.obj" \
+"CMakeFiles/FreeRTOS.dir/mem/mem_helper.c.obj"
 
 # External object files for target FreeRTOS
 FreeRTOS_EXTERNAL_OBJECTS =
@@ -1310,9 +1324,10 @@ src/libFreeRTOS.a: src/CMakeFiles/FreeRTOS.dir/drivers/tool.c.obj
 src/libFreeRTOS.a: src/CMakeFiles/FreeRTOS.dir/drivers/gpio.c.obj
 src/libFreeRTOS.a: src/CMakeFiles/FreeRTOS.dir/drivers/i2c.c.obj
 src/libFreeRTOS.a: src/CMakeFiles/FreeRTOS.dir/home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Source/system_RP2040.c.obj
+src/libFreeRTOS.a: src/CMakeFiles/FreeRTOS.dir/mem/mem_helper.c.obj
 src/libFreeRTOS.a: src/CMakeFiles/FreeRTOS.dir/build.make
 src/libFreeRTOS.a: src/CMakeFiles/FreeRTOS.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Linking CXX static library libFreeRTOS.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ddreise/pico/nfc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Linking CXX static library libFreeRTOS.a"
 	cd /home/ddreise/pico/nfc/build/src && $(CMAKE_COMMAND) -P CMakeFiles/FreeRTOS.dir/cmake_clean_target.cmake
 	cd /home/ddreise/pico/nfc/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/FreeRTOS.dir/link.txt --verbose=$(VERBOSE)
 

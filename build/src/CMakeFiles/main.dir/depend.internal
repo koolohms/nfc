@@ -2942,6 +2942,8 @@ src/CMakeFiles/main.dir/main.c.obj
  /home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdio_uart/include/pico/stdio_uart.h
  generated/pico_base/pico/config_autogen.h
  generated/pico_base/pico/version.h
+src/CMakeFiles/main.dir/mem/mem_helper.c.obj
+ /home/ddreise/pico/nfc/src/mem/mem_helper.c
 src/CMakeFiles/main.dir/nfcc/NxpNci.c.obj
  ../src/drivers/include/tool.h
  ../src/nfcc/include/Nfc.h

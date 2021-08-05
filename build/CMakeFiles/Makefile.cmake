@@ -16,6 +16,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../src/CMakeLists.txt"
   "../src/drivers/CMakeLists.txt"
   "../src/led/CMakeLists.txt"
+  "../src/mem/CMakeLists.txt"
   "../src/nfcc/CMakeLists.txt"
   "../src/test/CMakeLists.txt"
   "../src/usb/CMakeLists.txt"
@@ -218,6 +219,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "src/led/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/test/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/nfcc/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/mem/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:

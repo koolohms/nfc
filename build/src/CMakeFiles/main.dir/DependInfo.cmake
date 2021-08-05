@@ -125,6 +125,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "../src/drivers/include"
   "/home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Core/Include"
   "/home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Include"
+  "../src/mem"
   )
 set(CMAKE_DEPENDS_CHECK_C
   "/home/ddreise/pico/nfc/src/drivers/gpio.c" "/home/ddreise/pico/nfc/build/src/CMakeFiles/main.dir/drivers/gpio.c.obj"
@@ -185,6 +186,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c" "/home/ddreise/pico/nfc/build/src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj"
   "/home/ddreise/pico/nfc/src/led/led.c" "/home/ddreise/pico/nfc/build/src/CMakeFiles/main.dir/led/led.c.obj"
   "/home/ddreise/pico/nfc/src/main.c" "/home/ddreise/pico/nfc/build/src/CMakeFiles/main.dir/main.c.obj"
+  "/home/ddreise/pico/nfc/src/mem/mem_helper.c" "/home/ddreise/pico/nfc/build/src/CMakeFiles/main.dir/mem/mem_helper.c.obj"
   "/home/ddreise/pico/nfc/src/nfcc/NxpNci.c" "/home/ddreise/pico/nfc/build/src/CMakeFiles/main.dir/nfcc/NxpNci.c.obj"
   "/home/ddreise/pico/nfc/src/nfcc/P2P_NDEF.c" "/home/ddreise/pico/nfc/build/src/CMakeFiles/main.dir/nfcc/P2P_NDEF.c.obj"
   "/home/ddreise/pico/nfc/src/nfcc/ndef_helper.c" "/home/ddreise/pico/nfc/build/src/CMakeFiles/main.dir/nfcc/ndef_helper.c.obj"
@@ -304,6 +306,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../src/drivers/include"
   "/home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Core/Include"
   "/home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Include"
+  "../src/mem"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp" "/home/ddreise/pico/nfc/build/src/CMakeFiles/main.dir/home/ddreise/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj"
@@ -415,6 +418,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../src/drivers/include"
   "/home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Core/Include"
   "/home/ddreise/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Include"
+  "../src/mem"
   )
 
 # Targets to which this target links.

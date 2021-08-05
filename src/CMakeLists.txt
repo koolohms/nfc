@@ -19,6 +19,7 @@ target_link_libraries(main PRIVATE
         drivers
         FreeRTOS
         cmsis_core
+        mem
         )
 
 # Add FreeRTOS library
@@ -50,6 +51,7 @@ target_link_libraries(FreeRTOS PUBLIC
         pico_mem_ops
         drivers
         cmsis_core
+        mem
 )
 
 
@@ -64,3 +66,4 @@ add_subdirectory(usb)
 add_subdirectory(led)
 add_subdirectory(test)
 add_subdirectory(nfcc)
+add_subdirectory(mem)
