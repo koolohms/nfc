@@ -15036,7 +15036,7 @@ DISABLE_ALL_INTERRUPTS	freertos/portable/IAR/AVR32_UC3/portmacro.h	109;"	d
 DISABLE_INT_LEVEL	freertos/portable/GCC/AVR32_UC3/portmacro.h	110;"	d
 DISABLE_INT_LEVEL	freertos/portable/IAR/AVR32_UC3/portmacro.h	112;"	d
 DISC	nfcc/P2P_NDEF.c	36;"	d	file:
-DISK_BLOCK_NUM	usb/usb_msc.c	/^  DISK_BLOCK_NUM  = 16, \/\/ 8KB is the smallest size that windows allow to mount$/;"	e	enum:__anon2	file:
+DISK_BLOCK_NUM	usb/usb_msc.c	/^  DISK_BLOCK_NUM  = 200, \/\/ 8KB is the smallest size that windows allow to mount$/;"	e	enum:__anon2	file:
 DISK_BLOCK_SIZE	usb/usb_msc.c	/^  DISK_BLOCK_SIZE = 512$/;"	e	enum:__anon2	file:
 DM	nfcc/P2P_NDEF.c	38;"	d	file:
 DSFID	nfcc/include/Nfc.h	/^    unsigned char DSFID;$/;"	m	struct:__anon9
@@ -15375,7 +15375,7 @@ EventGroupDef_t	freertos/event_groups.c	/^typedef struct EventGroupDef_t$/;"	s	f
 EventGroupHandle_t	freertos/include/event_groups.h	/^typedef struct EventGroupDef_t   * EventGroupHandle_t;$/;"	t	typeref:struct:EventGroupDef_t
 EventGroup_t	freertos/event_groups.c	/^} EventGroup_t;$/;"	t	typeref:struct:EventGroupDef_t	file:
 Exit_IRQ_No_Context_Switch	freertos/portable/GCC/ARM_CA53_64_BIT/portASM.S	/^Exit_IRQ_No_Context_Switch:$/;"	l
-FALSE	main.c	50;"	d	file:
+FALSE	main.c	51;"	d	file:
 FALSE	usb/usb_helper.h	5;"	d
 FED	freertos/portable/WizC/PIC18/Install.bat	/^  set FED=C:\\Program Files\\FED\\PIC_C$/;"	v
 FED	freertos/portable/WizC/PIC18/Install.bat	/^  set FED=C:\\Program Files\\FED\\PIXIE$/;"	v
@@ -15560,6 +15560,7 @@ Info	nfcc/include/Nfc.h	/^    NxpNci_RfIntf_Info_t Info;$/;"	m	struct:__anon11
 Initial	nfcc/P2P_NDEF.c	/^    Initial,$/;"	e	enum:__anon3	file:
 Interface	nfcc/include/Nfc.h	/^    unsigned char Interface;$/;"	m	struct:__anon11
 KEY_MFC	nfcc/nfc_task.c	226;"	d	file:
+LBA	mem/mem_helper.c	29;"	d	file:
 LEVEL_HIGH	drivers/include/gpio.h	11;"	d
 LEVEL_LOW	drivers/include/gpio.h	10;"	d
 LIB_C_O	freertos/portable/ThirdParty/XCC/Xtensa/Makefile	/^LIB_C_O     = $(patsubst %.c,%.o,$(XT_C_FILES) $(FR_C_FILES))$/;"	m
@@ -15599,6 +15600,7 @@ LR	freertos/portable/IAR/STR91x/ISR_Support.h	/^	STMDB	LR!, {R0}$/;"	v
 LR	freertos/portable/IAR/STR91x/ISR_Support.h	/^	STR		LR, [R0]$/;"	v
 LR	freertos/portable/IAR/STR91x/ISR_Support.h	/^	SUB		LR, LR, #60$/;"	v
 LTO	nfcc/P2P_NDEF.c	52;"	d	file:
+LUN	mem/mem_helper.c	28;"	d	file:
 LVI_DISABLED	freertos/portable/IAR/78K0R/portmacro.h	134;"	d
 LVI_ENABLED	freertos/portable/IAR/78K0R/portmacro.h	133;"	d
 ListItem_t	freertos/include/list.h	/^typedef struct xLIST_ITEM ListItem_t;                       \/* For some reason lint wants this as two separate definitions. *\/$/;"	t	typeref:struct:xLIST_ITEM
@@ -15698,6 +15700,7 @@ MEDIA_HANDOVER_BLE_SECURE	nfcc/include/ndef_helper.h	/^    MEDIA_HANDOVER_BLE_SE
 MEDIA_HANDOVER_BT	nfcc/include/ndef_helper.h	/^    MEDIA_HANDOVER_BT,$/;"	e	enum:__anon14
 MEDIA_HANDOVER_WIFI	nfcc/include/ndef_helper.h	/^    MEDIA_HANDOVER_WIFI,$/;"	e	enum:__anon14
 MEDIA_VCARD	nfcc/include/ndef_helper.h	/^    MEDIA_VCARD,$/;"	e	enum:__anon14
+MEM_HELPER_H	mem/mem_helper.h	4;"	d
 MIUX	nfcc/P2P_NDEF.c	50;"	d	file:
 MODE_LISTEN	nfcc/include/Nfc.h	50;"	d
 MODE_MASK	nfcc/include/Nfc.h	51;"	d
@@ -16061,6 +16064,7 @@ NxpNci_WriteNdef	nfcc/NxpNci.c	/^static void NxpNci_WriteNdef(NxpNci_RfIntf_t Rf
 OCD_DISABLED	freertos/portable/IAR/78K0R/portmacro.h	136;"	d
 OCD_ENABLED	freertos/portable/IAR/78K0R/portmacro.h	137;"	d
 OCD_ENABLED_ERASE	freertos/portable/IAR/78K0R/portmacro.h	138;"	d
+OFFSET	mem/mem_helper.c	30;"	d	file:
 OPT_BYTES_SIZE	freertos/portable/IAR/78K0R/portmacro.h	130;"	d
 OSLIB	freertos/portable/ThirdParty/XCC/Xtensa/Makefile	/^OSLIB       = $(BLDDIR)$(S)libfreertos.a$/;"	m
 P2P_NDEF_LlcpHeader_t	nfcc/P2P_NDEF.c	/^} P2P_NDEF_LlcpHeader_t;$/;"	t	typeref:struct:__anon4	file:
@@ -19057,7 +19061,7 @@ TOOL_H	drivers/include/tool.h	4;"	d
 TOPOFSTACK_OFFS	freertos/portable/ThirdParty/GCC/Xtensa_ESP32/portasm.S	/^#define TOPOFSTACK_OFFS                 0x00    \/* StackType_t *pxTopOfStack *\/$/;"	d
 TOPOFSTACK_OFFS	freertos/portable/ThirdParty/GCC/Xtensa_ESP32_IDF3/portasm.S	/^#define TOPOFSTACK_OFFS                 0x00    \/* StackType_t *pxTopOfStack *\/$/;"	d
 TOPOFSTACK_OFFS	freertos/portable/ThirdParty/XCC/Xtensa/portasm.S	/^#define TOPOFSTACK_OFFS                 0x00    \/* StackType_t *pxTopOfStack *\/$/;"	d
-TRUE	main.c	49;"	d	file:
+TRUE	main.c	50;"	d	file:
 TRUE	usb/usb_helper.h	4;"	d
 TSTROOT	freertos/portable/ThirdParty/XCC/Xtensa/Makefile	/^TSTROOT     = $(abspath $(SRCROOT)$(S)..$(S)..$(S)..$(S)..$(S)..$(S)demos$(S)cadence$(S)sim$(SMALL))$/;"	m
 TWI_CR	freertos/portable/GCC/ARM7_AT91SAM7S/AT91SAM7X256.h	/^	AT91_REG	 TWI_CR; 	\/\/ Control Register$/;"	m	struct:_AT91S_TWI
@@ -21032,6 +21036,7 @@ gP2P_NDEF_size	nfcc/P2P_NDEF.c	/^static unsigned int gP2P_NDEF_size;$/;"	v	file:
 gPendingReception	nfcc/nfc_task.c	/^static unsigned short gPendingReception = 0;$/;"	v	file:
 gRfSettingsRestored_flag	nfcc/NxpNci.c	/^static bool gRfSettingsRestored_flag = false;$/;"	v	file:
 get_isr_tls	freertos/portable/ThirdParty/GCC/ARC_EM_HS/freertos_tls.c	/^    static void * get_isr_tls( void )$/;"	f	file:
+get_mem_info	mem/mem_helper.c	/^int32_t get_mem_info(char* pBuffer, int32_t bufsize){$/;"	f
 get_task_tls	freertos/portable/ThirdParty/GCC/ARC_EM_HS/freertos_tls.c	/^    static void * get_task_tls( void )$/;"	f	file:
 girq23_b4	freertos/portable/MPLAB/PIC32MEC14xx/port_asm.S	/^girq23_b4:$/;"	l
 girq23_isr	freertos/portable/MPLAB/PIC32MEC14xx/port_asm.S	/^girq23_isr:$/;"	l

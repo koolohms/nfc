@@ -26,7 +26,7 @@
 //  0x1c    4       file size (bytes)
 
 #define LUN 0 
-#define LBA 0
+#define LBA 2 
 #define OFFSET 0
 
 int32_t get_mem_info(char* pBuffer, int32_t bufsize){

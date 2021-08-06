@@ -147,8 +147,8 @@ void vUSBTask(void* pvParameters){
       /* Get fat12 directory info */
       get_mem_info(buf, bufsize);
       for(int32_t i = 0; i < bufsize; i++){
+        if (i % 32 == 0) printf("\n");
         printf("%02x ", buf[i]);
-        if (i == 31) printf("\n");
       }
       printf("\n");
     }
