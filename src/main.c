@@ -128,6 +128,12 @@ void vUSBTask(void* pvParameters){
   const char *pcTaskName = "USB Task is running\r\n";
   printf(pcTaskName);
 
+  // Create buffer to store fat12 directory
+  char* buf;
+  int32_t bufsize = 64;
+
+  buf = (char*) malloc(bufsize);
+
   while(1){
 
     // Put here a conditional if statement that will create a new record if new
@@ -137,6 +143,14 @@ void vUSBTask(void* pvParameters){
     if(checkfileReceived()){
       Record_sz = create_NDEFRecord(pFile, FileSize);
       received = TRUE;
+
+      /* Get fat12 directory info */
+      get_mem_info(buf, bufsize);
+      for(int32_t i = 0; i < bufsize; i++){
+        printf("%02x ", buf[i]);
+        if (i == 31) printf("\n");
+      }
+      printf("\n");
     }
 
     taskENTER_CRITICAL();
