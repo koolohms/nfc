@@ -131,15 +131,13 @@ void vUSBTask(void* pvParameters){
   printf(pcTaskName);
 
   // Create buffer to store fat12 directory
-  char buf[FAT12_DIR_SIZE];
+  char buf[FAT12_DIR_SIZE] = {0};
   int16_t bufsize = sizeof(buf);
 
   while(1){
 
     // Put here a conditional if statement that will create a new record if new
     // file received in USB memory
-
-    //unsigned char test_message[] = "this is a test";
     if(checkfileReceived()){
       Record_sz = create_NDEFRecord(pFile, FileSize);
       received = TRUE;

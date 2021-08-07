@@ -14,7 +14,7 @@
 #define SIZEOF_STATUS 1
 #define SIZEOF_LANG 2 
 
-unsigned char* pRecord;
+unsigned char pRecord[MAX_RECEIPT_SIZE] = {0};
 uint32_t Record_sz;
 
 // Create NDEF record to send to NFC
@@ -24,7 +24,6 @@ uint32_t create_NDEFRecord(unsigned char* pMessage, unsigned int MessageSize){
 
     // Total size
     tot_sz = SIZEOF_TNF + SIZEOF_PAYLOAD_SIZE + SIZEOF_TYPE + SIZEOF_STATUS + SIZEOF_LANG + MessageSize;
-    pRecord = (unsigned char*)malloc(tot_sz * sizeof(char));
 
     // Beginning of ndef header
     char NDEF_HEADER_TNF[SIZEOF_TNF] = {
@@ -119,8 +118,4 @@ uint32_t create_NDEFRecord(unsigned char* pMessage, unsigned int MessageSize){
     //  pRecord_array[i] = pRecord[i];
     //}
     return index; // return size of record
-}
-
-void free_NDEFRecord(){
-  free(pRecord);
 }
