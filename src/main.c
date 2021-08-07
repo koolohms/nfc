@@ -50,7 +50,9 @@
 #define TRUE 1
 #define FALSE 0
 
-uint8_t received = FALSE;
+#define FAT12_DIR_SIZE  128   // 128 (4 entries) For now, will set to 32 once testing is done (one entry is 32 bytes wide)
+
+int8_t received = FALSE;
 
 void vUSBTask(void* pvParameters);
 void vLEDTask(void* pvParameters);
@@ -129,10 +131,8 @@ void vUSBTask(void* pvParameters){
   printf(pcTaskName);
 
   // Create buffer to store fat12 directory
-  char* buf;
-  int32_t bufsize = 64;
-
-  buf = (char*) malloc(bufsize);
+  char buf[FAT12_DIR_SIZE];
+  int16_t bufsize = sizeof(buf);
 
   while(1){
 
