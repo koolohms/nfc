@@ -267,6 +267,10 @@ list.h
 ../src/usb/tusb_config.h
 
 /home/ddreise/pico/nfc/src/mem/mem_helper.c
+stdio.h
+-
+string.h
+-
 stdint.h
 -
 mem_helper.h

@@ -149,6 +149,9 @@ void vUSBTask(void* pvParameters){
         printf("%02x ", buf[i]);
       }
       printf("\n");
+
+      /* Get file info*/
+      get_file_info(buf, bufsize);
     }
 
     taskENTER_CRITICAL();

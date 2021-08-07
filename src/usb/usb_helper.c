@@ -17,7 +17,7 @@ uint8_t checkfileReceived(void){
   // keep track of current file size (because they go in chunks)
   // when the file pointer changes, set return to TRUE
 
-  if(logic_addr > temp){
+  if(logic_addr !=  temp){
     printf("New location of file: %x\n", pFile);
     printf("Size of file: %d\n", FileSize);
     printf("Contents of file: ");
