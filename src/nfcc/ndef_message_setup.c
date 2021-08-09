@@ -98,6 +98,7 @@ uint32_t create_NDEFRecord(unsigned char* pMessage, unsigned int MessageSize){
 
     Record_sz = index; // Since we kept track using index, it can be used for size
 
+    /*
     // Print out contents of pMessage
     printf("\nContents of pMessage: ");
     for (int i = 0; i < MessageSize; i++){
@@ -112,7 +113,7 @@ uint32_t create_NDEFRecord(unsigned char* pMessage, unsigned int MessageSize){
       printf("%.2x\n", pRecord[i]);
     }
     printf("\nSize of pRecord: %d\n" ,Record_sz);
-
+    */
     // populate array with pointer values
     //for (int i = 0; i < tot_sz; i++){
     //  pRecord_array[i] = pRecord[i];

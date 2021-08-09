@@ -36,7 +36,8 @@ struct Receipts receipt_info;
 
 int32_t get_mem_info(char* pBuffer, int32_t bufsize){
 
-  int32_t bytes_read = tud_msc_read10_cb(LUN, LBA, OFFSET, pBuffer, bufsize);
+  int32_t bytes_read = 0;
+  bytes_read = tud_msc_read10_cb(LUN, LBA, OFFSET, pBuffer, bufsize);
 
   return bytes_read;
 }
@@ -71,14 +72,11 @@ struct Receipts* get_file_info(char* pBuffer, int32_t bufsize){
 
     if (!strcmp(name, temp)){                       // Compare the two strings
       memcpy(ptr_receipt, pBuffer + (i*32), sizeof(receipt_info));  // copy directory entry into struct
-      for (i = 0; i < sizeof(ptr_receipt->file_ext); i++){
-        printf("%c", ptr_receipt->file_ext[i]);
-      }
-      printf("\n");
-      return 0;
+      printf("FOUND THE FILE!\n");
+      return ptr_receipt;
     }
     else;
   }
 
-  return ptr_receipt;
+  return 0; // ERROR
 }

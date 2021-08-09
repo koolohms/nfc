@@ -134,24 +134,44 @@ void vUSBTask(void* pvParameters){
   char buf[FAT12_DIR_SIZE] = {0};
   int16_t bufsize = sizeof(buf);
 
+  struct Receipts *receipt;
+
   while(1){
 
     // Put here a conditional if statement that will create a new record if new
     // file received in USB memory
     if(checkfileReceived()){
-      Record_sz = create_NDEFRecord(pFile, FileSize);
+
+
+      /* Trigger NFC task */
       received = TRUE;
 
       /* Get fat12 directory info */
-      get_mem_info(buf, bufsize);
-      for(int32_t i = 0; i < bufsize; i++){
-        if (i % 32 == 0) printf("\n");
-        printf("%02x ", buf[i]);
+      if(!get_mem_info(buf, bufsize)) printf("Error getting mem info\n");
+      for(uint8_t j = 0; j < 4; j++){
+        printf("Mem info: ");
+        for(uint8_t i = 0; i < 32; i++){
+          printf("%02x ", buf[i+32*j]);
+        }
+        printf("\n");
       }
-      printf("\n");
 
       /* Get file info*/
-      get_file_info(buf, bufsize);
+      receipt = get_file_info(buf, bufsize);
+      if(receipt == 0) printf("Error getting file info\n");
+      else {
+        printf("File location: ");
+        printf("%llu ", (uint64_t)receipt->file_location[0]*512 + (uint64_t)0x2000048C2 );
+        printf("\n");
+        printf("File size: ");
+        for(uint8_t i = 0; i < sizeof(receipt->file_size); i++){
+          printf("%02x ", receipt->file_size[i]);
+        }
+        printf("\n");
+      }
+
+      /* Create NDEF Record */
+      Record_sz = create_NDEFRecord(pFile, FileSize);
     }
 
     taskENTER_CRITICAL();
