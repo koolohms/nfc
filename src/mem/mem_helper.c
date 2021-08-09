@@ -32,21 +32,7 @@
 #define OFFSET 0
 #define NAMESIZE 7    // "RECEIPT" is 7 chars long
 
-struct Receipt {
-  char file_name[8];            // Offset 0x00
-  char file_ext[3];             //        0x08
-  char file_attr[1];            //        0x0B
-  char reserved[1];             //        0x0C
-  char create_time_fine[1];     //        0x0D
-  char create_time[2];          //        0x0E
-  char create_date[2];          //        0x10
-  char last_accessed[2];        //        0x12
-  char ea_index[2];             //        0x14
-  char last_modified_time[2];   //        0x16
-  char last_modified_date[2];   //        0x18
-  char file_location[2];        //        0x1A
-  char file_size[4];            //        0x0C
-} receipt;
+struct Receipts receipt_info;
 
 int32_t get_mem_info(char* pBuffer, int32_t bufsize){
 
@@ -67,25 +53,32 @@ int32_t get_mem_info(char* pBuffer, int32_t bufsize){
  * returns --> pointer to structure 
  * table
  */
-uint32_t get_file_info(char* pBuffer, int32_t bufsize){
+struct Receipts* get_file_info(char* pBuffer, int32_t bufsize){
   
   int16_t i = 0;
   const char name[8] = "RECEIPT";
   char temp[8] = {0};
+  struct Receipts *ptr_receipt;
+
+  ptr_receipt = &receipt_info;
   
   // Look for "RECEIPT" file name
   // Loop through directory entries (32 bytes each)
-  
   for (i = 0; i < 4; i++){
 
-    memcpy(temp, pBuffer + (i*32), strlen(name));  // Copy directory entry filename into temporary array
-    temp[sizeof(name)] = '\0';                  // Add null terminator after to make it a string
+    memcpy(temp, pBuffer + (i*32), strlen(name));   // Copy directory entry filename into temporary array
+    temp[sizeof(name)] = '\0';                      // Add null terminator after to make it a string
 
-    if (!strcmp(name, temp)){   // Compare the two strings
-      printf("<%s> == <%s>\n", name, temp);
+    if (!strcmp(name, temp)){                       // Compare the two strings
+      memcpy(ptr_receipt, pBuffer + (i*32), sizeof(receipt_info));  // copy directory entry into struct
+      for (i = 0; i < sizeof(ptr_receipt->file_ext); i++){
+        printf("%c", ptr_receipt->file_ext[i]);
+      }
+      printf("\n");
+      return 0;
     }
-    else printf("<%s> != <%s>\n", name, temp);
+    else;
   }
 
-  return 0;
+  return ptr_receipt;
 }
