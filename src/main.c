@@ -132,8 +132,13 @@ void vUSBTask(void* pvParameters){
 
   // Create buffer to store fat12 directory
   char buf[FAT12_DIR_SIZE] = {0};
+  char s1[1];
+  char s2[1];
+  char s3[1];
+  char s4[1];
+  char str[1];
   int16_t bufsize = sizeof(buf);
-
+  uint64_t* file_loc;
   struct Receipts *receipt;
 
   while(1){
@@ -162,6 +167,8 @@ void vUSBTask(void* pvParameters){
       else {
         printf("File location: ");
         printf("%llu ", (uint64_t)receipt->file_location[0]*512 + (uint64_t)0x2000048C2 );
+        file_loc = (uint64_t*)(receipt->file_location[0]*512 + 0x2000048c2);
+        printf("file location again: %llu\n", *file_loc);
         printf("\n");
         printf("File size: ");
         for(uint8_t i = 0; i < sizeof(receipt->file_size); i++){
@@ -170,8 +177,25 @@ void vUSBTask(void* pvParameters){
         printf("\n");
       }
 
+      /* Format size of file */
+      sprintf(s1, "%x", receipt->file_size[0]);
+      sprintf(s2, "%x", receipt->file_size[1]);
+      sprintf(s3, "%x", receipt->file_size[2]);
+      sprintf(s4, "%x", receipt->file_size[3]);
+      printf("%x\n", receipt->file_size[0]);
+      printf("%x\n", receipt->file_size[1]);
+      printf("%x\n", receipt->file_size[2]);
+      printf("%x\n", receipt->file_size[3]);
+      strcat(str, s4);
+      strcat(str, s3);
+      strcat(str, s2);
+      strcat(str, s1);
+
+      printf("String file size: %s\n", str);
+      uint16_t c = atoi(str);
+
       /* Create NDEF Record */
-      Record_sz = create_NDEFRecord(pFile, FileSize);
+      //Record_sz = create_NDEFRecord(file_loc, c);
     }
 
     taskENTER_CRITICAL();
@@ -183,7 +207,7 @@ void vUSBTask(void* pvParameters){
 
 void vLEDTask(void* pvParameters){
 
-  const char *pcTaskName = "LED Task is running\r\n";
+
   printf(pcTaskName);
 
   while(1){
